@@ -20,7 +20,7 @@ public class ItemSystem : MonoBehaviour
     // เอกสาร 1 : 3-1-2-4-7 * 1
     // เอกสาร 2 : 8-5-3-1-2-7 * 5
     // เอกสาร 3 : 4-5-1-2-7 * 9
-    // เอกสาร 4 : 3-1-2-4-5-7
+    // เอกสาร 4 : 3-1-2-4-5-7 * 13
 
     // 1 - ห้องเครื่องปริ้นท์
     // 2 - ห้องลงตราประทับ 
@@ -145,6 +145,52 @@ public class ItemSystem : MonoBehaviour
                 itemID = "100";
             }
             else if(itemID == "9" && checkID != "7")
+            {
+                itemID = "100";
+            }
+            
+            // 3
+            if (orderList == "0" && checkID == "4" && itemID == "0" && itemID != "100")
+            {
+                document3Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "10";
+            }
+            else if(checkID == "5" && itemID == "10")
+            {
+                orderList = "2";
+                itemID = "11";
+            }
+            else if(checkID == "1" && itemID == "11")
+            {
+                orderList = "3";
+                itemID = "12";
+            }
+            else if(checkID == "2" && itemID == "12")
+            {
+                orderList = "4";
+                itemID = "13";
+            }
+            else if(checkID == "7" && itemID == "13")
+            {
+                score += 130;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+            }
+            else if(itemID == "10" && checkID != "5")
+            {
+                itemID = "100";
+            }
+            else if(itemID == "11" && checkID != "1")
+            {
+                itemID = "100";
+            }
+            else if(itemID == "12" && checkID != "2")
+            {
+                itemID = "100";
+            }
+            else if(itemID == "13" && checkID != "7")
             {
                 itemID = "100";
             }
