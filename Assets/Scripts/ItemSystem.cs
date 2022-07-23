@@ -348,7 +348,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if(checkID == "7" && itemID == "9")
             {
-                score += 130;
+                score += 150;
                 orderList = "0";
                 itemID = "0";
                 holding = false;
