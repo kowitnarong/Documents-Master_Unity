@@ -283,7 +283,7 @@ public class ItemSystem : MonoBehaviour
                 holding = true;
                 document2Prefab.SetActive(true);
                 Doc2 = true;
-                statusDevice5_1 = true;
+                statusDevice5_1 = false;
             }
             else if (checkID == "3" && itemID == "6" && itemID6 == false && statusDevice3_1 == false && statusDevice3_1 == false)
             {
