@@ -62,5 +62,6 @@ public class ObjectLabeller : MonoBehaviour
     {
         //Always face camera
         m_Canvas.transform.rotation = Quaternion.LookRotation( m_Canvas.transform.position - Camera.main.transform.position );
+        m_TextLabel.fontSize = 24;
     }
 }

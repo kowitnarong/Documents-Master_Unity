@@ -234,7 +234,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order1Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder1 = true;
-            ItemSystem.score -= 100;
+            ItemSystem.score -= 50;
         }
         else if (OrderManager.RanOrder2 == 1)
         {
@@ -242,7 +242,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order1Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder2 = true;
-            ItemSystem.score -= 100;
+            ItemSystem.score -= 50;
         }
     }
     public IEnumerator Card1Random()
@@ -290,7 +290,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order2Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder1 = true;
-            ItemSystem.score -= 150;
+            ItemSystem.score -= 50;
         }
         else if (OrderManager.RanOrder2 == 2)
         {
@@ -298,7 +298,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order2Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder2 = true;
-            ItemSystem.score -= 150;
+            ItemSystem.score -= 50;
         }
     }
     public IEnumerator Card2Random()
@@ -346,7 +346,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order3Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder1 = true;
-            ItemSystem.score -= 100;
+            ItemSystem.score -= 50;
         }
         else if (OrderManager.RanOrder2 == 3)
         {
@@ -354,7 +354,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order3Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder2 = true;
-            ItemSystem.score -= 100;
+            ItemSystem.score -= 50;
         }
     }
     public IEnumerator Card3Random()
@@ -402,7 +402,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order4Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder1 = true;
-            ItemSystem.score -= 130;
+            ItemSystem.score -= 50;
         }
         else if (OrderManager.RanOrder2 == 4)
         {
@@ -410,7 +410,7 @@ public class CardScript : MonoBehaviour
             OrderManager.Order4Enable = false;
             yield return new WaitForSeconds(2f);
             OrderManager.RandomOrder2 = true;
-            ItemSystem.score -= 130;
+            ItemSystem.score -= 50;
         }
     }
     public IEnumerator Card4Random()
