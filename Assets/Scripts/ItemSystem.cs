@@ -143,6 +143,10 @@ public class ItemSystem : MonoBehaviour
 
     void Update()
     {
+        if (score <= 0)
+        {
+            score = 0;
+        }
         if (itemID == "100")
         {
             document1Prefab.SetActive(false);
