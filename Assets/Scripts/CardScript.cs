@@ -227,7 +227,7 @@ public class CardScript : MonoBehaviour
 
     public IEnumerator Card1TimeOut()
     {
-        yield return new WaitForSeconds(45f);
+        yield return new WaitForSeconds(30f);
         if (OrderManager.RanOrder1 == 1)
         {
             OrderManager.RanOrder1 = 0;

@@ -33,7 +33,7 @@ public class TimerOrder : MonoBehaviour
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            if (CardScript.Card1Finish == true && _TimeLeft == 45)
+            if (CardScript.Card1Finish == true && _TimeLeft == 30)
             {
                 TimeLeft = 0;
                 TimerOn = false;

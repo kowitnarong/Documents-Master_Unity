@@ -5052,7 +5052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc396dcac6487d74d8455148d09fb339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLeft: 45
+  TimeLeft: 30
   TimerOn: 0
   TimerTxt: {fileID: 555410111}
 --- !u!1 &1279019001
