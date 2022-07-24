@@ -127,8 +127,8 @@ public class ItemSystem : MonoBehaviour
     static public bool itemID12_3 = false;
     private bool itemID12_3Check = false;
 
-    // เอกสาร 1 : 3-1-2-4-7 * 1
-    // เอกสาร 2 : 8-5-3-1-2-7 * 5
+    // เอกสาร 1 : 3-1-2-4-7 * 1 45
+    // เอกสาร 2 : 8-5-3-1-2-7 * 5 50
     // เอกสาร 3 : 4-5-1-2-7 * 9
     // เอกสาร 4 : 3-1-2-4-5-7 * 13
 
@@ -418,7 +418,24 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "7" && itemID == "14")
             {
-                score += 130;
+                if (OrderManager.Order4Enable == true)
+                {
+                    score += 130;
+                    if (OrderManager.RanOrder1 == 4)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 4)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card4Finish = true;
+                    OrderManager.Order4Enable = false;
+                }
+                else if (OrderManager.Order4Enable == false)
+                {
+                    score -= 130;
+                }
                 orderList = "0";
                 itemID = "0";
                 holding = false;
@@ -427,7 +444,24 @@ public class ItemSystem : MonoBehaviour
             else if (checkID == "7" && itemID == "4")
             {
                 Doc1 = false;
-                score += 100;
+                if (OrderManager.Order1Enable == true)
+                {
+                    score += 100;
+                    if (OrderManager.RanOrder1 == 1)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 1)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card1Finish = true;
+                    OrderManager.Order1Enable = false;
+                }
+                else if (OrderManager.Order1Enable == false)
+                {
+                    score -= 100;
+                }
                 orderList = "0";
                 itemID = "0";
                 holding = false;
@@ -701,7 +735,24 @@ public class ItemSystem : MonoBehaviour
             }
             else if(checkID == "7" && itemID == "9")
             {
-                score += 150;
+                if (OrderManager.Order2Enable == true)
+                {
+                    score += 150;
+                    if (OrderManager.RanOrder1 == 2)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 2)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card2Finish = true;
+                    OrderManager.Order2Enable = false;
+                }
+                else if (OrderManager.Order2Enable == false)
+                {
+                    score -= 150;
+                }
                 orderList = "0";
                 itemID = "0";
                 holding = false;
@@ -927,7 +978,24 @@ public class ItemSystem : MonoBehaviour
             }
             else if(checkID == "7" && itemID == "13")
             {
-                score += 100;
+                if (OrderManager.Order3Enable == true)
+                {
+                    score += 100;
+                    if (OrderManager.RanOrder1 == 3)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 3)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card3Finish = true;
+                    OrderManager.Order3Enable = false;
+                }
+                else if (OrderManager.Order3Enable == false)
+                {
+                    score -= 100;
+                }
                 orderList = "0";
                 itemID = "0";
                 document3Prefab.SetActive(false);

@@ -11,7 +11,7 @@ public class ShowText : MonoBehaviour
     static public string textOrder;
     void Update()
     {
-        textScore = "Score : " + ItemSystem.score.ToString();
+        textScore = "" + ItemSystem.score.ToString();
         textOrder = "Order : " + ItemSystem.orderList;
 
         textElementScore.text = textScore;
