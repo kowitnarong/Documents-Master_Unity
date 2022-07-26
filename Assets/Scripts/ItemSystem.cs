@@ -359,12 +359,12 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_1" && itemID == "4" && itemID4_1 == false && statusDevice5_1 == false)
             {
+                Doc1 = false;
                 itemID4_1 = true;
                 orderList = "0";
                 itemID = "0";
                 document1Prefab.SetActive(false);
                 StartCoroutine(CooldownItemID4_1());
-                Doc1 = false;
                 holding = false;
                 statusDevice5_1 = true;
             }
@@ -380,12 +380,12 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_2" && itemID == "4" && itemID4_2 == false && statusDevice5_2 == false)
             {
+                Doc1 = false;
                 itemID4_2 = true;
                 orderList = "0";
                 itemID = "0";
                 document1Prefab.SetActive(false);
                 StartCoroutine(CooldownItemID4_2());
-                Doc1 = false;
                 holding = false;
                 statusDevice5_2 = true;
             }
@@ -401,12 +401,12 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_3" && itemID == "4" && itemID4_3 == false && statusDevice5_3 == false)
             {
+                Doc1 = false;
                 itemID4_3 = true;
                 orderList = "0";
                 itemID = "0";
                 document1Prefab.SetActive(false);
                 StartCoroutine(CooldownItemID4_3());
-                Doc1 = false;
                 holding = false;
                 statusDevice5_3 = true;
             }
@@ -576,6 +576,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_1" && itemID == "6" && itemID6_1 == false && statusDevice3_1 == false)
             {
+                Doc2 = false;
                 itemID6_1 = true;
                 orderList = "0";
                 itemID = "0";
@@ -586,7 +587,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_1" && itemID6_1Check == true && holding == false)
             {
-                Doc2 = false;
                 itemID = "7";
                 orderList = "3";
                 itemID6_1 = false;
@@ -597,6 +597,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_2" && itemID == "6" && itemID6_2 == false && statusDevice3_2 == false)
             {
+                Doc2 = false;
                 itemID6_2 = true;
                 orderList = "0";
                 itemID = "0";
@@ -607,7 +608,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_2" && itemID6_2Check == true && holding == false)
             {
-                Doc2 = false;
                 itemID = "7";
                 orderList = "3";
                 itemID6_2 = false;
@@ -618,6 +618,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_3" && itemID == "6" && itemID6_3 == false && statusDevice3_3 == false)
             {
+                Doc2 = false;
                 itemID6_3 = true;
                 orderList = "0";
                 itemID = "0";
@@ -628,7 +629,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "3_3" && itemID6_3Check == true && holding == false)
             {
-                Doc2 = false;
                 itemID = "7";
                 orderList = "3";
                 itemID6_3 = false;

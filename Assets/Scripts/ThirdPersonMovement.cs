@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
+    [SerializeField]
+    private float _gravity = 9.8f;
 
     public CharacterController controller;
 
@@ -38,7 +40,10 @@ public class ThirdPersonMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
+            direction.y -= _gravity;
             controller.Move(direction * speed * Time.deltaTime);
         }
+
+
     }
 }

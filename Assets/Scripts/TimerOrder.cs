@@ -33,25 +33,25 @@ public class TimerOrder : MonoBehaviour
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            if (CardScript.Card1Finish == true && _TimeLeft == 40)
+            if (CardScript.Card1Finish == true && _TimeLeft == 60)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card2Finish == true && _TimeLeft == 50)
+            else if (CardScript.Card2Finish == true && _TimeLeft == 75)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card3Finish == true && _TimeLeft == 45)
+            else if (CardScript.Card3Finish == true && _TimeLeft == 65)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card4Finish == true && _TimeLeft == 55)
+            else if (CardScript.Card4Finish == true && _TimeLeft == 70)
             {
                 TimeLeft = 0;
                 TimerOn = false;
