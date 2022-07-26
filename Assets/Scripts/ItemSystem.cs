@@ -127,8 +127,8 @@ public class ItemSystem : MonoBehaviour
     static public bool itemID12_3 = false;
     private bool itemID12_3Check = false;
 
-    // เอกสาร 1 : 3-1-2-4-7 * 1 45
-    // เอกสาร 2 : 8-5-3-1-2-7 * 5 50
+    // เอกสาร 1 : 3-1-2-4-7 * 1
+    // เอกสาร 2 : 8-5-3-1-2-7 * 5
     // เอกสาร 3 : 4-5-1-2-7 * 9
     // เอกสาร 4 : 3-1-2-4-5-7 * 13
 
@@ -319,6 +319,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "4_1" && itemID == "3" && itemID3_1 == false && statusDevice4_1 == false)
             {
+                Doc1 = false;
                 itemID3_1 = true;
                 orderList = "0";
                 itemID = "0";
@@ -339,6 +340,7 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "4_2" && itemID == "3" && itemID3_2 == false && statusDevice4_2 == false)
             {
+                Doc1 = false;
                 itemID3_2 = true;
                 orderList = "0";
                 itemID = "0";
@@ -359,7 +361,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_1" && itemID == "4" && itemID4_1 == false && statusDevice5_1 == false)
             {
-                Doc1 = false;
                 itemID4_1 = true;
                 orderList = "0";
                 itemID = "0";
@@ -380,7 +381,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_2" && itemID == "4" && itemID4_2 == false && statusDevice5_2 == false)
             {
-                Doc1 = false;
                 itemID4_2 = true;
                 orderList = "0";
                 itemID = "0";
@@ -401,7 +401,6 @@ public class ItemSystem : MonoBehaviour
             }
             else if (checkID == "5_3" && itemID == "4" && itemID4_3 == false && statusDevice5_3 == false)
             {
-                Doc1 = false;
                 itemID4_3 = true;
                 orderList = "0";
                 itemID = "0";

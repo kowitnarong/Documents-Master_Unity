@@ -12,7 +12,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public CharacterController controller;
 
-    public float speed = 6f;
+    static public float speed = 10f;
+    bool speedTurnBack = false;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -43,7 +44,16 @@ public class ThirdPersonMovement : MonoBehaviour
             direction.y -= _gravity;
             controller.Move(direction * speed * Time.deltaTime);
         }
+        if (speed == 13 && speedTurnBack == false)
+        {
+            Invoke("defaultSpeed", 8);
+            speedTurnBack = true;
+        }
 
-
+    }
+    void defaultSpeed()
+    {
+        ThirdPersonMovement.speed = 10;
+        speedTurnBack = false;
     }
 }
