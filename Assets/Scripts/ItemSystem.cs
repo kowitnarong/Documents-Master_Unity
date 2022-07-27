@@ -23,109 +23,112 @@ public class ItemSystem : MonoBehaviour
     private bool Doc1 = false;
     private bool Doc2 = false;
 
+    private bool isPlayer1 = false;
+    private bool isPlayer2 = false;
+
     static public bool Destroy1 = false;
     static public bool Destroy2 = false;
 
-    private bool statusDestroy1 = false;
-    private bool statusDestroy2 = false;
-    private bool statusDevice1_1 = false;
-    private bool statusDevice1_2 = false;
-    private bool statusDevice2_1 = false;
-    private bool statusDevice2_2 = false;
-    private bool statusDevice2_3 = false;
-    private bool statusDevice3_1 = false;
-    private bool statusDevice3_2 = false;
-    private bool statusDevice3_3 = false;
-    private bool statusDevice4_1 = false;
-    private bool statusDevice4_2 = false;
-    private bool statusDevice5_1 = false;
-    private bool statusDevice5_2 = false;
-    private bool statusDevice5_3 = false;
-    private bool statusDevice8_1 = false;
+    static private bool statusDestroy1 = false;
+    static private bool statusDestroy2 = false;
+    static private bool statusDevice1_1 = false;
+    static private bool statusDevice1_2 = false;
+    static private bool statusDevice2_1 = false;
+    static private bool statusDevice2_2 = false;
+    static private bool statusDevice2_3 = false;
+    static private bool statusDevice3_1 = false;
+    static private bool statusDevice3_2 = false;
+    static private bool statusDevice3_3 = false;
+    static private bool statusDevice4_1 = false;
+    static private bool statusDevice4_2 = false;
+    static private bool statusDevice5_1 = false;
+    static private bool statusDevice5_2 = false;
+    static private bool statusDevice5_3 = false;
+    static private bool statusDevice8_1 = false;
 
     static public bool Device3_1 = false;
-    private bool Device3_1Check = false;
+    static private bool Device3_1Check = false;
     static public bool Device3_2 = false;
-    private bool Device3_2Check = false;
+    static private bool Device3_2Check = false;
     static public bool Device3_3 = false;
-    private bool Device3_3Check = false;
+    static private bool Device3_3Check = false;
 
     static public bool itemID1_1 = false;
-    private bool itemID1_1Check = false;
+    static private bool itemID1_1Check = false;
     static public bool itemID1_2 = false;
-    private bool itemID1_2Check = false;
+    static private bool itemID1_2Check = false;
 
     static public bool itemID2_1 = false;
-    private bool itemID2_1Check = false;
+    static private bool itemID2_1Check = false;
     static public bool itemID2_2 = false;
-    private bool itemID2_2Check = false;
+    static private bool itemID2_2Check = false;
     static public bool itemID2_3 = false;
-    private bool itemID2_3Check = false;
+    static private bool itemID2_3Check = false;
 
     static public bool itemID3_1 = false;
-    private bool itemID3_1Check = false;
+    static private bool itemID3_1Check = false;
     static public bool itemID3_2 = false;
-    private bool itemID3_2Check = false;
+    static private bool itemID3_2Check = false;
 
     static public bool itemID4_1 = false;
-    private bool itemID4_1Check = false;
+    static private bool itemID4_1Check = false;
     static public bool itemID4_2 = false;
-    private bool itemID4_2Check = false;
+    static private bool itemID4_2Check = false;
     static public bool itemID4_3 = false;
-    private bool itemID4_3Check = false;
+    static private bool itemID4_3Check = false;
 
     static public bool Device8_1 = false;
-    private bool Device8_1Check = false;
+    static private bool Device8_1Check = false;
 
     static public bool itemID5_1 = false;
-    private bool itemID5_1Check = false;
+    static private bool itemID5_1Check = false;
     static public bool itemID5_2 = false;
-    private bool itemID5_2Check = false;
+    static private bool itemID5_2Check = false;
     static public bool itemID5_3 = false;
-    private bool itemID5_3Check = false;
+    static private bool itemID5_3Check = false;
 
     static public bool itemID6_1 = false;
-    private bool itemID6_1Check = false;
+    static private bool itemID6_1Check = false;
     static public bool itemID6_2 = false;
-    private bool itemID6_2Check = false;
+    static private bool itemID6_2Check = false;
     static public bool itemID6_3 = false;
-    private bool itemID6_3Check = false;
+    static private bool itemID6_3Check = false;
 
     static public bool itemID7_1 = false;
-    private bool itemID7_1Check = false;
+    static private bool itemID7_1Check = false;
     static public bool itemID7_2 = false;
-    private bool itemID7_2Check = false;
+    static private bool itemID7_2Check = false;
 
     static public bool itemID8_1 = false;
-    private bool itemID8_1Check = false;
+    static private bool itemID8_1Check = false;
     static public bool itemID8_2 = false;
-    private bool itemID8_2Check = false;
+    static private bool itemID8_2Check = false;
     static public bool itemID8_3 = false;
-    private bool itemID8_3Check = false;
+    static private bool itemID8_3Check = false;
 
     static public bool Device4_1 = false;
-    private bool Device4_1Check = false;
+    static private bool Device4_1Check = false;
     static public bool Device4_2 = false;
-    private bool Device4_2Check = false;
+    static private bool Device4_2Check = false;
 
     static public bool itemID10_1 = false;
-    private bool itemID10_1Check = false;
+    static private bool itemID10_1Check = false;
     static public bool itemID10_2 = false;
-    private bool itemID10_2Check = false;
+    static private bool itemID10_2Check = false;
     static public bool itemID10_3 = false;
-    private bool itemID10_3Check = false;
+    static private bool itemID10_3Check = false;
 
     static public bool itemID11_1 = false;
-    private bool itemID11_1Check = false;
+    static private bool itemID11_1Check = false;
     static public bool itemID11_2 = false;
-    private bool itemID11_2Check = false;
+    static private bool itemID11_2Check = false;
 
     static public bool itemID12_1 = false;
-    private bool itemID12_1Check = false;
+    static private bool itemID12_1Check = false;
     static public bool itemID12_2 = false;
-    private bool itemID12_2Check = false;
+    static private bool itemID12_2Check = false;
     static public bool itemID12_3 = false;
-    private bool itemID12_3Check = false;
+    static private bool itemID12_3Check = false;
 
     // เอกสาร 1 : 3-1-2-4-7 * 1
     // เอกสาร 2 : 8-5-3-1-2-7 * 5
@@ -157,12 +160,12 @@ public class ItemSystem : MonoBehaviour
         }
     }
 
-    public void OnPickItem(InputValue value)
+    public void OnPickItem1(InputValue value)
     {
-        Debug.Log("PickUp");
         var v = value.Get<float>();
         if (value.isPressed)
         {
+            isPlayer1 = true;
             if (orderList == "0" && checkID == "3_1" && itemID == "0" && itemID != "100" 
                 && Device3_1 == false && holding == false && Doc2 == false && statusDevice3_1 == false)
             {
@@ -170,7 +173,7 @@ public class ItemSystem : MonoBehaviour
                 StartCoroutine(CooldownDevice3_1());
                 statusDevice3_1 = true;
             }
-            else if (orderList == "0" && checkID == "3_1" && itemID == "0" && itemID != "100" && Device3_1Check == true)
+            else if (orderList == "0" && checkID == "3_1" && itemID == "0" && itemID != "100" && Device3_1Check == true && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 orderList = "1";
@@ -187,7 +190,7 @@ public class ItemSystem : MonoBehaviour
                 StartCoroutine(CooldownDevice3_2());
                 statusDevice3_2 = true;
             }
-            else if (orderList == "0" && checkID == "3_2" && itemID == "0" && itemID != "100" && Device3_2Check == true)
+            else if (orderList == "0" && checkID == "3_2" && itemID == "0" && itemID != "100" && Device3_2Check == true && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 orderList = "1";
@@ -204,7 +207,7 @@ public class ItemSystem : MonoBehaviour
                 StartCoroutine(CooldownDevice3_3());
                 statusDevice3_3 = true;
             }
-            else if (orderList == "0" && checkID == "3_3" && itemID == "0" && itemID != "100" && Device3_3Check == true)
+            else if (orderList == "0" && checkID == "3_3" && itemID == "0" && itemID != "100" && Device3_3Check == true && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 orderList = "1";
@@ -224,7 +227,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_1 = true;
             }
-            else if (checkID == "1_1" && itemID1_1Check == true && holding == false)
+            else if (checkID == "1_1" && itemID1_1Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "2";
@@ -244,7 +247,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_2 = true;
             }
-            else if (checkID == "1_2" && itemID1_2Check == true && holding == false)
+            else if (checkID == "1_2" && itemID1_2Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "2";
@@ -264,7 +267,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_1 = true;
             }
-            else if (checkID == "2_1" && itemID2_1Check == true && holding == false)
+            else if (checkID == "2_1" && itemID2_1Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "3";
@@ -285,7 +288,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_2 = true;
             }
-            else if (checkID == "2_2" && itemID2_2Check == true && holding == false)
+            else if (checkID == "2_2" && itemID2_2Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "3";
@@ -306,7 +309,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_3 = true;
             }
-            else if (checkID == "2_3" && itemID2_3Check == true && holding == false)
+            else if (checkID == "2_3" && itemID2_3Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "3";
@@ -328,7 +331,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice4_1 = true;
             }
-            else if (checkID == "4_1" && itemID3_1Check == true && holding == false)
+            else if (checkID == "4_1" && itemID3_1Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "4";
@@ -349,7 +352,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice4_2 = true;
             }
-            else if (checkID == "4_2" && itemID3_2Check == true && holding == false)
+            else if (checkID == "4_2" && itemID3_2Check == true && holding == false && isPlayer1 == true)
             {
                 document1Prefab.SetActive(true);
                 itemID = "4";
@@ -369,7 +372,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_1 = true;
             }
-            else if (checkID == "5_1" && itemID4_1Check == true && holding == false)
+            else if (checkID == "5_1" && itemID4_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "14";
                 orderList = "5";
@@ -389,7 +392,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_2 = true;
             }
-            else if (checkID == "5_2" && itemID4_2Check == true && holding == false)
+            else if (checkID == "5_2" && itemID4_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "14";
                 orderList = "5";
@@ -409,7 +412,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_3 = true;
             }
-            else if (checkID == "5_3" && itemID4_3Check == true && holding == false)
+            else if (checkID == "5_3" && itemID4_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "14";
                 orderList = "5";
@@ -500,7 +503,7 @@ public class ItemSystem : MonoBehaviour
                 statusDevice8_1 = true;
             }
             if (orderList == "0" && checkID == "8" && itemID == "0" && itemID != "100"
-                && Device8_1Check == true)
+                && Device8_1Check == true && isPlayer1 == true)
             {
                 document2Prefab.SetActive(true);
                 orderList = "1";
@@ -520,7 +523,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_1 = true;
             }
-            else if (checkID == "5_1" && itemID5_1Check == true && holding == false)
+            else if (checkID == "5_1" && itemID5_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "6";
                 orderList = "2";
@@ -541,7 +544,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_2 = true;
             }
-            else if (checkID == "5_2" && itemID5_2Check == true && holding == false)
+            else if (checkID == "5_2" && itemID5_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "6";
                 orderList = "2";
@@ -562,7 +565,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_3 = true;
             }
-            else if (checkID == "5_3" && itemID5_3Check == true && holding == false)
+            else if (checkID == "5_3" && itemID5_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "6";
                 orderList = "2";
@@ -584,7 +587,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice3_1 = true;
             }
-            else if (checkID == "3_1" && itemID6_1Check == true && holding == false)
+            else if (checkID == "3_1" && itemID6_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "7";
                 orderList = "3";
@@ -605,7 +608,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice3_2 = true;
             }
-            else if (checkID == "3_2" && itemID6_2Check == true && holding == false)
+            else if (checkID == "3_2" && itemID6_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "7";
                 orderList = "3";
@@ -626,7 +629,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice3_3 = true;
             }
-            else if (checkID == "3_3" && itemID6_3Check == true && holding == false)
+            else if (checkID == "3_3" && itemID6_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "7";
                 orderList = "3";
@@ -646,7 +649,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_1 = true;
             }
-            else if (checkID == "1_1" && itemID7_1Check == true && holding == false)
+            else if (checkID == "1_1" && itemID7_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "8";
                 orderList = "4";
@@ -666,7 +669,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_2 = true;
             }
-            else if (checkID == "1_2" && itemID7_2Check == true && holding == false)
+            else if (checkID == "1_2" && itemID7_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "8";
                 orderList = "4";
@@ -686,7 +689,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_1 = true;
             }
-            else if (checkID == "2_1" && itemID8_1Check == true && holding == false)
+            else if (checkID == "2_1" && itemID8_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "9";
                 orderList = "5";
@@ -706,7 +709,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_2 = true;
             }
-            else if (checkID == "2_2" && itemID8_2Check == true && holding == false)
+            else if (checkID == "2_2" && itemID8_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "9";
                 orderList = "5";
@@ -726,7 +729,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_3 = true;
             }
-            else if (checkID == "2_3" && itemID8_3Check == true && holding == false)
+            else if (checkID == "2_3" && itemID8_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "9";
                 orderList = "5";
@@ -791,7 +794,7 @@ public class ItemSystem : MonoBehaviour
                 statusDevice4_1 = true;
             }
             else if (orderList == "0" && checkID == "4_1" && itemID == "0" && itemID != "100"
-                && Device4_1Check == true)
+                && Device4_1Check == true && isPlayer1 == true)
             {
                 document3Prefab.SetActive(true);
                 orderList = "1";
@@ -809,7 +812,7 @@ public class ItemSystem : MonoBehaviour
                 statusDevice4_1 = true;
             }
             else if (orderList == "0" && checkID == "4_2" && itemID == "0" && itemID != "100"
-                && Device4_2Check == true)
+                && Device4_2Check == true && isPlayer1 == true)
             {
                 document3Prefab.SetActive(true);
                 orderList = "1";
@@ -829,7 +832,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_1 = true;
             }
-            else if (checkID == "5_1" && itemID10_1Check == true && holding == false)
+            else if (checkID == "5_1" && itemID10_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "11";
                 orderList = "2";
@@ -849,7 +852,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_2 = true;
             }
-            else if (checkID == "5_2" && itemID10_2Check == true && holding == false)
+            else if (checkID == "5_2" && itemID10_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "11";
                 orderList = "2";
@@ -869,7 +872,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice5_3 = true;
             }
-            else if (checkID == "5_3" && itemID10_3Check == true && holding == false)
+            else if (checkID == "5_3" && itemID10_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "11";
                 orderList = "2";
@@ -889,7 +892,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_1 = true;
             }
-            else if (checkID == "1_1" && itemID11_1Check == true && holding == false)
+            else if (checkID == "1_1" && itemID11_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "12";
                 orderList = "3";
@@ -909,7 +912,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice1_2 = true;
             }
-            else if (checkID == "1_2" && itemID11_2Check == true && holding == false)
+            else if (checkID == "1_2" && itemID11_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "12";
                 orderList = "3";
@@ -929,7 +932,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_1 = true;
             }
-            else if (checkID == "2_1" && itemID12_1Check == true && holding == false)
+            else if (checkID == "2_1" && itemID12_1Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "13";
                 orderList = "4";
@@ -949,7 +952,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_2 = true;
             }
-            else if (checkID == "2_2" && itemID12_2Check == true && holding == false)
+            else if (checkID == "2_2" && itemID12_2Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "13";
                 orderList = "4";
@@ -969,7 +972,7 @@ public class ItemSystem : MonoBehaviour
                 holding = false;
                 statusDevice2_3 = true;
             }
-            else if (checkID == "2_3" && itemID12_3Check == true && holding == false)
+            else if (checkID == "2_3" && itemID12_3Check == true && holding == false && isPlayer1 == true)
             {
                 itemID = "13";
                 orderList = "4";
@@ -1117,6 +1120,976 @@ public class ItemSystem : MonoBehaviour
 
                 statusDestroy2 = true;
             }
+        }
+        else
+        {
+            isPlayer1 = false;
+        }
+    }
+    public void OnPickItem2(InputValue value)
+    {
+        var v = value.Get<float>();
+        if (value.isPressed)
+        {
+            isPlayer2 = true;
+            if (orderList == "0" && checkID == "3_1" && itemID == "0" && itemID != "100"
+                && Device3_1 == false && holding == false && Doc2 == false && statusDevice3_1 == false)
+            {
+                Device3_1 = true;
+                StartCoroutine(CooldownDevice3_1());
+                statusDevice3_1 = true;
+            }
+            else if (orderList == "0" && checkID == "3_1" && itemID == "0" && itemID != "100" && Device3_1Check == true && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "1";
+                Device3_1 = false;
+                Device3_1Check = false;
+                holding = true;
+                statusDevice3_1 = false;
+            }
+            else if (orderList == "0" && checkID == "3_2" && itemID == "0" && itemID != "100"
+                && Device3_2 == false && holding == false && Doc2 == false && statusDevice3_2 == false)
+            {
+                Device3_2 = true;
+                StartCoroutine(CooldownDevice3_2());
+                statusDevice3_2 = true;
+            }
+            else if (orderList == "0" && checkID == "3_2" && itemID == "0" && itemID != "100" && Device3_2Check == true && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "1";
+                Device3_2 = false;
+                Device3_2Check = false;
+                holding = true;
+                statusDevice3_2 = false;
+            }
+            else if (orderList == "0" && checkID == "3_3" && itemID == "0" && itemID != "100"
+                && Device3_3 == false && holding == false && Doc2 == false && statusDevice3_3 == false)
+            {
+                Device3_3 = true;
+                StartCoroutine(CooldownDevice3_3());
+                statusDevice3_3 = true;
+            }
+            else if (orderList == "0" && checkID == "3_3" && itemID == "0" && itemID != "100" && Device3_3Check == true && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "1";
+                Device3_3 = false;
+                Device3_3Check = false;
+                holding = true;
+                statusDevice3_3 = false;
+            }
+            else if (checkID == "1_1" && itemID == "1" && itemID1_1 == false && statusDevice1_1 == false)
+            {
+                itemID1_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID1_1());
+                holding = false;
+                statusDevice1_1 = true;
+            }
+            else if (checkID == "1_1" && itemID1_1Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "2";
+                orderList = "2";
+                itemID1_1 = false;
+                itemID1_1Check = false;
+                holding = true;
+                statusDevice1_1 = false;
+            }
+            else if (checkID == "1_2" && itemID == "1" && itemID1_2 == false && statusDevice1_2 == false)
+            {
+                itemID1_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID1_2());
+                holding = false;
+                statusDevice1_2 = true;
+            }
+            else if (checkID == "1_2" && itemID1_2Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "2";
+                orderList = "2";
+                itemID1_2 = false;
+                itemID1_2Check = false;
+                holding = true;
+                statusDevice1_2 = false;
+            }
+            else if (checkID == "2_1" && itemID == "2" && itemID2_1 == false && statusDevice2_1 == false)
+            {
+                itemID2_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID2_1());
+                holding = false;
+                statusDevice2_1 = true;
+            }
+            else if (checkID == "2_1" && itemID2_1Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "3";
+                orderList = "3";
+                itemID2_1 = false;
+                itemID2_1Check = false;
+                Doc1 = true;
+                holding = true;
+                statusDevice2_1 = false;
+            }
+            else if (checkID == "2_2" && itemID == "2" && itemID2_2 == false && statusDevice2_2 == false)
+            {
+                itemID2_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID2_2());
+                holding = false;
+                statusDevice2_2 = true;
+            }
+            else if (checkID == "2_2" && itemID2_2Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "3";
+                orderList = "3";
+                itemID2_2 = false;
+                itemID2_2Check = false;
+                Doc1 = true;
+                holding = true;
+                statusDevice2_2 = false;
+            }
+            else if (checkID == "2_3" && itemID == "2" && itemID2_3 == false && statusDevice2_3 == false)
+            {
+                itemID2_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID2_3());
+                holding = false;
+                statusDevice2_3 = true;
+            }
+            else if (checkID == "2_3" && itemID2_3Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "3";
+                orderList = "3";
+                itemID2_3 = false;
+                itemID2_3Check = false;
+                Doc1 = true;
+                holding = true;
+                statusDevice2_3 = false;
+            }
+            else if (checkID == "4_1" && itemID == "3" && itemID3_1 == false && statusDevice4_1 == false)
+            {
+                Doc1 = false;
+                itemID3_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID3_1());
+                holding = false;
+                statusDevice4_1 = true;
+            }
+            else if (checkID == "4_1" && itemID3_1Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "4";
+                orderList = "4";
+                itemID3_1 = false;
+                itemID3_1Check = false;
+                holding = true;
+                statusDevice4_1 = false;
+            }
+            else if (checkID == "4_2" && itemID == "3" && itemID3_2 == false && statusDevice4_2 == false)
+            {
+                Doc1 = false;
+                itemID3_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID3_2());
+                holding = false;
+                statusDevice4_2 = true;
+            }
+            else if (checkID == "4_2" && itemID3_2Check == true && holding == false && isPlayer2 == true)
+            {
+                document1Prefab.SetActive(true);
+                itemID = "4";
+                orderList = "4";
+                itemID3_2 = false;
+                itemID3_2Check = false;
+                holding = true;
+                statusDevice4_2 = false;
+            }
+            else if (checkID == "5_1" && itemID == "4" && itemID4_1 == false && statusDevice5_1 == false)
+            {
+                itemID4_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID4_1());
+                holding = false;
+                statusDevice5_1 = true;
+            }
+            else if (checkID == "5_1" && itemID4_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "14";
+                orderList = "5";
+                itemID4_1 = false;
+                itemID4_1Check = false;
+                holding = true;
+                document4Prefab.SetActive(true);
+                statusDevice5_1 = false;
+            }
+            else if (checkID == "5_2" && itemID == "4" && itemID4_2 == false && statusDevice5_2 == false)
+            {
+                itemID4_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID4_2());
+                holding = false;
+                statusDevice5_2 = true;
+            }
+            else if (checkID == "5_2" && itemID4_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "14";
+                orderList = "5";
+                itemID4_2 = false;
+                itemID4_2Check = false;
+                holding = true;
+                document4Prefab.SetActive(true);
+                statusDevice5_2 = false;
+            }
+            else if (checkID == "5_3" && itemID == "4" && itemID4_3 == false && statusDevice5_3 == false)
+            {
+                itemID4_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document1Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID4_3());
+                holding = false;
+                statusDevice5_3 = true;
+            }
+            else if (checkID == "5_3" && itemID4_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "14";
+                orderList = "5";
+                itemID4_3 = false;
+                itemID4_3Check = false;
+                holding = true;
+                document4Prefab.SetActive(true);
+                statusDevice5_3 = false;
+            }
+            else if (checkID == "7" && itemID == "14")
+            {
+                if (OrderManager.Order4Enable == true)
+                {
+                    score += 130;
+                    if (OrderManager.RanOrder1 == 4)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 4)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card4Finish = true;
+                    OrderManager.Order4Enable = false;
+                }
+                else if (OrderManager.Order4Enable == false)
+                {
+                    score -= 130;
+                }
+                orderList = "0";
+                itemID = "0";
+                holding = false;
+                document4Prefab.SetActive(false);
+            }
+            else if (checkID == "7" && itemID == "4")
+            {
+                Doc1 = false;
+                if (OrderManager.Order1Enable == true)
+                {
+                    score += 100;
+                    if (OrderManager.RanOrder1 == 1)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 1)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card1Finish = true;
+                    OrderManager.Order1Enable = false;
+                }
+                else if (OrderManager.Order1Enable == false)
+                {
+                    score -= 100;
+                }
+                orderList = "0";
+                itemID = "0";
+                holding = false;
+                document1Prefab.SetActive(false);
+            }
+            else if (itemID == "1" && (checkID != "1_1" && checkID != "1_2") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "2" && (checkID != "2_1" && checkID != "2_2" && checkID != "2_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "3" && (checkID != "4_1" && checkID != "4_2") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "4" && checkID != "7" && (checkID != "5_1" && checkID != "5_2" && checkID != "5_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "14" && checkID != "7" && Collision == true)
+            {
+                itemID = "100";
+            }
+
+            // 2
+            if (orderList == "0" && checkID == "8" && itemID == "0" && itemID != "100"
+                && Device8_1 == false && holding == false && statusDevice8_1 == false)
+            {
+                Device8_1 = true;
+                StartCoroutine(CooldownDevice8_1());
+                statusDevice8_1 = true;
+            }
+            if (orderList == "0" && checkID == "8" && itemID == "0" && itemID != "100"
+                && Device8_1Check == true && isPlayer2 == true)
+            {
+                document2Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "5";
+                Device8_1 = false;
+                Device8_1Check = false;
+                holding = true;
+                statusDevice8_1 = false;
+            }
+            else if (checkID == "5_1" && itemID == "5" && itemID5_1 == false && statusDevice5_1 == false)
+            {
+                itemID5_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID5_1());
+                holding = false;
+                statusDevice5_1 = true;
+            }
+            else if (checkID == "5_1" && itemID5_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "6";
+                orderList = "2";
+                itemID5_1 = false;
+                itemID5_1Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                Doc2 = true;
+                statusDevice5_1 = false;
+            }
+            else if (checkID == "5_2" && itemID == "5" && itemID5_2 == false && statusDevice5_2 == false)
+            {
+                itemID5_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID5_2());
+                holding = false;
+                statusDevice5_2 = true;
+            }
+            else if (checkID == "5_2" && itemID5_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "6";
+                orderList = "2";
+                itemID5_2 = false;
+                itemID5_2Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                Doc2 = true;
+                statusDevice5_2 = false;
+            }
+            else if (checkID == "5_3" && itemID == "5" && itemID5_3 == false && statusDevice5_3 == false)
+            {
+                itemID5_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID5_3());
+                holding = false;
+                statusDevice5_3 = true;
+            }
+            else if (checkID == "5_3" && itemID5_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "6";
+                orderList = "2";
+                itemID5_3 = false;
+                itemID5_3Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                Doc2 = true;
+                statusDevice5_3 = false;
+            }
+            else if (checkID == "3_1" && itemID == "6" && itemID6_1 == false && statusDevice3_1 == false)
+            {
+                Doc2 = false;
+                itemID6_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID6_1());
+                holding = false;
+                statusDevice3_1 = true;
+            }
+            else if (checkID == "3_1" && itemID6_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "7";
+                orderList = "3";
+                itemID6_1 = false;
+                itemID6_1Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice3_1 = false;
+            }
+            else if (checkID == "3_2" && itemID == "6" && itemID6_2 == false && statusDevice3_2 == false)
+            {
+                Doc2 = false;
+                itemID6_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID6_2());
+                holding = false;
+                statusDevice3_2 = true;
+            }
+            else if (checkID == "3_2" && itemID6_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "7";
+                orderList = "3";
+                itemID6_2 = false;
+                itemID6_2Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice3_2 = false;
+            }
+            else if (checkID == "3_3" && itemID == "6" && itemID6_3 == false && statusDevice3_3 == false)
+            {
+                Doc2 = false;
+                itemID6_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID6_3());
+                holding = false;
+                statusDevice3_3 = true;
+            }
+            else if (checkID == "3_3" && itemID6_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "7";
+                orderList = "3";
+                itemID6_3 = false;
+                itemID6_3Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice3_3 = false;
+            }
+            else if (checkID == "1_1" && itemID == "7" && itemID7_1 == false && statusDevice1_1 == false)
+            {
+                itemID7_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID7_1());
+                holding = false;
+                statusDevice1_1 = true;
+            }
+            else if (checkID == "1_1" && itemID7_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "8";
+                orderList = "4";
+                itemID7_1 = false;
+                itemID7_1Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice1_1 = false;
+            }
+            else if (checkID == "1_2" && itemID == "7" && itemID7_2 == false && statusDevice1_2 == false)
+            {
+                itemID7_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID7_2());
+                holding = false;
+                statusDevice1_2 = true;
+            }
+            else if (checkID == "1_2" && itemID7_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "8";
+                orderList = "4";
+                itemID7_2 = false;
+                itemID7_2Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice1_2 = false;
+            }
+            else if (checkID == "2_1" && itemID == "8" && itemID8_1 == false && statusDevice2_1 == false)
+            {
+                itemID8_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID8_1());
+                holding = false;
+                statusDevice2_1 = true;
+            }
+            else if (checkID == "2_1" && itemID8_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "9";
+                orderList = "5";
+                itemID8_1 = false;
+                itemID8_1Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice2_1 = false;
+            }
+            else if (checkID == "2_2" && itemID == "8" && itemID8_2 == false && statusDevice2_2 == false)
+            {
+                itemID8_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID8_2());
+                holding = false;
+                statusDevice2_2 = true;
+            }
+            else if (checkID == "2_2" && itemID8_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "9";
+                orderList = "5";
+                itemID8_2 = false;
+                itemID8_2Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice2_2 = false;
+            }
+            else if (checkID == "2_3" && itemID == "8" && itemID8_3 == false && statusDevice2_3 == false)
+            {
+                itemID8_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document2Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID8_3());
+                holding = false;
+                statusDevice2_3 = true;
+            }
+            else if (checkID == "2_3" && itemID8_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "9";
+                orderList = "5";
+                itemID8_3 = false;
+                itemID8_3Check = false;
+                holding = true;
+                document2Prefab.SetActive(true);
+                statusDevice2_3 = false;
+            }
+            else if (checkID == "7" && itemID == "9")
+            {
+                if (OrderManager.Order2Enable == true)
+                {
+                    score += 150;
+                    if (OrderManager.RanOrder1 == 2)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 2)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card2Finish = true;
+                    OrderManager.Order2Enable = false;
+                }
+                else if (OrderManager.Order2Enable == false)
+                {
+                    score -= 150;
+                }
+                orderList = "0";
+                itemID = "0";
+                holding = false;
+                document2Prefab.SetActive(false);
+            }
+            else if (itemID == "5" && (checkID != "5_1" && checkID != "5_2" && checkID != "5_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "6" && (checkID != "3_1" && checkID != "3_2" && checkID != "3_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "7" && (checkID != "1_1" && checkID != "1_2") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "8" && (checkID != "2_1" && checkID != "2_2" && checkID != "2_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "9" && checkID != "7" && Collision == true)
+            {
+                itemID = "100";
+            }
+
+            // 3
+            if (orderList == "0" && checkID == "4_1" && itemID == "0" && itemID != "100" && Doc1 == false
+                && Device4_1 == false && holding == false && statusDevice4_1 == false)
+            {
+                Device4_1 = true;
+                StartCoroutine(CooldownDevice4_1());
+                statusDevice4_1 = true;
+            }
+            else if (orderList == "0" && checkID == "4_1" && itemID == "0" && itemID != "100"
+                && Device4_1Check == true && isPlayer2 == true)
+            {
+                document3Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "10";
+                Device4_1 = false;
+                Device4_1Check = false;
+                holding = true;
+                statusDevice4_1 = false;
+            }
+            else if (orderList == "0" && checkID == "4_2" && itemID == "0" && itemID != "100" && Doc1 == false
+                && Device4_2 == false && holding == false && statusDevice4_2 == false)
+            {
+                Device4_2 = true;
+                StartCoroutine(CooldownDevice4_2());
+                statusDevice4_1 = true;
+            }
+            else if (orderList == "0" && checkID == "4_2" && itemID == "0" && itemID != "100"
+                && Device4_2Check == true && isPlayer2 == true)
+            {
+                document3Prefab.SetActive(true);
+                orderList = "1";
+                itemID = "10";
+                Device4_2 = false;
+                Device4_2Check = false;
+                holding = true;
+                statusDevice4_2 = false;
+            }
+            else if (checkID == "5_1" && itemID == "10" && itemID10_1 == false && statusDevice5_1 == false)
+            {
+                itemID10_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID10_1());
+                holding = false;
+                statusDevice5_1 = true;
+            }
+            else if (checkID == "5_1" && itemID10_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "11";
+                orderList = "2";
+                itemID10_1 = false;
+                itemID10_1Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice5_1 = false;
+            }
+            else if (checkID == "5_2" && itemID == "10" && itemID10_2 == false && statusDevice5_2 == false)
+            {
+                itemID10_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID10_2());
+                holding = false;
+                statusDevice5_2 = true;
+            }
+            else if (checkID == "5_2" && itemID10_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "11";
+                orderList = "2";
+                itemID10_2 = false;
+                itemID10_2Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice5_2 = false;
+            }
+            else if (checkID == "5_3" && itemID == "10" && itemID10_3 == false && statusDevice5_3 == false)
+            {
+                itemID10_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID10_3());
+                holding = false;
+                statusDevice5_3 = true;
+            }
+            else if (checkID == "5_3" && itemID10_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "11";
+                orderList = "2";
+                itemID10_3 = false;
+                itemID10_3Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice5_3 = false;
+            }
+            else if (checkID == "1_1" && itemID == "11" && itemID11_1 == false && statusDevice1_1 == false)
+            {
+                itemID11_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID11_1());
+                holding = false;
+                statusDevice1_1 = true;
+            }
+            else if (checkID == "1_1" && itemID11_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "12";
+                orderList = "3";
+                itemID11_1 = false;
+                itemID11_1Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice1_1 = false;
+            }
+            else if (checkID == "1_2" && itemID == "11" && itemID11_2 == false && statusDevice1_2 == false)
+            {
+                itemID11_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID11_2());
+                holding = false;
+                statusDevice1_2 = true;
+            }
+            else if (checkID == "1_2" && itemID11_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "12";
+                orderList = "3";
+                itemID11_2 = false;
+                itemID11_2Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice1_2 = false;
+            }
+            else if (checkID == "2_1" && itemID == "12" && itemID12_1 == false && statusDevice2_1 == false)
+            {
+                itemID12_1 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID12_1());
+                holding = false;
+                statusDevice2_1 = true;
+            }
+            else if (checkID == "2_1" && itemID12_1Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "13";
+                orderList = "4";
+                itemID12_1 = false;
+                itemID12_1Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice2_1 = false;
+            }
+            else if (checkID == "2_2" && itemID == "12" && itemID12_2 == false && statusDevice2_2 == false)
+            {
+                itemID12_2 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID12_2());
+                holding = false;
+                statusDevice2_2 = true;
+            }
+            else if (checkID == "2_2" && itemID12_2Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "13";
+                orderList = "4";
+                itemID12_2 = false;
+                itemID12_2Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice2_2 = false;
+            }
+            else if (checkID == "2_3" && itemID == "12" && itemID12_3 == false && statusDevice2_3 == false)
+            {
+                itemID12_3 = true;
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                StartCoroutine(CooldownItemID12_3());
+                holding = false;
+                statusDevice2_3 = true;
+            }
+            else if (checkID == "2_3" && itemID12_3Check == true && holding == false && isPlayer2 == true)
+            {
+                itemID = "13";
+                orderList = "4";
+                itemID12_3 = false;
+                itemID12_3Check = false;
+                holding = true;
+                document3Prefab.SetActive(true);
+                statusDevice2_3 = false;
+            }
+            else if (checkID == "7" && itemID == "13")
+            {
+                if (OrderManager.Order3Enable == true)
+                {
+                    score += 100;
+                    if (OrderManager.RanOrder1 == 3)
+                    {
+                        OrderManager.RanOrder1 = 0;
+                    }
+                    if (OrderManager.RanOrder2 == 3)
+                    {
+                        OrderManager.RanOrder2 = 0;
+                    }
+                    CardScript.Card3Finish = true;
+                    OrderManager.Order3Enable = false;
+                }
+                else if (OrderManager.Order3Enable == false)
+                {
+                    score -= 100;
+                }
+                orderList = "0";
+                itemID = "0";
+                document3Prefab.SetActive(false);
+                holding = false;
+            }
+            else if (itemID == "10" && (checkID != "5_1" && checkID != "5_2" && checkID != "5_3") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "11" && (checkID != "1_1" && checkID != "1_2") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "12" && (checkID != "2_1" && checkID != "2_2") && Collision == true)
+            {
+                itemID = "100";
+            }
+            else if (itemID == "13" && checkID != "7" && Collision == true)
+            {
+                itemID = "100";
+            }
+
+            // Destroy_1
+            if (checkID == "99" && Destroy1 == false && holding == true && statusDestroy1 == false)
+            {
+                if (orderList == "1")
+                {
+                    score -= 20;
+                }
+                else if (orderList == "2")
+                {
+                    score -= 40;
+                }
+                else if (orderList == "3")
+                {
+                    score -= 60;
+                }
+                else if (orderList == "4")
+                {
+                    score -= 80;
+                }
+                else if (orderList == "5")
+                {
+                    score -= 100;
+                }
+
+                document1Prefab.SetActive(false);
+                document2Prefab.SetActive(false);
+                document3Prefab.SetActive(false);
+                document4Prefab.SetActive(false);
+                trashPrefab.SetActive(false);
+
+                orderList = "0";
+                itemID = "0";
+
+                StartCoroutine(CooldownDestory1());
+                Destroy1 = true;
+                holding = false;
+
+                if (Doc1 == true)
+                {
+                    Doc1 = false;
+                }
+                if (Doc2 == true)
+                {
+                    Doc2 = false;
+                }
+
+                statusDestroy1 = true;
+            }
+            // Destroy_2
+            if (checkID == "98" && Destroy2 == false && holding == true && statusDestroy2 == false)
+            {
+                if (orderList == "1")
+                {
+                    score -= 20;
+                }
+                else if (orderList == "2")
+                {
+                    score -= 40;
+                }
+                else if (orderList == "3")
+                {
+                    score -= 60;
+                }
+                else if (orderList == "4")
+                {
+                    score -= 80;
+                }
+                else if (orderList == "5")
+                {
+                    score -= 100;
+                }
+
+                document1Prefab.SetActive(false);
+                document2Prefab.SetActive(false);
+                document3Prefab.SetActive(false);
+                document4Prefab.SetActive(false);
+                trashPrefab.SetActive(false);
+
+                orderList = "0";
+                itemID = "0";
+
+                StartCoroutine(CooldownDestory2());
+                Destroy2 = true;
+                holding = false;
+
+                if (Doc1 == true)
+                {
+                    Doc1 = false;
+                }
+                if (Doc2 == true)
+                {
+                    Doc2 = false;
+                }
+
+                statusDestroy2 = true;
+            }
+        }
+        else
+        {
+            isPlayer2 = false;
         }
     }
 

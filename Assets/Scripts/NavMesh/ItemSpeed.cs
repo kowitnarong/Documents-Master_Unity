@@ -24,7 +24,7 @@ public class ItemSpeed : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "ThirdPersonPlayer")
+        if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
         {
             ThirdPersonMovement.speed = 13;
             Destroy(this.gameObject);

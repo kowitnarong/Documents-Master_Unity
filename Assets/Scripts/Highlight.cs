@@ -9,7 +9,7 @@ public class Highlight : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collision : " + collision.gameObject.name);
-        if (collision.gameObject.name == "ThirdPersonPlayer")
+        if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
         {
             outline.OutlineWidth = 4;
         }
@@ -17,7 +17,7 @@ public class Highlight : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "ThirdPersonPlayer")
+        if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
         {
             outline.OutlineWidth = 0;
         }

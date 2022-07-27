@@ -6,7 +6,7 @@
             "id": "c8492735-f58b-4830-afbf-d7612f313aae",
             "actions": [
                 {
-                    "name": "Horizontal",
+                    "name": "Horizontal1",
                     "type": "PassThrough",
                     "id": "7970409b-5b22-420a-be0f-4d8eeb20996b",
                     "expectedControlType": "Button",
@@ -15,7 +15,16 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Vertical",
+                    "name": "Horizontal2",
+                    "type": "PassThrough",
+                    "id": "5c58cedd-5034-4096-aa03-7697a40a8124",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Vertical1",
                     "type": "PassThrough",
                     "id": "291e3ab0-4383-4147-a380-c28fc309c05d",
                     "expectedControlType": "Button",
@@ -24,9 +33,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PickItem",
+                    "name": "Vertical2",
+                    "type": "PassThrough",
+                    "id": "cfc4cc09-9527-4a6d-b6db-81a5d3aa3268",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PickItem1",
                     "type": "Button",
                     "id": "41c036b1-9605-466f-ac80-a3098cff1c57",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PickItem2",
+                    "type": "Button",
+                    "id": "229ce4a3-b5a4-40b5-8964-4e2a89261b09",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -41,7 +68,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Horizontal",
+                    "action": "Horizontal1",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -52,18 +79,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "negative",
-                    "id": "39fe5e33-97b5-4f6d-a031-f404a3bb3550",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Horizontal",
+                    "action": "Horizontal1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -74,18 +90,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "9b36d316-3995-4fbb-8bb5-8e7a0f5aceaa",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Horizontal",
+                    "action": "Horizontal1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -96,7 +101,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Vertical",
+                    "action": "Vertical1",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -107,18 +112,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Vertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "negative",
-                    "id": "d4c29c21-169f-4e6f-ba27-d919e14d9bb3",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Vertical",
+                    "action": "Vertical1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -129,18 +123,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Vertical",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "a91297f1-a00b-454e-b455-756f5f02c41c",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Vertical",
+                    "action": "Vertical1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -148,10 +131,87 @@
                     "name": "",
                     "id": "5d53e270-1752-4fa0-ac3f-53ea373807af",
                     "path": "<Keyboard>/e",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
-                    "action": "PickItem",
+                    "action": "PickItem1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "afa0cd88-18ad-499f-8da0-1a4967b0f6d8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal2",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "db908949-e8dc-467e-8e48-edad53cdaed0",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "2f056f47-724f-4714-adc2-6c1ed543cf99",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "bcb43b7c-732d-4397-88f2-d1ce7551de3c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical2",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3b5580bf-12ca-4b08-9e2f-a980a86db5a0",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "4eccef84-e590-4e51-95ff-50cce9d2e897",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "72390b91-7ca0-480d-b904-3cf41d35986e",
+                    "path": "<Keyboard>/slash",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PickItem2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
