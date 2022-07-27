@@ -28,7 +28,8 @@ public class TimerOrder : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time UP!");
+                //Debug.Log("Time UP!");
+                Time.timeScale = 0;
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;

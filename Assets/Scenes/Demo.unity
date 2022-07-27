@@ -2422,6 +2422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkID: 0
   itemID: 0
+  _orderList1: 
+  _orderList2: 
   document1Prefab: {fileID: 531290308}
   document2Prefab: {fileID: 888365832}
   document3Prefab: {fileID: 424881474}
@@ -2429,6 +2431,8 @@ MonoBehaviour:
   trashPrefab: {fileID: 2102837206}
   holding: 0
   speedDevice: 4
+  isPlayer1: 0
+  isPlayer2: 1
 --- !u!114 &434558490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13032,6 +13036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkID: 0
   itemID: 0
+  _orderList1: 
+  _orderList2: 
   document1Prefab: {fileID: 2076811627}
   document2Prefab: {fileID: 1837465769}
   document3Prefab: {fileID: 1862674666}
@@ -13039,6 +13045,8 @@ MonoBehaviour:
   trashPrefab: {fileID: 1799110099}
   holding: 0
   speedDevice: 4
+  isPlayer1: 1
+  isPlayer2: 0
 --- !u!1 &1994707560
 GameObject:
   m_ObjectHideFlags: 0
