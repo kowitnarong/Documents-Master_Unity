@@ -7,14 +7,20 @@ public class TimerOrder : MonoBehaviour
 {
 
     public float TimeLeft;
+    public int DocOrder;
     private float _TimeLeft;
     public bool TimerOn = false;
+    public bool TimeStart = false;
 
     public Text TimerTxt;
+    static public float Timer1;
+    static public float Timer2;
+    static public float Timer3;
+    static public float Timer4;
 
     void Start()
     {
-        _TimeLeft = TimeLeft;
+        getValue(TimeLeft, DocOrder);
     }
 
     void Update()
@@ -29,30 +35,33 @@ public class TimerOrder : MonoBehaviour
             else
             {
                 //Debug.Log("Time UP!");
-                Time.timeScale = 0;
+                if (TimeStart)
+                {
+                    Time.timeScale = 0;
+                }
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            if (CardScript.Card1Finish == true && _TimeLeft == 60)
+            if (CardScript.Card1Finish == true && _TimeLeft == Timer1)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card2Finish == true && _TimeLeft == 75)
+            else if (CardScript.Card2Finish == true && _TimeLeft == Timer2)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card3Finish == true && _TimeLeft == 65)
+            else if (CardScript.Card3Finish == true && _TimeLeft == Timer3)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card4Finish == true && _TimeLeft == 70)
+            else if (CardScript.Card4Finish == true && _TimeLeft == Timer4)
             {
                 TimeLeft = 0;
                 TimerOn = false;
@@ -69,5 +78,29 @@ public class TimerOrder : MonoBehaviour
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
         TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    void getValue(float time, int order)
+    {
+        if (order == 1)
+        {
+            Timer1 = time;
+            _TimeLeft = Timer1;
+        }
+        else if (order == 2)
+        {
+            Timer2 = time;
+            _TimeLeft = Timer2;
+        }
+        else if (order == 3)
+        {
+            Timer3 = time;
+            _TimeLeft = Timer3;
+        }
+        else if (order == 4)
+        {
+            Timer4 = time;
+            _TimeLeft = Timer4;
+        }
     }
 }

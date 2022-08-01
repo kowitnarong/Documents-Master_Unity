@@ -1509,7 +1509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 65
+  DocOrder: 3
   TimerOn: 0
+  TimeStart: 0
   TimerTxt: {fileID: 422276790}
 --- !u!1 &283028317
 GameObject:
@@ -2606,7 +2608,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 70
+  DocOrder: 4
   TimerOn: 0
+  TimeStart: 0
   TimerTxt: {fileID: 616115546}
 --- !u!95 &456682542
 Animator:
@@ -4630,7 +4634,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 75
+  DocOrder: 2
   TimerOn: 0
+  TimeStart: 0
   TimerTxt: {fileID: 283028318}
 --- !u!1 &687107622
 GameObject:
@@ -7719,7 +7725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 60
+  DocOrder: 1
   TimerOn: 0
+  TimeStart: 0
   TimerTxt: {fileID: 555410111}
 --- !u!1 &1196032764
 GameObject:
@@ -12713,7 +12721,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 240
+  DocOrder: 0
   TimerOn: 1
+  TimeStart: 1
   TimerTxt: {fileID: 1126170143}
 --- !u!1 &1943333295
 GameObject:
