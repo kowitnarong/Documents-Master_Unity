@@ -13,14 +13,10 @@ public class TimerOrder : MonoBehaviour
     public bool TimeStart = false;
 
     public Text TimerTxt;
-    static public float Timer1;
-    static public float Timer2;
-    static public float Timer3;
-    static public float Timer4;
 
     void Start()
     {
-        getValue(TimeLeft, DocOrder);
+        getValue(DocOrder);
     }
 
     void Update()
@@ -43,25 +39,25 @@ public class TimerOrder : MonoBehaviour
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            if (CardScript.Card1Finish == true && _TimeLeft == Timer1)
+            if (CardScript.Card1Finish == true && _TimeLeft == TimeDocumentSet.Timer1)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card2Finish == true && _TimeLeft == Timer2)
+            else if (CardScript.Card2Finish == true && _TimeLeft == TimeDocumentSet.Timer2)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card3Finish == true && _TimeLeft == Timer3)
+            else if (CardScript.Card3Finish == true && _TimeLeft == TimeDocumentSet.Timer3)
             {
                 TimeLeft = 0;
                 TimerOn = false;
                 TimeLeft = _TimeLeft;
             }
-            else if (CardScript.Card4Finish == true && _TimeLeft == Timer4)
+            else if (CardScript.Card4Finish == true && _TimeLeft == TimeDocumentSet.Timer4)
             {
                 TimeLeft = 0;
                 TimerOn = false;
@@ -80,27 +76,27 @@ public class TimerOrder : MonoBehaviour
         TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    void getValue(float time, int order)
+    void getValue(int order)
     {
         if (order == 1)
         {
-            Timer1 = time;
-            _TimeLeft = Timer1;
+            TimeLeft = TimeDocumentSet.Timer1;
+            _TimeLeft = TimeLeft;        
         }
         else if (order == 2)
         {
-            Timer2 = time;
-            _TimeLeft = Timer2;
+            TimeLeft = TimeDocumentSet.Timer2;
+            _TimeLeft = TimeLeft;
         }
         else if (order == 3)
         {
-            Timer3 = time;
-            _TimeLeft = Timer3;
+            TimeLeft = TimeDocumentSet.Timer3;
+            _TimeLeft = TimeLeft;
         }
         else if (order == 4)
         {
-            Timer4 = time;
-            _TimeLeft = Timer4;
+            TimeLeft = TimeDocumentSet.Timer4;
+            _TimeLeft = TimeLeft;
         }
     }
 }

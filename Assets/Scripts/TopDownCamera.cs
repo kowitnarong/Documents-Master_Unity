@@ -18,7 +18,7 @@ public class TopDownCamera : MonoBehaviour
     public Vector3 offset = new Vector3( 0f, 0f, 0f);
 
     // 1 player distance 18 height 38
-    // 2 player distance 22 height 50 y 37 z -16
+    // 2 player distance 19 height 50 y 40 z -16
 
     void LateUpdate()
     {
@@ -68,9 +68,9 @@ public class TopDownCamera : MonoBehaviour
             targets.Add(GameObject.FindGameObjectWithTag("Player1").transform);
             targets.Add(GameObject.FindGameObjectWithTag("Player2").transform);
 
-            distance = 22f;
+            distance = 19f;
             height = 50f;
-            offset = new Vector3(0f, 37f, -16f);
+            offset = new Vector3(0f, 40f, -16f);
         }
         Target = GameObject.FindGameObjectWithTag("Player1").transform;
         tdCam();
