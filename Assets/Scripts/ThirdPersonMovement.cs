@@ -46,7 +46,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
-        if (player == "Player1")
+        if (player == "Player1" && PauseMenu.GameIsPaused == false)
         {
             Vector3 direction = new Vector3(horizontal1, 0f, vertical1).normalized;
 
@@ -60,7 +60,7 @@ public class ThirdPersonMovement : MonoBehaviour
                 controller.Move(direction * speed * Time.deltaTime);
             }
         }
-        if (player == "Player2")
+        if (player == "Player2" && PauseMenu.GameIsPaused == false)
         {
             Vector3 direction = new Vector3(horizontal2, 0f, vertical2).normalized;
 
