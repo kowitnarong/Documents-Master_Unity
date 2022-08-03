@@ -12,6 +12,9 @@ public class TimerOrder : MonoBehaviour
     public bool TimerOn = false;
     public bool TimeStart = false;
 
+    // Check time up
+    static public bool GameIsTimeOut = false;
+
     public Text TimerTxt;
 
     void Start()
@@ -33,7 +36,7 @@ public class TimerOrder : MonoBehaviour
                 //Debug.Log("Time UP!");
                 if (TimeStart)
                 {
-                    Time.timeScale = 0;
+                    GameIsTimeOut = true;
                 }
                 TimeLeft = 0;
                 TimerOn = false;
