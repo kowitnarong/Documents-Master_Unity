@@ -1,0 +1,23 @@
+Hello and thank you for purchasing Low Poly Office Package.
+
+There are 232 prefabs.
+
+Most of the prefabs are set to static.
+
+Models have separate parts for animation.
+
+Texture is 512*512 png
+
+Example Scenes have baked indirect lightmaps. Static objects get realtime direct light.
+
+
+UPDATE 1.1 NOTE:
+- Pack updated to Universal Render Pipeline.
+- Example Scenes updated to Progressive CPU Lightmapper.
+- Outer Walls, Roof and Floor Bottom added. As FBX files and added inside existing prefabs.
+- Mixed Lights Example Scene with Animated Door added.
+- Realtime Lights Example Scene added.
+- Setup Prefabs added for Mixed and Realtime lighting. (Camera Post-Process Volume and Light.)
+
+For questions you can contact me at:
+a3deve@gmail.com

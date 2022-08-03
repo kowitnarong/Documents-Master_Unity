@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: c8a46153fa93cd64a90c6edbe2d8c4cb
+timeCreated: 1552380055
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Wall 01 Dark Blue
+    100002: Wall 01 Grey
+    100004: Wall 01 Light Black
+    100006: Wall 01 Light Blue
+    100008: Wall 01 Light Green
+    100010: Wall 01 Light Orange
+    100012: Wall 01 Light Yellow
+    100014: Wall 01 Orange
+    100016: Wall 01 Pink
+    100018: Wall 01 Turquoise
+    100020: Wall 01 White
+    100022: Wall 01 Wine Red
+    100024: Wall 01 Yellow
+    100026: Wall 02 Dark Blue
+    100028: Wall 02 Grey
+    100030: Wall 02 Grey 2
+    100032: Wall 02 Grey 2.001
+    100034: Wall 02 Light Black
+    100036: Wall 02 Light Blue
+    100038: Wall 02 Light Green
+    100040: Wall 02 Light Orange
+    100042: Wall 02 Light Yellow
+    100044: Wall 02 Orange
+    100046: Wall 02 Pink
+    100048: Wall 02 Turquoise
+    100050: Wall 02 White
+    100052: Wall 02 Wine Red
+    100054: Wall 02 Yellow
+    100056: Wall 03 Dark Blue
+    100058: Wall 03 Grey
+    100060: Wall 03 Grey 2
+    100062: Wall 03 Light Black
+    100064: Wall 03 Light Blue
+    100066: Wall 03 Light Green
+    100068: Wall 03 Light Orange
+    100070: Wall 03 Light Yellow
+    100072: Wall 03 Orange
+    100074: Wall 03 Pink
+    100076: Wall 03 Turquoise
+    100078: Wall 03 White
+    100080: Wall 03 Wine Red
+    100082: Wall 03 Yellow
+    100084: Wall 04 Dark Blue
+    100086: Wall 04 Grey
+    100088: Wall 04 Grey 2
+    100090: Wall 04 Light Black
+    100092: Wall 04 Light Blue
+    100094: Wall 04 Light Green
+    100096: Wall 04 Light Orange
+    100098: Wall 04 Light Yellow
+    100100: Wall 04 Orange
+    100102: Wall 04 Pink
+    100104: Wall 04 Turquoise
+    100106: Wall 04 White
+    100108: Wall 04 Wine Red
+    100110: Wall 04 Yellow
+    100112: Wall 05 Dark Blue
+    100114: Wall 05 Grey
+    100116: Wall 05 Grey 2
+    100118: Wall 05 Light Black
+    100120: Wall 05 Light Blue
+    100122: Wall 05 Light Green
+    100124: Wall 05 Light Orange
+    100126: Wall 05 Light Yellow
+    100128: Wall 05 Orange
+    100130: Wall 05 Pink
+    100132: Wall 05 Turquoise
+    100134: Wall 05 White
+    100136: Wall 05 Wine Red
+    100138: Wall 05 Yellow
+    100140: Wall 06 Dark Blue
+    100142: Wall 06 Grey
+    100144: Wall 06 Grey 2
+    100146: Wall 06 Light Black
+    100148: Wall 06 Light Blue
+    100150: Wall 06 Light Green
+    100152: Wall 06 Light Orange
+    100154: Wall 06 Light Yellow
+    100156: Wall 06 Orange
+    100158: Wall 06 Pink
+    100160: Wall 06 Turquoise
+    100162: Wall 06 White
+    100164: Wall 06 Wine Red
+    100166: Wall 06 Yellow
+    100168: //RootNode
+    400000: Wall 01 Dark Blue
+    400002: Wall 01 Grey
+    400004: Wall 01 Light Black
+    400006: Wall 01 Light Blue
+    400008: Wall 01 Light Green
+    400010: Wall 01 Light Orange
+    400012: Wall 01 Light Yellow
+    400014: Wall 01 Orange
+    400016: Wall 01 Pink
+    400018: Wall 01 Turquoise
+    400020: Wall 01 White
+    400022: Wall 01 Wine Red
+    400024: Wall 01 Yellow
+    400026: Wall 02 Dark Blue
+    400028: Wall 02 Grey
+    400030: Wall 02 Grey 2
+    400032: Wall 02 Grey 2.001
+    400034: Wall 02 Light Black
+    400036: Wall 02 Light Blue
+    400038: Wall 02 Light Green
+    400040: Wall 02 Light Orange
+    400042: Wall 02 Light Yellow
+    400044: Wall 02 Orange
+    400046: Wall 02 Pink
+    400048: Wall 02 Turquoise
+    400050: Wall 02 White
+    400052: Wall 02 Wine Red
+    400054: Wall 02 Yellow
+    400056: Wall 03 Dark Blue
+    400058: Wall 03 Grey
+    400060: Wall 03 Grey 2
+    400062: Wall 03 Light Black
+    400064: Wall 03 Light Blue
+    400066: Wall 03 Light Green
+    400068: Wall 03 Light Orange
+    400070: Wall 03 Light Yellow
+    400072: Wall 03 Orange
+    400074: Wall 03 Pink
+    400076: Wall 03 Turquoise
+    400078: Wall 03 White
+    400080: Wall 03 Wine Red
+    400082: Wall 03 Yellow
+    400084: Wall 04 Dark Blue
+    400086: Wall 04 Grey
+    400088: Wall 04 Grey 2
+    400090: Wall 04 Light Black
+    400092: Wall 04 Light Blue
+    400094: Wall 04 Light Green
+    400096: Wall 04 Light Orange
+    400098: Wall 04 Light Yellow
+    400100: Wall 04 Orange
+    400102: Wall 04 Pink
+    400104: Wall 04 Turquoise
+    400106: Wall 04 White
+    400108: Wall 04 Wine Red
+    400110: Wall 04 Yellow
+    400112: Wall 05 Dark Blue
+    400114: Wall 05 Grey
+    400116: Wall 05 Grey 2
+    400118: Wall 05 Light Black
+    400120: Wall 05 Light Blue
+    400122: Wall 05 Light Green
+    400124: Wall 05 Light Orange
+    400126: Wall 05 Light Yellow
+    400128: Wall 05 Orange
+    400130: Wall 05 Pink
+    400132: Wall 05 Turquoise
+    400134: Wall 05 White
+    400136: Wall 05 Wine Red
+    400138: Wall 05 Yellow
+    400140: Wall 06 Dark Blue
+    400142: Wall 06 Grey
+    400144: Wall 06 Grey 2
+    400146: Wall 06 Light Black
+    400148: Wall 06 Light Blue
+    400150: Wall 06 Light Green
+    400152: Wall 06 Light Orange
+    400154: Wall 06 Light Yellow
+    400156: Wall 06 Orange
+    400158: Wall 06 Pink
+    400160: Wall 06 Turquoise
+    400162: Wall 06 White
+    400164: Wall 06 Wine Red
+    400166: Wall 06 Yellow
+    400168: //RootNode
+    2300000: Wall 01 Dark Blue
+    2300002: Wall 01 Grey
+    2300004: Wall 01 Light Black
+    2300006: Wall 01 Light Blue
+    2300008: Wall 01 Light Green
+    2300010: Wall 01 Light Orange
+    2300012: Wall 01 Light Yellow
+    2300014: Wall 01 Orange
+    2300016: Wall 01 Pink
+    2300018: Wall 01 Turquoise
+    2300020: Wall 01 White
+    2300022: Wall 01 Wine Red
+    2300024: Wall 01 Yellow
+    2300026: Wall 02 Dark Blue
+    2300028: Wall 02 Grey
+    2300030: Wall 02 Grey 2
+    2300032: Wall 02 Grey 2.001
+    2300034: Wall 02 Light Black
+    2300036: Wall 02 Light Blue
+    2300038: Wall 02 Light Green
+    2300040: Wall 02 Light Orange
+    2300042: Wall 02 Light Yellow
+    2300044: Wall 02 Orange
+    2300046: Wall 02 Pink
+    2300048: Wall 02 Turquoise
+    2300050: Wall 02 White
+    2300052: Wall 02 Wine Red
+    2300054: Wall 02 Yellow
+    2300056: Wall 03 Dark Blue
+    2300058: Wall 03 Grey
+    2300060: Wall 03 Grey 2
+    2300062: Wall 03 Light Black
+    2300064: Wall 03 Light Blue
+    2300066: Wall 03 Light Green
+    2300068: Wall 03 Light Orange
+    2300070: Wall 03 Light Yellow
+    2300072: Wall 03 Orange
+    2300074: Wall 03 Pink
+    2300076: Wall 03 Turquoise
+    2300078: Wall 03 White
+    2300080: Wall 03 Wine Red
+    2300082: Wall 03 Yellow
+    2300084: Wall 04 Dark Blue
+    2300086: Wall 04 Grey
+    2300088: Wall 04 Grey 2
+    2300090: Wall 04 Light Black
+    2300092: Wall 04 Light Blue
+    2300094: Wall 04 Light Green
+    2300096: Wall 04 Light Orange
+    2300098: Wall 04 Light Yellow
+    2300100: Wall 04 Orange
+    2300102: Wall 04 Pink
+    2300104: Wall 04 Turquoise
+    2300106: Wall 04 White
+    2300108: Wall 04 Wine Red
+    2300110: Wall 04 Yellow
+    2300112: Wall 05 Dark Blue
+    2300114: Wall 05 Grey
+    2300116: Wall 05 Grey 2
+    2300118: Wall 05 Light Black
+    2300120: Wall 05 Light Blue
+    2300122: Wall 05 Light Green
+    2300124: Wall 05 Light Orange
+    2300126: Wall 05 Light Yellow
+    2300128: Wall 05 Orange
+    2300130: Wall 05 Pink
+    2300132: Wall 05 Turquoise
+    2300134: Wall 05 White
+    2300136: Wall 05 Wine Red
+    2300138: Wall 05 Yellow
+    2300140: Wall 06 Dark Blue
+    2300142: Wall 06 Grey
+    2300144: Wall 06 Grey 2
+    2300146: Wall 06 Light Black
+    2300148: Wall 06 Light Blue
+    2300150: Wall 06 Light Green
+    2300152: Wall 06 Light Orange
+    2300154: Wall 06 Light Yellow
+    2300156: Wall 06 Orange
+    2300158: Wall 06 Pink
+    2300160: Wall 06 Turquoise
+    2300162: Wall 06 White
+    2300164: Wall 06 Wine Red
+    2300166: Wall 06 Yellow
+    3300000: Wall 01 Dark Blue
+    3300002: Wall 01 Grey
+    3300004: Wall 01 Light Black
+    3300006: Wall 01 Light Blue
+    3300008: Wall 01 Light Green
+    3300010: Wall 01 Light Orange
+    3300012: Wall 01 Light Yellow
+    3300014: Wall 01 Orange
+    3300016: Wall 01 Pink
+    3300018: Wall 01 Turquoise
+    3300020: Wall 01 White
+    3300022: Wall 01 Wine Red
+    3300024: Wall 01 Yellow
+    3300026: Wall 02 Dark Blue
+    3300028: Wall 02 Grey
+    3300030: Wall 02 Grey 2
+    3300032: Wall 02 Grey 2.001
+    3300034: Wall 02 Light Black
+    3300036: Wall 02 Light Blue
+    3300038: Wall 02 Light Green
+    3300040: Wall 02 Light Orange
+    3300042: Wall 02 Light Yellow
+    3300044: Wall 02 Orange
+    3300046: Wall 02 Pink
+    3300048: Wall 02 Turquoise
+    3300050: Wall 02 White
+    3300052: Wall 02 Wine Red
+    3300054: Wall 02 Yellow
+    3300056: Wall 03 Dark Blue
+    3300058: Wall 03 Grey
+    3300060: Wall 03 Grey 2
+    3300062: Wall 03 Light Black
+    3300064: Wall 03 Light Blue
+    3300066: Wall 03 Light Green
+    3300068: Wall 03 Light Orange
+    3300070: Wall 03 Light Yellow
+    3300072: Wall 03 Orange
+    3300074: Wall 03 Pink
+    3300076: Wall 03 Turquoise
+    3300078: Wall 03 White
+    3300080: Wall 03 Wine Red
+    3300082: Wall 03 Yellow
+    3300084: Wall 04 Dark Blue
+    3300086: Wall 04 Grey
+    3300088: Wall 04 Grey 2
+    3300090: Wall 04 Light Black
+    3300092: Wall 04 Light Blue
+    3300094: Wall 04 Light Green
+    3300096: Wall 04 Light Orange
+    3300098: Wall 04 Light Yellow
+    3300100: Wall 04 Orange
+    3300102: Wall 04 Pink
+    3300104: Wall 04 Turquoise
+    3300106: Wall 04 White
+    3300108: Wall 04 Wine Red
+    3300110: Wall 04 Yellow
+    3300112: Wall 05 Dark Blue
+    3300114: Wall 05 Grey
+    3300116: Wall 05 Grey 2
+    3300118: Wall 05 Light Black
+    3300120: Wall 05 Light Blue
+    3300122: Wall 05 Light Green
+    3300124: Wall 05 Light Orange
+    3300126: Wall 05 Light Yellow
+    3300128: Wall 05 Orange
+    3300130: Wall 05 Pink
+    3300132: Wall 05 Turquoise
+    3300134: Wall 05 White
+    3300136: Wall 05 Wine Red
+    3300138: Wall 05 Yellow
+    3300140: Wall 06 Dark Blue
+    3300142: Wall 06 Grey
+    3300144: Wall 06 Grey 2
+    3300146: Wall 06 Light Black
+    3300148: Wall 06 Light Blue
+    3300150: Wall 06 Light Green
+    3300152: Wall 06 Light Orange
+    3300154: Wall 06 Light Yellow
+    3300156: Wall 06 Orange
+    3300158: Wall 06 Pink
+    3300160: Wall 06 Turquoise
+    3300162: Wall 06 White
+    3300164: Wall 06 Wine Red
+    3300166: Wall 06 Yellow
+    4300000: Wall 04 Grey 2
+    4300002: Wall 05 Grey 2
+    4300004: Wall 02 Grey 2
+    4300006: Wall 03 Grey 2
+    4300008: Wall 06 Grey 2
+    4300010: Wall 02 Grey 2.001
+    4300012: Wall 01 Grey
+    4300014: Wall 06 Grey
+    4300016: Wall 03 Grey
+    4300018: Wall 02 Grey
+    4300020: Wall 05 Grey
+    4300022: Wall 04 Grey
+    4300024: Wall 04 Wine Red
+    4300026: Wall 05 Wine Red
+    4300028: Wall 02 Wine Red
+    4300030: Wall 03 Wine Red
+    4300032: Wall 06 Wine Red
+    4300034: Wall 01 Wine Red
+    4300036: Wall 01 Yellow
+    4300038: Wall 06 Yellow
+    4300040: Wall 03 Yellow
+    4300042: Wall 02 Yellow
+    4300044: Wall 05 Yellow
+    4300046: Wall 04 Yellow
+    4300048: Wall 04 Turquoise
+    4300050: Wall 05 Turquoise
+    4300052: Wall 02 Turquoise
+    4300054: Wall 03 Turquoise
+    4300056: Wall 06 Turquoise
+    4300058: Wall 01 Turquoise
+    4300060: Wall 01 Pink
+    4300062: Wall 06 Pink
+    4300064: Wall 03 Pink
+    4300066: Wall 02 Pink
+    4300068: Wall 05 Pink
+    4300070: Wall 04 Pink
+    4300072: Wall 04 Orange
+    4300074: Wall 05 Orange
+    4300076: Wall 02 Orange
+    4300078: Wall 03 Orange
+    4300080: Wall 06 Orange
+    4300082: Wall 01 Orange
+    4300084: Wall 01 Dark Blue
+    4300086: Wall 06 Dark Blue
+    4300088: Wall 03 Dark Blue
+    4300090: Wall 02 Dark Blue
+    4300092: Wall 05 Dark Blue
+    4300094: Wall 04 Dark Blue
+    4300096: Wall 04 Light Black
+    4300098: Wall 05 Light Black
+    4300100: Wall 02 Light Black
+    4300102: Wall 03 Light Black
+    4300104: Wall 06 Light Black
+    4300106: Wall 01 Light Black
+    4300108: Wall 01 Light Orange
+    4300110: Wall 06 Light Orange
+    4300112: Wall 03 Light Orange
+    4300114: Wall 02 Light Orange
+    4300116: Wall 05 Light Orange
+    4300118: Wall 04 Light Orange
+    4300120: Wall 04 Light Blue
+    4300122: Wall 05 Light Blue
+    4300124: Wall 02 Light Blue
+    4300126: Wall 03 Light Blue
+    4300128: Wall 06 Light Blue
+    4300130: Wall 01 Light Blue
+    4300132: Wall 01 Light Green
+    4300134: Wall 06 Light Green
+    4300136: Wall 03 Light Green
+    4300138: Wall 02 Light Green
+    4300140: Wall 05 Light Green
+    4300142: Wall 04 Light Green
+    4300144: Wall 04 Light Yellow
+    4300146: Wall 05 Light Yellow
+    4300148: Wall 02 Light Yellow
+    4300150: Wall 03 Light Yellow
+    4300152: Wall 06 Light Yellow
+    4300154: Wall 01 Light Yellow
+    4300156: Wall 01 White
+    4300158: Wall 06 White
+    4300160: Wall 03 White
+    4300162: Wall 02 White
+    4300164: Wall 05 White
+    4300166: Wall 04 White
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: d1dcfb7acec772a46a580955508b864a
+timeCreated: 1552402855
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Office Floor 01
+    100004: Office Floor 010
+    100006: Office Floor 011
+    100008: Office Floor 012
+    100010: Office Floor 013
+    100012: Office Floor 014
+    100014: Office Floor 015
+    100016: Office Floor 016
+    100018: Office Floor 017
+    100020: Office Floor 018
+    100022: Office Floor 019
+    100024: Office Floor 02
+    100026: Office Floor 020
+    100028: Office Floor 021
+    100030: Office Floor 022
+    100032: Office Floor 023
+    100034: Office Floor 024
+    100036: Office Floor 025
+    100038: Office Floor 026
+    100040: Office Floor 027
+    100042: Office Floor 028
+    100044: Office Floor 03
+    100046: Office Floor 04
+    100048: Office Floor 05
+    100050: Office Floor 06
+    100052: Office Floor 07
+    100054: Office Floor 08
+    100056: Office Floor 09
+    400000: //RootNode
+    400002: Office Floor 01
+    400004: Office Floor 010
+    400006: Office Floor 011
+    400008: Office Floor 012
+    400010: Office Floor 013
+    400012: Office Floor 014
+    400014: Office Floor 015
+    400016: Office Floor 016
+    400018: Office Floor 017
+    400020: Office Floor 018
+    400022: Office Floor 019
+    400024: Office Floor 02
+    400026: Office Floor 020
+    400028: Office Floor 021
+    400030: Office Floor 022
+    400032: Office Floor 023
+    400034: Office Floor 024
+    400036: Office Floor 025
+    400038: Office Floor 026
+    400040: Office Floor 027
+    400042: Office Floor 028
+    400044: Office Floor 03
+    400046: Office Floor 04
+    400048: Office Floor 05
+    400050: Office Floor 06
+    400052: Office Floor 07
+    400054: Office Floor 08
+    400056: Office Floor 09
+    2300000: Office Floor 01
+    2300002: Office Floor 010
+    2300004: Office Floor 011
+    2300006: Office Floor 012
+    2300008: Office Floor 013
+    2300010: Office Floor 014
+    2300012: Office Floor 015
+    2300014: Office Floor 016
+    2300016: Office Floor 017
+    2300018: Office Floor 018
+    2300020: Office Floor 019
+    2300022: Office Floor 02
+    2300024: Office Floor 020
+    2300026: Office Floor 021
+    2300028: Office Floor 022
+    2300030: Office Floor 023
+    2300032: Office Floor 024
+    2300034: Office Floor 025
+    2300036: Office Floor 026
+    2300038: Office Floor 027
+    2300040: Office Floor 028
+    2300042: Office Floor 03
+    2300044: Office Floor 04
+    2300046: Office Floor 05
+    2300048: Office Floor 06
+    2300050: Office Floor 07
+    2300052: Office Floor 08
+    2300054: Office Floor 09
+    3300000: Office Floor 01
+    3300002: Office Floor 010
+    3300004: Office Floor 011
+    3300006: Office Floor 012
+    3300008: Office Floor 013
+    3300010: Office Floor 014
+    3300012: Office Floor 015
+    3300014: Office Floor 016
+    3300016: Office Floor 017
+    3300018: Office Floor 018
+    3300020: Office Floor 019
+    3300022: Office Floor 02
+    3300024: Office Floor 020
+    3300026: Office Floor 021
+    3300028: Office Floor 022
+    3300030: Office Floor 023
+    3300032: Office Floor 024
+    3300034: Office Floor 025
+    3300036: Office Floor 026
+    3300038: Office Floor 027
+    3300040: Office Floor 028
+    3300042: Office Floor 03
+    3300044: Office Floor 04
+    3300046: Office Floor 05
+    3300048: Office Floor 06
+    3300050: Office Floor 07
+    3300052: Office Floor 08
+    3300054: Office Floor 09
+    4300000: Office Floor 028
+    4300002: Office Floor 027
+    4300004: Office Floor 026
+    4300006: Office Floor 025
+    4300008: Office Floor 024
+    4300010: Office Floor 023
+    4300012: Office Floor 022
+    4300014: Office Floor 021
+    4300016: Office Floor 020
+    4300018: Office Floor 019
+    4300020: Office Floor 018
+    4300022: Office Floor 017
+    4300024: Office Floor 016
+    4300026: Office Floor 015
+    4300028: Office Floor 014
+    4300030: Office Floor 013
+    4300032: Office Floor 012
+    4300034: Office Floor 011
+    4300036: Office Floor 010
+    4300038: Office Floor 09
+    4300040: Office Floor 08
+    4300042: Office Floor 07
+    4300044: Office Floor 06
+    4300046: Office Floor 05
+    4300048: Office Floor 04
+    4300050: Office Floor 03
+    4300052: Office Floor 02
+    4300054: Office Floor 01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
