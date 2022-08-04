@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour
+namespace GameDev3.Project
 {
-    public Animator Transition;
-    public int IndexSceneID;
-
-    // Update is called once per frame
-    void Update()
+    public class LevelLoader : MonoBehaviour
     {
-        TransitionIn();
-    }
+        public Animator Transition;
+        public int IndexSceneID;
 
-    void TransitionIn()
-    {
-        if (TimerOrder.GameIsTimeOut == true)
+        // Update is called once per frame
+        void Update()
         {
-            Transition.SetBool("End", true);
-            StartCoroutine(LoadSummaryScene());
+            TransitionIn();
         }
-    }
 
-    public IEnumerator LoadSummaryScene()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(IndexSceneID);
+        void TransitionIn()
+        {
+            if (TimerOrder.GameIsTimeOut == true)
+            {
+                Transition.SetBool("End", true);
+                StartCoroutine(LoadSummaryScene());
+            }
+        }
+
+        public IEnumerator LoadSummaryScene()
+        {
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene(IndexSceneID);
+        }
     }
 }

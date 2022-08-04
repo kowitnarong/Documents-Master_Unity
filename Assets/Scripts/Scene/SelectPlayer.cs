@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SelectPlayer : MonoBehaviour
+namespace GameDev3.Project
 {
-    public int Player;
-    static public int countOfPlayer;
-    // Start is called before the first frame update
-    public void SetPlayerThenMove(int sceneID)
+    public class SelectPlayer : MonoBehaviour
     {
-        SceneManager.LoadScene(sceneID);
-        countOfPlayer = Player;
+        public int Player;
+        static public int countOfPlayer;
+        // Start is called before the first frame update
+        public void SetPlayerThenMove(int sceneID)
+        {
+            SceneManager.LoadScene(sceneID);
+            countOfPlayer = Player;
+        }
     }
 }

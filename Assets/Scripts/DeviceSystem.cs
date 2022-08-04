@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeviceSystem : MonoBehaviour
+namespace GameDev3.Project
 {
-    public string deviceID;
+    public class DeviceSystem : MonoBehaviour
+    {
+        public string deviceID;
+    }
 }

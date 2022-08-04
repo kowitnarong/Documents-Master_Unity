@@ -4,86 +4,88 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 
-
-public class ThirdPersonMovement : MonoBehaviour
+namespace GameDev3.Project
 {
-    [SerializeField]
-    private float _gravity = 9.8f;
-
-    public CharacterController controller;
-    public string player;
-
-    static public float speed = 10f;
-    bool speedTurnBack = false;
-
-    public float turnSmoothTime = 0.1f;
-    float turnSmoothVelocity;
-
-    float horizontal1;
-    float vertical1;
-    float horizontal2;
-    float vertical2;
-
-    public void OnHorizontal1(InputValue value)
+    public class ThirdPersonMovement : MonoBehaviour
     {
-        horizontal1 = value.Get<float>();
-    }
-    
-    public void OnVertical1(InputValue value)
-    {
-        vertical1 = value.Get<float>();
-    }
+        [SerializeField]
+        private float _gravity = 9.8f;
 
-    public void OnHorizontal2(InputValue value)
-    {
-        horizontal2 = value.Get<float>();
-    }
+        public CharacterController controller;
+        public string player;
 
-    public void OnVertical2(InputValue value)
-    {
-        vertical2 = value.Get<float>();
-    }
+        static public float speed = 10f;
+        bool speedTurnBack = false;
 
-    void Update()
-    {
-        if (player == "Player1" && PauseMenu.GameIsPaused == false)
+        public float turnSmoothTime = 0.1f;
+        float turnSmoothVelocity;
+
+        float horizontal1;
+        float vertical1;
+        float horizontal2;
+        float vertical2;
+
+        public void OnHorizontal1(InputValue value)
         {
-            Vector3 direction = new Vector3(horizontal1, 0f, vertical1).normalized;
+            horizontal1 = value.Get<float>();
+        }
 
-            if (direction.magnitude >= 0.1f)
+        public void OnVertical1(InputValue value)
+        {
+            vertical1 = value.Get<float>();
+        }
+
+        public void OnHorizontal2(InputValue value)
+        {
+            horizontal2 = value.Get<float>();
+        }
+
+        public void OnVertical2(InputValue value)
+        {
+            vertical2 = value.Get<float>();
+        }
+
+        void Update()
+        {
+            if (player == "Player1" && PauseMenu.GameIsPaused == false)
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+                Vector3 direction = new Vector3(horizontal1, 0f, vertical1).normalized;
 
-                direction.y -= _gravity;
-                controller.Move(direction * speed * Time.deltaTime);
+                if (direction.magnitude >= 0.1f)
+                {
+                    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                    direction.y -= _gravity;
+                    controller.Move(direction * speed * Time.deltaTime);
+                }
             }
-        }
-        if (player == "Player2" && PauseMenu.GameIsPaused == false)
-        {
-            Vector3 direction = new Vector3(horizontal2, 0f, vertical2).normalized;
-
-            if (direction.magnitude >= 0.1f)
+            if (player == "Player2" && PauseMenu.GameIsPaused == false)
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+                Vector3 direction = new Vector3(horizontal2, 0f, vertical2).normalized;
 
-                direction.y -= _gravity;
-                controller.Move(direction * speed * Time.deltaTime);
+                if (direction.magnitude >= 0.1f)
+                {
+                    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                    direction.y -= _gravity;
+                    controller.Move(direction * speed * Time.deltaTime);
+                }
             }
-        }
-        if (speed == 13 && speedTurnBack == false)
-        {
-            Invoke("defaultSpeed", 8);
-            speedTurnBack = true;
-        }
+            if (speed == 13 && speedTurnBack == false)
+            {
+                Invoke("defaultSpeed", 8);
+                speedTurnBack = true;
+            }
 
-    }
-    void defaultSpeed()
-    {
-        ThirdPersonMovement.speed = 10;
-        speedTurnBack = false;
+        }
+        void defaultSpeed()
+        {
+            speed = 10;
+            speedTurnBack = false;
+        }
     }
 }

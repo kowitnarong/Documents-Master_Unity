@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShowText : MonoBehaviour
+namespace GameDev3.Project
 {
-    public Text textElementScore;
-    private string textScore;
-    void Update()
+    public class ShowText : MonoBehaviour
     {
-        textScore = "" + ItemSystem.score.ToString();
+        public Text textElementScore;
+        private string textScore;
+        void Update()
+        {
+            textScore = "" + ItemSystem.score.ToString();
 
-        textElementScore.text = textScore;
+            textElementScore.text = textScore;
+        }
     }
 }

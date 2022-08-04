@@ -2,24 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Highlight : MonoBehaviour
+namespace GameDev3.Project
 {
-    public Outline outline;
-
-    private void OnCollisionEnter(Collision collision)
+    public class Highlight : MonoBehaviour
     {
-        //Debug.Log("collision : " + collision.gameObject.name);
-        if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+        public Outline outline;
+
+        private void OnCollisionEnter(Collision collision)
         {
-            outline.OutlineWidth = 4;
+            //Debug.Log("collision : " + collision.gameObject.name);
+            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+            {
+                outline.OutlineWidth = 4;
+            }
         }
-    }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+        private void OnCollisionExit(Collision collision)
         {
-            outline.OutlineWidth = 0;
+            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+            {
+                outline.OutlineWidth = 0;
+            }
         }
     }
 }
