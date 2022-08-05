@@ -9,6 +9,24 @@ namespace GameDev3.Project
     public class ItemSystem : MonoBehaviour
     {
         static public int score = 0;
+        static public int m_score
+        {
+            get
+            {
+                return score;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    score += value;
+                }
+                else if (value < 0 && score > 0)
+                {
+                    score += value;
+                }
+            }
+        }
 
         public string checkID = "0";
         public string itemID = "0";
@@ -433,7 +451,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order4Enable == true)
                     {
-                        score += 130;
+                        m_score = 130;
                         if (OrderManager.RanOrder1 == 4)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -447,7 +465,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order4Enable == false)
                     {
-                        score -= 130;
+                        m_score = -130;
                     }
                     orderList1 = "0";
                     itemID = "0";
@@ -459,7 +477,7 @@ namespace GameDev3.Project
                     Doc1 = false;
                     if (OrderManager.Order1Enable == true)
                     {
-                        score += 100;
+                        m_score = 100;
                         if (OrderManager.RanOrder1 == 1)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -473,7 +491,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order1Enable == false)
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
                     orderList1 = "0";
                     itemID = "0";
@@ -750,7 +768,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order2Enable == true)
                     {
-                        score += 150;
+                        m_score = 150;
                         if (OrderManager.RanOrder1 == 2)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -764,7 +782,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order2Enable == false)
                     {
-                        score -= 150;
+                        m_score = -150;
                     }
                     orderList1 = "0";
                     itemID = "0";
@@ -993,7 +1011,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order3Enable == true)
                     {
-                        score += 100;
+                        m_score = 100;
                         if (OrderManager.RanOrder1 == 3)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -1007,7 +1025,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order3Enable == false)
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
                     orderList1 = "0";
                     itemID = "0";
@@ -1036,23 +1054,23 @@ namespace GameDev3.Project
                 {
                     if (orderList1 == "1")
                     {
-                        score -= 20;
+                        m_score = -20;
                     }
                     else if (orderList1 == "2")
                     {
-                        score -= 40;
+                        m_score = -40;
                     }
                     else if (orderList1 == "3")
                     {
-                        score -= 60;
+                        m_score = -60;
                     }
                     else if (orderList1 == "4")
                     {
-                        score -= 80;
+                        m_score = -80;
                     }
                     else if (orderList1 == "5")
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
 
                     document1Prefab.SetActive(false);
@@ -1084,23 +1102,23 @@ namespace GameDev3.Project
                 {
                     if (orderList1 == "1")
                     {
-                        score -= 20;
+                        m_score = -20;
                     }
                     else if (orderList1 == "2")
                     {
-                        score -= 40;
+                        m_score = -40;
                     }
                     else if (orderList1 == "3")
                     {
-                        score -= 60;
+                        m_score = -60;
                     }
                     else if (orderList1 == "4")
                     {
-                        score -= 80;
+                        m_score = -80;
                     }
                     else if (orderList1 == "5")
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
 
                     document1Prefab.SetActive(false);
@@ -1395,7 +1413,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order4Enable == true)
                     {
-                        score += 130;
+                        m_score = 130;
                         if (OrderManager.RanOrder1 == 4)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -1409,7 +1427,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order4Enable == false)
                     {
-                        score -= 130;
+                        m_score = -130;
                     }
                     orderList2 = "0";
                     itemID = "0";
@@ -1421,7 +1439,7 @@ namespace GameDev3.Project
                     Doc1 = false;
                     if (OrderManager.Order1Enable == true)
                     {
-                        score += 100;
+                        m_score = 100;
                         if (OrderManager.RanOrder1 == 1)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -1435,7 +1453,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order1Enable == false)
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
                     orderList2 = "0";
                     itemID = "0";
@@ -1712,7 +1730,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order2Enable == true)
                     {
-                        score += 150;
+                        m_score = 150;
                         if (OrderManager.RanOrder1 == 2)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -1726,7 +1744,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order2Enable == false)
                     {
-                        score -= 150;
+                        m_score = -150;
                     }
                     orderList2 = "0";
                     itemID = "0";
@@ -1955,7 +1973,7 @@ namespace GameDev3.Project
                 {
                     if (OrderManager.Order3Enable == true)
                     {
-                        score += 100;
+                        m_score = 100;
                         if (OrderManager.RanOrder1 == 3)
                         {
                             OrderManager.RanOrder1 = 0;
@@ -1969,7 +1987,7 @@ namespace GameDev3.Project
                     }
                     else if (OrderManager.Order3Enable == false)
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
                     orderList2 = "0";
                     itemID = "0";
@@ -1998,23 +2016,23 @@ namespace GameDev3.Project
                 {
                     if (orderList2 == "1")
                     {
-                        score -= 20;
+                        m_score = -20;
                     }
                     else if (orderList2 == "2")
                     {
-                        score -= 40;
+                        m_score = -40;
                     }
                     else if (orderList2 == "3")
                     {
-                        score -= 60;
+                        m_score = -60;
                     }
                     else if (orderList2 == "4")
                     {
-                        score -= 80;
+                        m_score = -80;
                     }
                     else if (orderList2 == "5")
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
 
                     document1Prefab.SetActive(false);
@@ -2045,23 +2063,23 @@ namespace GameDev3.Project
                 {
                     if (orderList2 == "1")
                     {
-                        score -= 20;
+                        m_score = -20;
                     }
                     else if (orderList2 == "2")
                     {
-                        score -= 40;
+                        m_score = -40;
                     }
                     else if (orderList2 == "3")
                     {
-                        score -= 60;
+                        m_score = -60;
                     }
                     else if (orderList2 == "4")
                     {
-                        score -= 80;
+                        m_score = -80;
                     }
                     else if (orderList2 == "5")
                     {
-                        score -= 100;
+                        m_score = -100;
                     }
 
                     document1Prefab.SetActive(false);

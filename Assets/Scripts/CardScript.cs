@@ -235,7 +235,7 @@ namespace GameDev3.Project
                 OrderManager.Order1Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder1 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
             else if (OrderManager.RanOrder2 == 1)
             {
@@ -243,7 +243,7 @@ namespace GameDev3.Project
                 OrderManager.Order1Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder2 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
         }
         public IEnumerator Card1Random()
@@ -291,7 +291,7 @@ namespace GameDev3.Project
                 OrderManager.Order2Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder1 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
             else if (OrderManager.RanOrder2 == 2)
             {
@@ -299,7 +299,7 @@ namespace GameDev3.Project
                 OrderManager.Order2Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder2 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
         }
         public IEnumerator Card2Random()
@@ -347,7 +347,7 @@ namespace GameDev3.Project
                 OrderManager.Order3Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder1 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
             else if (OrderManager.RanOrder2 == 3)
             {
@@ -355,7 +355,7 @@ namespace GameDev3.Project
                 OrderManager.Order3Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder2 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
         }
         public IEnumerator Card3Random()
@@ -403,7 +403,7 @@ namespace GameDev3.Project
                 OrderManager.Order4Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder1 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
             else if (OrderManager.RanOrder2 == 4)
             {
@@ -411,7 +411,7 @@ namespace GameDev3.Project
                 OrderManager.Order4Enable = false;
                 yield return new WaitForSeconds(2f);
                 OrderManager.RandomOrder2 = true;
-                ItemSystem.score -= 50;
+                ItemSystem.m_score = -50;
             }
         }
         public IEnumerator Card4Random()
