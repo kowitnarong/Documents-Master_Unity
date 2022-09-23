@@ -11,7 +11,7 @@ namespace GameDev3.Project
         private string textScore;
         void Update()
         {
-            textScore = "" + ItemSystem.score.ToString();
+            textScore = "" + Score.ScoreGame.ToString();
 
             textElementScore.text = textScore;
         }

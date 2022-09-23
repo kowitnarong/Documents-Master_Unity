@@ -5624,7 +5624,6 @@ GameObject:
   - component: {fileID: 150820255}
   - component: {fileID: 150820254}
   - component: {fileID: 150820253}
-  - component: {fileID: 150820252}
   - component: {fileID: 150820260}
   - component: {fileID: 150820261}
   m_Layer: 0
@@ -5634,19 +5633,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &150820252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150820251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 3_1
 --- !u!54 &150820253
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9356,7 +9342,6 @@ GameObject:
   - component: {fileID: 623790387}
   - component: {fileID: 623790386}
   - component: {fileID: 623790385}
-  - component: {fileID: 623790384}
   - component: {fileID: 623790383}
   - component: {fileID: 623790382}
   m_Layer: 0
@@ -9396,19 +9381,6 @@ MonoBehaviour:
   m_Label: Device3_2
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &623790384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623790381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 3_2
 --- !u!54 &623790385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15687,7 +15659,6 @@ GameObject:
   - component: {fileID: 782674419}
   - component: {fileID: 782674418}
   - component: {fileID: 782674417}
-  - component: {fileID: 782674416}
   - component: {fileID: 782674415}
   - component: {fileID: 782674414}
   m_Layer: 0
@@ -15727,19 +15698,6 @@ MonoBehaviour:
   m_Label: Device1_2
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &782674416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782674413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 1_2
 --- !u!54 &782674417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16100,7 +16058,6 @@ GameObject:
   - component: {fileID: 822297149}
   - component: {fileID: 822297148}
   - component: {fileID: 822297147}
-  - component: {fileID: 822297146}
   - component: {fileID: 822297145}
   - component: {fileID: 822297144}
   m_Layer: 0
@@ -16140,19 +16097,6 @@ MonoBehaviour:
   m_Label: Device2_3
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &822297146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822297143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 2_3
 --- !u!54 &822297147
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18245,7 +18189,6 @@ GameObject:
   - component: {fileID: 1279019005}
   - component: {fileID: 1279019004}
   - component: {fileID: 1279019003}
-  - component: {fileID: 1279019002}
   - component: {fileID: 1279019010}
   - component: {fileID: 1279019011}
   m_Layer: 0
@@ -18255,19 +18198,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &1279019002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279019001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 4_1
 --- !u!54 &1279019003
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18989,7 +18919,6 @@ GameObject:
   - component: {fileID: 1386642421}
   - component: {fileID: 1386642420}
   - component: {fileID: 1386642419}
-  - component: {fileID: 1386642418}
   - component: {fileID: 1386642417}
   - component: {fileID: 1386642416}
   m_Layer: 0
@@ -19029,19 +18958,6 @@ MonoBehaviour:
   m_Label: Device4_2
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1386642418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386642415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 4_2
 --- !u!54 &1386642419
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19949,7 +19865,6 @@ GameObject:
   - component: {fileID: 1554835188}
   - component: {fileID: 1554835189}
   - component: {fileID: 1554835190}
-  - component: {fileID: 1554835191}
   - component: {fileID: 1554835192}
   - component: {fileID: 1554835193}
   m_Layer: 0
@@ -20111,19 +20026,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &1554835191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554835183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 1_1
 --- !u!114 &1554835192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20522,7 +20424,6 @@ GameObject:
   - component: {fileID: 1655259186}
   - component: {fileID: 1655259185}
   - component: {fileID: 1655259184}
-  - component: {fileID: 1655259183}
   - component: {fileID: 1655259182}
   - component: {fileID: 1655259181}
   m_Layer: 0
@@ -20562,19 +20463,6 @@ MonoBehaviour:
   m_Label: Device5_3
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1655259183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655259180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 5_3
 --- !u!54 &1655259184
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22759,7 +22647,6 @@ GameObject:
   - component: {fileID: 1894203981}
   - component: {fileID: 1894203980}
   - component: {fileID: 1894203979}
-  - component: {fileID: 1894203978}
   - component: {fileID: 1894203977}
   - component: {fileID: 1894203976}
   m_Layer: 0
@@ -22799,19 +22686,6 @@ MonoBehaviour:
   m_Label: Device2_2
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1894203978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894203975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 2_2
 --- !u!54 &1894203979
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23075,7 +22949,6 @@ GameObject:
   - component: {fileID: 1912490071}
   - component: {fileID: 1912490070}
   - component: {fileID: 1912490069}
-  - component: {fileID: 1912490068}
   - component: {fileID: 1912490067}
   - component: {fileID: 1912490066}
   m_Layer: 0
@@ -23115,19 +22988,6 @@ MonoBehaviour:
   m_Label: Device5_2
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1912490068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912490065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 5_2
 --- !u!54 &1912490069
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24046,7 +23906,6 @@ GameObject:
   - component: {fileID: 2016912378}
   - component: {fileID: 2016912377}
   - component: {fileID: 2016912376}
-  - component: {fileID: 2016912375}
   - component: {fileID: 2016912383}
   - component: {fileID: 2016912384}
   m_Layer: 0
@@ -24056,19 +23915,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &2016912375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016912374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 2_1
 --- !u!54 &2016912376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24523,7 +24369,6 @@ GameObject:
   - component: {fileID: 2068513016}
   - component: {fileID: 2068513015}
   - component: {fileID: 2068513014}
-  - component: {fileID: 2068513013}
   - component: {fileID: 2068513012}
   - component: {fileID: 2068513011}
   m_Layer: 0
@@ -24563,19 +24408,6 @@ MonoBehaviour:
   m_Label: Device3_3
   m_Colour: {r: 0, g: 0, b: 0, a: 1}
   m_TextOffset: {x: 0, y: 0, z: 0}
---- !u!114 &2068513013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068513010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 3_3
 --- !u!54 &2068513014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25034,7 +24866,6 @@ GameObject:
   - component: {fileID: 2104727011}
   - component: {fileID: 2104727010}
   - component: {fileID: 2104727009}
-  - component: {fileID: 2104727008}
   - component: {fileID: 2104727016}
   - component: {fileID: 2104727017}
   m_Layer: 0
@@ -25044,19 +24875,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &2104727008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104727007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ba1b0078697fb4b92190c969852c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceID: 5_1
 --- !u!54 &2104727009
 Rigidbody:
   m_ObjectHideFlags: 0

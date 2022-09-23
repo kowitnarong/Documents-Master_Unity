@@ -67,6 +67,9 @@ namespace GameDev3.Project
 
         void Start()
         {
+            ////////////////////////////////////
+            SelectPlayer.countOfPlayer = 1;
+            ////////////////////////////////////
             if (SelectPlayer.countOfPlayer == 1)
             {
                 targets.Add(GameObject.FindGameObjectWithTag("Player1").transform);

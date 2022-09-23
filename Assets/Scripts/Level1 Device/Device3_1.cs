@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace GameDev3.Project
 {
-    public class DeviceSystem : MonoBehaviour
+    public class Device3_1 : DeviceEnd
     {
-        public string deviceID;
+        
     }
 }

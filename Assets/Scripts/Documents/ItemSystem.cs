@@ -2307,12 +2307,12 @@ namespace GameDev3.Project
                 || collision.gameObject.name == "Table5_3" || collision.gameObject.name == "Table7"
                 || collision.gameObject.name == "Table8")
             {
-                checkID = collision.gameObject.GetComponent<DeviceSystem>().deviceID;
+                //checkID = collision.gameObject.GetComponent<DeviceSystem>().deviceID;
                 Collision = true;
             }
             if (collision.gameObject.name == "Destroy_1" || collision.gameObject.name == "Destroy_2")
             {
-                checkID = collision.gameObject.GetComponent<DeviceSystem>().deviceID;
+                //checkID = collision.gameObject.GetComponent<DeviceSystem>().deviceID;
             }
         }
 

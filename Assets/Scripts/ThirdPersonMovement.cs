@@ -68,7 +68,7 @@ namespace GameDev3.Project
             if (player == "Player1" && PauseMenu.GameIsPaused == false)
             {
                 Vector3 direction = new Vector3(horizontal1, 0f, vertical1).normalized;
-                Debug.Log(direction.magnitude);
+               
                 if (direction.magnitude >= 0.1f)
                 {
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;

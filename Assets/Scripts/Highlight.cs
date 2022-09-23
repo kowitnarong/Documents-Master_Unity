@@ -11,7 +11,7 @@ namespace GameDev3.Project
         private void OnCollisionEnter(Collision collision)
         {
             //Debug.Log("collision : " + collision.gameObject.name);
-            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+            if (collision.gameObject.name == "Interaction Trigger")
             {
                 outline.OutlineWidth = 4;
             }
@@ -19,7 +19,7 @@ namespace GameDev3.Project
 
         private void OnCollisionExit(Collision collision)
         {
-            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+            if (collision.gameObject.name == "Interaction Trigger")
             {
                 outline.OutlineWidth = 0;
             }

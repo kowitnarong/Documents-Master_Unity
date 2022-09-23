@@ -10,7 +10,7 @@ namespace GameDev3.Project
     public class TimeCount : MonoBehaviour
     {
         Image timerBar;
-        public float maxTime = 4;
+        public float maxTime;
         public float timeLeft;
         void Start()
         {
