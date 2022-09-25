@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameDev3.Project
 {
-    public class Device2_1 : MonoBehaviour, IInteractable, IActorEnterExitHandler
+    public class DevicePath : MonoBehaviour, IInteractable, IActorEnterExitHandler
     {
         [Header("Receive")]
         public string ReceiveID;

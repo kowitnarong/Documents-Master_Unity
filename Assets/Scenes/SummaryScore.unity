@@ -562,6 +562,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textElementScore: {fileID: 302999915}
   textElementStar: {fileID: 1503573558}
+  Level1: {fileID: 11400000, guid: 45504bc922b2c45449595b1115419299, type: 2}
+  Level2: {fileID: 11400000, guid: 9d4e2045c5a279f48bd5dd12e3f769b2, type: 2}
+  Level3: {fileID: 11400000, guid: 11986a6f5296bea42abcb359eef17c40, type: 2}
 --- !u!1 &1503573557
 GameObject:
   m_ObjectHideFlags: 0

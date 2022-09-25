@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c51b356f062c14c9d5749b1b59b5f8, type: 3}
+  m_Name: SummaryScoreLevel2
+  m_EditorClassIdentifier: 
+  Score1StarEasy: 300
+  Score2StarEasy: 400
+  Score3StarEasy: 500
+  Score1StarNormal: 550
+  Score2StarNormal: 650
+  Score3StarNormal: 750
+  Score1StarHard: 800
+  Score2StarHard: 1000
+  Score3StarHard: 1250

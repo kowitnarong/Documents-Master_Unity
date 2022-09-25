@@ -12,9 +12,14 @@ namespace GameDev3.Project
         private string textScore;
         private string textStar;
         private int _Score;
+
+        public SummaryScoreScriptable Level1;
+        public SummaryScoreScriptable Level2;
+        public SummaryScoreScriptable Level3;
+
         void Start()
         {
-            _Score = ItemSystem.score;
+            _Score = Score.ScoreGame;
         }
         void Update()
         {
@@ -25,15 +30,210 @@ namespace GameDev3.Project
 
         void CalculateStar()
         {
-            if (_Score >= 800)
+            if (DifficultSelect.LevelSelect == "Easy")
             {
-                textStar = "1 Star";
+                SetStarEasy();
             }
-            else if (_Score < 800)
+            else if (DifficultSelect.LevelSelect == "Normal")
             {
-                textStar = "0 Star";
+                SetStarNormal();
             }
-            textElementStar.text = textStar;
+            else if (DifficultSelect.LevelSelect == "Hard")
+            {
+                SetStarHard();
+            }
+        }
+
+        void SetStarEasy()
+        {
+            if (Score._Level == "Level1")
+            {
+                if (_Score >= Level1.Score3StarEasy)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level1.Score2StarEasy)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level1.Score1StarEasy)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level1.Score1StarEasy)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level2")
+            {
+                if (_Score >= Level2.Score3StarEasy)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level2.Score2StarEasy)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level2.Score1StarEasy)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level2.Score1StarEasy)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level3")
+            {
+                if (_Score >= Level3.Score3StarEasy)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level3.Score2StarEasy)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level3.Score1StarEasy)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level3.Score1StarEasy)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+        }
+
+        void SetStarNormal()
+        {
+            if (Score._Level == "Level1")
+            {
+                if (_Score >= Level1.Score3StarNormal)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level1.Score2StarNormal)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level1.Score1StarNormal)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level1.Score1StarNormal)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level2")
+            {
+                if (_Score >= Level2.Score3StarNormal)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level2.Score2StarNormal)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level2.Score1StarNormal)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level2.Score1StarNormal)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level3")
+            {
+                if (_Score >= Level3.Score3StarNormal)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level3.Score2StarNormal)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level3.Score1StarNormal)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level3.Score1StarNormal)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+        }
+
+        void SetStarHard()
+        {
+            if (Score._Level == "Level1")
+            {
+                if (_Score >= Level1.Score3StarHard)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level1.Score2StarHard)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level1.Score1StarHard)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level1.Score1StarHard)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level2")
+            {
+                if (_Score >= Level2.Score3StarHard)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level2.Score2StarHard)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level2.Score1StarHard)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level2.Score1StarHard)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
+            else if (Score._Level == "Level3")
+            {
+                if (_Score >= Level3.Score3StarHard)
+                {
+                    textStar = "3 Star";
+                }
+                else if (_Score >= Level3.Score2StarHard)
+                {
+                    textStar = "2 Star";
+                }
+                else if (_Score >= Level3.Score1StarHard)
+                {
+                    textStar = "1 Star";
+                }
+                else if (_Score < Level3.Score1StarHard)
+                {
+                    textStar = "0 Star";
+                }
+                textElementStar.text = textStar;
+            }
         }
     }
 }

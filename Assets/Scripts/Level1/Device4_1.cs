@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameDev3.Project
 {
-    public class Device3_1 : DeviceEnd
+    public class Device4_1 : DevicePath
     {
         
     }

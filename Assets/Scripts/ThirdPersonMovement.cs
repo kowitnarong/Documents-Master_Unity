@@ -31,11 +31,25 @@ namespace GameDev3.Project
         float horizontal2;
         float vertical2;
 
+        public GameObject Player1;
+        public GameObject Player2;
+        [SerializeField] private Vector3 _Player1;
+        [SerializeField] private Vector3 _Player2;
+
+        bool Spawn1 = false;
+        bool Spawn2 = false;
+
         public ParticleSystem dust;
 
         private void Awake()
         {
             playerControls = new PlayerControl();
+        }
+
+        private void Start()
+        {
+            _Player1 = Player1.transform.position;
+            _Player2 = Player2.transform.position;
         }
 
         private void OnEnable()
@@ -65,7 +79,13 @@ namespace GameDev3.Project
             horizontal2 = Horizontal2.ReadValue<float>();
             vertical2 = Vertical2.ReadValue<float>();
 
-            if (player == "Player1" && PauseMenu.GameIsPaused == false)
+
+            if (player == "Player1" && Player1.transform.position.y < -15)
+            {
+                Spawn1 = true;
+                SpawnPlayer1();
+            }
+            else if (player == "Player1" && PauseMenu.GameIsPaused == false && Spawn1 == false)
             {
                 Vector3 direction = new Vector3(horizontal1, 0f, vertical1).normalized;
                
@@ -74,13 +94,19 @@ namespace GameDev3.Project
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                     transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-                    direction.y -= _gravity;
-                    controller.Move(direction * speed * Time.deltaTime);
+                   
                     CreateDust();
                 }
+                direction.y -= _gravity;
+                controller.Move(direction * speed * Time.deltaTime);
             }
-            if (player == "Player2" && PauseMenu.GameIsPaused == false)
+
+            if (player == "Player2" && Player2.transform.position.y < -15)
+            {
+                Spawn2 = true;
+                SpawnPlayer2();
+            }
+            else if (player == "Player2" && PauseMenu.GameIsPaused == false && Spawn2 == false)
             {
                 Vector3 direction = new Vector3(horizontal2, 0f, vertical2).normalized;
                 if (direction.magnitude >= 0.1f)
@@ -88,11 +114,11 @@ namespace GameDev3.Project
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                     transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-                    direction.y -= _gravity;
-                    controller.Move(direction * speed * Time.deltaTime);
+   
                     CreateDust();
                 }
+                direction.y -= _gravity;
+                controller.Move(direction * speed * Time.deltaTime);
             }
             if (speed == 13 && speedTurnBack == false)
             {
@@ -108,6 +134,32 @@ namespace GameDev3.Project
         void CreateDust()
         {
             dust.Play();
+        }
+
+        void SpawnPlayer1()
+        {
+            Player1.transform.position = _Player1;
+            var inventory = GetComponent<Inventory>();
+            inventory.m_ItemInventory.Clear();
+            Invoke("Move1", 2f);
+        }
+
+        void SpawnPlayer2()
+        {
+            Player2.transform.position = _Player2;
+            var inventory = GetComponent<Inventory>();
+            inventory.m_ItemInventory.Clear();
+            Invoke("Move2", 2f);
+        }
+
+        void Move1()
+        {
+            Spawn1 = false;
+        }
+
+        void Move2()
+        {
+            Spawn2 = false;
         }
     }
 }
