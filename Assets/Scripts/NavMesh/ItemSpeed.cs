@@ -26,7 +26,9 @@ namespace GameDev3.Project
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2")
+            Debug.Log(collision.gameObject.name);
+            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2"
+                || collision.gameObject.name == "Interaction Trigger")
             {
                 ThirdPersonMovement.speed = 13;
                 Destroy(gameObject);

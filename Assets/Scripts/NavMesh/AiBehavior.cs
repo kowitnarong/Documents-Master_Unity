@@ -15,7 +15,7 @@ namespace GameDev3.Project
 
         public IEnumerator DropItem()
         {
-            yield return new WaitForSeconds(30);
+            yield return new WaitForSeconds(3);
             Instantiate(itemSpeed, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), transform.rotation);
             StartCoroutine(DropItem());
         }

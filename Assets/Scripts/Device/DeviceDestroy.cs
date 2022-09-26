@@ -11,7 +11,6 @@ namespace GameDev3.Project
         [Header("----------------------------")]
         public TimeCount timeCount;
         private bool Working = false;
-        private bool isFinished = false;
 
 
         void Start()
