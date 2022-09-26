@@ -6234,6 +6234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSpeed: {fileID: 4101385203883199002, guid: e463a9bf190367a45a7e1b124034a295, type: 3}
+  DelayDrop: 12
 --- !u!1 &215022094
 GameObject:
   m_ObjectHideFlags: 0
