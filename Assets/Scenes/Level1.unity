@@ -19374,6 +19374,7 @@ MonoBehaviour:
   Doc2TimeHard: 49
   Doc3TimeHard: 49
   Doc4TimeHard: 49
+  TimeDeduct2Player: 15
   Timer1: 0
   Timer2: 0
   Timer3: 0

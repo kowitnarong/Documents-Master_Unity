@@ -12,14 +12,14 @@ namespace GameDev3.Project
         void Start()
         {
             direction = Random.Range(-0.05f, 0.05f);
-            Invoke("TurnOffBounce", 0.1f);
+            Invoke("TurnOffBounce", 0.05f);
         }
         // Update is called once per frame
         void Update()
         {
             if (bounce)
             {
-                transform.position = new Vector3(transform.position.x + direction, transform.position.y + 0.05f, transform.position.z + direction);
+                transform.position = new Vector3(transform.position.x + direction, transform.position.y + 0.02f, transform.position.z + direction);
             }
             transform.Rotate(_rotation * Time.deltaTime);
         }

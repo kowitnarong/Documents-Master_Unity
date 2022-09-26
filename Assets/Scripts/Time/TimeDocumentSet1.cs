@@ -18,6 +18,8 @@ namespace GameDev3.Project
         public float Doc2TimeHard;
         public float Doc3TimeHard;
         public float Doc4TimeHard;
+        [Header("---------------------")]
+        public float TimeDeduct2Player;
 
         [HideInInspector] public float Timer1;
         [HideInInspector] public float Timer2;
@@ -27,26 +29,53 @@ namespace GameDev3.Project
         // Start is called before the first frame update
         void Awake()
         {
-            if (DifficultSelect.LevelSelect == "Easy")
+            if (SelectPlayer.countOfPlayer == 1)
             {
-                Timer1 = Doc1TimeEasy;
-                Timer2 = Doc2TimeEasy;
-                Timer3 = Doc3TimeEasy;
-                Timer4 = Doc4TimeEasy;
+                if (DifficultSelect.LevelSelect == "Easy")
+                {
+                    Timer1 = Doc1TimeEasy;
+                    Timer2 = Doc2TimeEasy;
+                    Timer3 = Doc3TimeEasy;
+                    Timer4 = Doc4TimeEasy;
+                }
+                else if (DifficultSelect.LevelSelect == "Normal")
+                {
+                    Timer1 = Doc1TimeNormal;
+                    Timer2 = Doc2TimeNormal;
+                    Timer3 = Doc3TimeNormal;
+                    Timer4 = Doc4TimeNormal;
+                }
+                else if (DifficultSelect.LevelSelect == "Hard")
+                {
+                    Timer1 = Doc1TimeHard;
+                    Timer2 = Doc2TimeHard;
+                    Timer3 = Doc3TimeHard;
+                    Timer4 = Doc4TimeHard;
+                }
             }
-            else if (DifficultSelect.LevelSelect == "Normal")
+            else if (SelectPlayer.countOfPlayer == 2)
             {
-                Timer1 = Doc1TimeNormal;
-                Timer2 = Doc2TimeNormal;
-                Timer3 = Doc3TimeNormal;
-                Timer4 = Doc4TimeNormal;
-            }
-            else if (DifficultSelect.LevelSelect == "Hard")
-            {
-                Timer1 = Doc1TimeHard;
-                Timer2 = Doc2TimeHard;
-                Timer3 = Doc3TimeHard;
-                Timer4 = Doc4TimeHard;
+                if (DifficultSelect.LevelSelect == "Easy")
+                {
+                    Timer1 = Doc1TimeEasy - TimeDeduct2Player;
+                    Timer2 = Doc2TimeEasy - TimeDeduct2Player;
+                    Timer3 = Doc3TimeEasy - TimeDeduct2Player;
+                    Timer4 = Doc4TimeEasy - TimeDeduct2Player;
+                }
+                else if (DifficultSelect.LevelSelect == "Normal")
+                {
+                    Timer1 = Doc1TimeNormal - TimeDeduct2Player;
+                    Timer2 = Doc2TimeNormal - TimeDeduct2Player;
+                    Timer3 = Doc3TimeNormal - TimeDeduct2Player;
+                    Timer4 = Doc4TimeNormal - TimeDeduct2Player;
+                }
+                else if (DifficultSelect.LevelSelect == "Hard")
+                {
+                    Timer1 = Doc1TimeHard - TimeDeduct2Player;
+                    Timer2 = Doc2TimeHard - TimeDeduct2Player;
+                    Timer3 = Doc3TimeHard - TimeDeduct2Player;
+                    Timer4 = Doc4TimeHard - TimeDeduct2Player;
+                }
             }
         }
     }
