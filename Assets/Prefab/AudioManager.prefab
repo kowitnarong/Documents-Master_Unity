@@ -164,6 +164,13 @@ MonoBehaviour:
     spatial: 0
     loop: 0
     source: {fileID: 0}
+  - name: CollectItem
+    clip: {fileID: 8300000, guid: 5dfa6a36ab7f92449ad96ca90e97a8dc, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
   Level1:
     name: 
     clip: {fileID: 0}
