@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6299363354903976073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82728906817224971}
+  - component: {fileID: 1599200534609738870}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Audio
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82728906817224971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299363354903976073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.58, y: 1.5587225, z: -4.118494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599200534609738870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299363354903976073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e45f0a075c96347a87b34082260b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BG_Scene1
+    clip: {fileID: 8300000, guid: d4a05f7a77b412e4ea78d0fb4d866cd7, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatial: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: BG_Scene2
+    clip: {fileID: 8300000, guid: 52eecf9f92071e74b89e67c0090d817c, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatial: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: BG_Scene3
+    clip: {fileID: 8300000, guid: 98b7a62b9155fc8409e7aeb055c90a9f, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatial: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Menu_Scene
+    clip: {fileID: 8300000, guid: a7614e3a89d38cc49b50eda2c8f18fd0, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatial: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: PickUpItem
+    clip: {fileID: 8300000, guid: 546258da7451e594f9ab2a209ca75ee1, type: 3}
+    volume: 0.8
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: EndGame
+    clip: {fileID: 8300000, guid: 9df6750634a7fdf41af944ba9bb1013b, type: 3}
+    volume: 0.15
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: DocumentFailed
+    clip: {fileID: 8300000, guid: 692479db28af100479edb287bcb11660, type: 3}
+    volume: 0.15
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AISpawnItem
+    clip: {fileID: 8300000, guid: 1050f29ff5147cc4b9dd9e8a9f373bac, type: 3}
+    volume: 0.15
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: RecieveDevice
+    clip: {fileID: 8300000, guid: 86a395241d24391438c80e966782ee6a, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: SentDevice
+    clip: {fileID: 8300000, guid: dec5efead8cea3141ade8b0b313eff2f, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Down
+    clip: {fileID: 8300000, guid: 005f38bc52e986d488fa6aec025222cb, type: 3}
+    volume: 0.15
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Scanner
+    clip: {fileID: 8300000, guid: 21c13cac36f4a284cbc4585f78ba3da3, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Seal
+    clip: {fileID: 8300000, guid: 0775f88547a04d24baa96e34227d781e, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Computer
+    clip: {fileID: 8300000, guid: e801b12a9d4a97b4da16c4e895b6ed13, type: 3}
+    volume: 0.6
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Shredder
+    clip: {fileID: 8300000, guid: 02b6b9c5dfd71064d8d4e32a117e25cd, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: DocumentCome
+    clip: {fileID: 8300000, guid: c727184bcc4b17e43945f28abbef4e68, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: SpawnItem
+    clip: {fileID: 8300000, guid: 1050f29ff5147cc4b9dd9e8a9f373bac, type: 3}
+    volume: 1
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  Level1:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  Level2:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  Level3:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  Menu:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  BGVolume: 0.1

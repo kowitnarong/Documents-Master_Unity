@@ -15,7 +15,7 @@ namespace GameDev3.Project
         public CharacterController controller;
         public string player;
 
-        static public float speed = 10f;
+        public float speed = 10f;
         bool speedTurnBack = false;
 
         public float turnSmoothTime = 0.1f;
@@ -140,6 +140,10 @@ namespace GameDev3.Project
         {
             Player1.transform.position = _Player1;
             var inventory = GetComponent<Inventory>();
+            if (AudioManager.SFxOn)
+            {
+                FindObjectOfType<AudioManager>().Play("Down");
+            }
             inventory.m_ItemInventory.Clear();
             Invoke("Move1", 2f);
         }
@@ -148,6 +152,10 @@ namespace GameDev3.Project
         {
             Player2.transform.position = _Player2;
             var inventory = GetComponent<Inventory>();
+            if (AudioManager.SFxOn)
+            {
+                FindObjectOfType<AudioManager>().Play("Down");
+            }
             inventory.m_ItemInventory.Clear();
             Invoke("Move2", 2f);
         }

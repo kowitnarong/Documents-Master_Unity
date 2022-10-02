@@ -1,0 +1,24 @@
+Combo - Combo.wav
+จบเกม - GameComplete.wav
+เครื่องคอม - Keyboard-Sound-Computer.wav
+Pick - Pick-Up-Paper.wav
+เครื่องปริ้น - Printer.wav
+เครื่อง Scan - Printer-Scanner.wav
+AI spawn item - Spawn Item.wav
+เครื่องทำลายเอกสาร - Shredder.wav
+จุดรับเอกสาร - Document Pickup Point.wav
+จุดส่งเอกสาร - Document Sent Point.wav
+ตราประทับ - Seal.wav
+ตู้โทรศัพธ์ - Phone booth.wav
+ตู้เอกสาร - Cabinet.wav
+ป้ายเอกสารมา - Document Come.wav
+ทำเอกสารไม่ทัน,ทำพลาด - Document Fail.wav
+
+Background Sound
+
+= https://assetstore.unity.com/packages/audio/music/electronic/casual-game-music-happy-bouncy-social-214104
+
+Menu - Cloud Chaser
+Level-1 - Cotton Candy
+Level-2 - Pool Crew
+Level-3 - Skyscraper

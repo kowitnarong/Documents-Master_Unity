@@ -14,6 +14,10 @@ namespace GameDev3.Project
             if (orderManager.Order1Enable == true)
             {
                 Score.ScoreGame += ScorePath1;
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("SentDevice");
+                }
                 if (orderManager.RanOrder1 == 1)
                 {
                     orderManager.RanOrder1 = 0;
@@ -35,6 +39,10 @@ namespace GameDev3.Project
             if (orderManager.Order2Enable == true)
             {
                 Score.ScoreGame += ScorePath2;
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("SentDevice");
+                }
                 if (orderManager.RanOrder1 == 2)
                 {
                     orderManager.RanOrder1 = 0;
@@ -56,6 +64,10 @@ namespace GameDev3.Project
             if (orderManager.Order3Enable == true)
             {
                 Score.ScoreGame += ScorePath3;
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("SentDevice");
+                }
                 if (orderManager.RanOrder1 == 3)
                 {
                     orderManager.RanOrder1 = 0;
@@ -77,6 +89,10 @@ namespace GameDev3.Project
             if (orderManager.Order4Enable == true)
             {
                 Score.ScoreGame += ScorePath4;
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("SentDevice");
+                }
                 if (orderManager.RanOrder1 == 4)
                 {
                     orderManager.RanOrder1 = 0;

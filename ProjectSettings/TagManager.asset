@@ -7,6 +7,9 @@ TagManager:
   - UICamera
   - Player1
   - Player2
+  - InteractP1
+  - InteractP2
+  - Audio
   layers:
   - Default
   - TransparentFX

@@ -7,10 +7,14 @@ namespace GameDev3.Project
     public class ItemSpeed : MonoBehaviour
     {
         private Vector3 _rotation = new Vector3(0f, 100f, 0f);
+        public GameObject Player1;
+        public GameObject Player2;
         float direction;
         bool bounce = true;
         void Start()
         {
+            Player1 = GameObject.Find("ThirdPersonPlayer1");
+            Player2 = GameObject.Find("ThirdPersonPlayer2");
             direction = Random.Range(-0.05f, 0.05f);
             Invoke("TurnOffBounce", 0.05f);
         }
@@ -26,11 +30,32 @@ namespace GameDev3.Project
 
         private void OnCollisionEnter(Collision collision)
         {
-            Debug.Log(collision.gameObject.name);
-            if (collision.gameObject.name == "ThirdPersonPlayer1" || collision.gameObject.name == "ThirdPersonPlayer2"
-                || collision.gameObject.name == "Interaction Trigger")
+            if (collision.gameObject.name == "ThirdPersonPlayer1")
             {
-                ThirdPersonMovement.speed = 13;
+                if (collision.gameObject.GetComponent<ThirdPersonMovement>().player == "Player1")
+                {
+                    Player1.GetComponent<ThirdPersonMovement>().speed = 13f;
+                }
+                Destroy(gameObject);
+            }
+            if (collision.gameObject.name == "ThirdPersonPlayer2")
+            {
+                if (collision.gameObject.GetComponent<ThirdPersonMovement>().player == "Player2")
+                {
+                    Player2.GetComponent<ThirdPersonMovement>().speed = 13f;
+                }
+                Destroy(gameObject);
+            }
+            if (collision.gameObject.name == "Interaction Trigger")
+            {
+                if (collision.gameObject.tag == "InteractP1")
+                {
+                    Player1.GetComponent<ThirdPersonMovement>().speed = 13f;
+                }
+                if (collision.gameObject.tag == "InteractP2")
+                {
+                    Player2.GetComponent<ThirdPersonMovement>().speed = 13f;
+                }
                 Destroy(gameObject);
             }
         }

@@ -2,23 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+namespace GameDev3.Project
 {
-    public static int ScoreGame = 0;
-    public static string _Level;
-
-    public string CurrentLevel;
-
-    private void Start()
+    public class Score : MonoBehaviour
     {
-        _Level = CurrentLevel;
-    }
+        public static int ScoreGame = 0;
+        public static string _Level;
 
-    private void Update()
-    {
-        if (ScoreGame <= 0)
+        public string CurrentLevel;
+
+        private void Start()
         {
-            ScoreGame = 0;
+            _Level = CurrentLevel;
+            AudioManager.ChangeScene = true;
+        }
+
+        private void Update()
+        {
+            if (ScoreGame <= 0)
+            {
+                ScoreGame = 0;
+            }
         }
     }
 }

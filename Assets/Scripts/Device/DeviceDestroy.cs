@@ -25,10 +25,18 @@ namespace GameDev3.Project
 
             if (Working == false)
             {
-                inventory.m_ItemInventory.Clear();
-                timeSystem.Working = true;
-                Working = true;
-                Invoke("DeviceFinished", SpeedDevice);
+                if (inventory.m_ItemInventory.Count != 0)
+                {
+                    inventory.m_ItemInventory.Clear();
+                    timeSystem.Working = true;
+                    if (AudioManager.SFxOn)
+                    {
+                        FindObjectOfType<AudioManager>().Play("Shredder");
+                    }
+
+                    Working = true;
+                    Invoke("DeviceFinished", SpeedDevice);
+                }
             }
         }
 

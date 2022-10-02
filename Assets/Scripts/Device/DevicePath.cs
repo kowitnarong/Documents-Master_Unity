@@ -35,6 +35,7 @@ namespace GameDev3.Project
                     inventory.m_ItemInventory.Remove(ReceiveID);
 
                     timeSystem.Working = true;
+                    PlaySoundWorking();
                     Working = true;
                     Invoke("DeviceFinished", SpeedDevice);
                 }
@@ -52,26 +53,38 @@ namespace GameDev3.Project
                 if (isFinished)
                 {
                     inventory.AddItem(DeviceID);
+                    if (AudioManager.SFxOn)
+                    {
+                        FindObjectOfType<AudioManager>().Play("PickUpItem");
+                    }
                     timeSystem.Working = false;
                     isFinished = false;
                     Working = false;
                 }
-            }            
+            }
         }
 
         public void ActorEnter(GameObject actor)
         {
-           
+
         }
 
         public void ActorExit(GameObject actor)
         {
-           
+
         }
 
         void DeviceFinished()
         {
             isFinished = true;
+        }
+
+        public virtual void PlaySoundWorking()
+        {
+            if (AudioManager.SFxOn)
+            {
+                FindObjectOfType<AudioManager>().Play("PickUpItem");
+            }
         }
     }
 }

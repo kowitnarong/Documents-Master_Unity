@@ -69,6 +69,10 @@ namespace GameDev3.Project
             {
                 animatorCard1.SetBool("Card1In", true);
                 animatorCard1.Play("Card1In", -1, 0f);
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("DocumentCome");
+                }
                 animatorCard1.SetBool("Card1Out", false);
                 animatorCard1.SetBool("Card1Idle", false);
                 _Card1In = true;
@@ -101,6 +105,10 @@ namespace GameDev3.Project
             {
                 animatorCard2.SetBool("Card2In", true);
                 animatorCard2.Play("Card2In", -1, 0f);
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("DocumentCome");
+                }
                 animatorCard2.SetBool("Card2Out", false);
                 animatorCard2.SetBool("Card2Idle", false);
                 _Card2In = true;
@@ -133,6 +141,10 @@ namespace GameDev3.Project
             {
                 animatorCard3.SetBool("Card3In", true);
                 animatorCard3.Play("Card3In", -1, 0f);
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("DocumentCome");
+                }
                 animatorCard3.SetBool("Card3Out", false);
                 animatorCard3.SetBool("Card3Idle", false);
                 _Card3In = true;
@@ -165,6 +177,10 @@ namespace GameDev3.Project
             {
                 animatorCard4.SetBool("Card4In", true);
                 animatorCard4.Play("Card4In", -1, 0f);
+                if (AudioManager.SFxOn)
+                {
+                    FindObjectOfType<AudioManager>().Play("DocumentCome");
+                }
                 animatorCard4.SetBool("Card4Out", false);
                 animatorCard4.SetBool("Card4Idle", false);
                 _Card4In = true;
