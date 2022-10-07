@@ -8,10 +8,7 @@ namespace GameDev3.Project
     {
         public override void PlaySoundWorking()
         {
-            if (AudioManager.SFxOn)
-            {
-                FindObjectOfType<AudioManager>().Play("Seal");
-            }
+            FindObjectOfType<AudioManager>().Play("Seal");
         }
     }
 }

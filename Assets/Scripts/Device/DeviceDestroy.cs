@@ -29,10 +29,7 @@ namespace GameDev3.Project
                 {
                     inventory.m_ItemInventory.Clear();
                     timeSystem.Working = true;
-                    if (AudioManager.SFxOn)
-                    {
-                        FindObjectOfType<AudioManager>().Play("Shredder");
-                    }
+                    FindObjectOfType<AudioManager>().Play("Shredder");
 
                     Working = true;
                     Invoke("DeviceFinished", SpeedDevice);

@@ -19,10 +19,7 @@ namespace GameDev3.Project
         {
             yield return new WaitForSeconds(DelayDrop);
             Instantiate(itemSpeed, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), transform.rotation);
-            if (AudioManager.SFxOn)
-            {
-                FindObjectOfType<AudioManager>().Play("SpawnItem");
-            }
+            FindObjectOfType<AudioManager>().Play("SpawnItem");
             StartCoroutine(DropItem());
         }
     }

@@ -10,12 +10,6 @@ namespace GameDev3.Project
 
         public GameObject pauseMenuUI;
         public GameObject optionMenuUI;
-        public AudioManager _audio;
-
-        void Start()
-        {
-            _audio = GameObject.FindWithTag("Audio").GetComponent<AudioManager>();
-        }
 
         void Update()
         {
@@ -62,16 +56,6 @@ namespace GameDev3.Project
         public void QuitGame()
         {
             Application.Quit();
-        }
-
-        public void AdjectBGVolume(float volume)
-        {
-            _audio.BGVolume = volume;
-        }
-
-        public void AdjectSFx(bool OnOff)
-        {
-            AudioManager.SFxOn = OnOff;
         }
     }
 }

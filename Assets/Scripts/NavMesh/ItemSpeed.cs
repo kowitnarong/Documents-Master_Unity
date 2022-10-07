@@ -36,10 +36,7 @@ namespace GameDev3.Project
                 {
                     Player1.GetComponent<ThirdPersonMovement>().speed = 13f;
                 }
-                if (AudioManager.SFxOn)
-                {
-                    FindObjectOfType<AudioManager>().Play("CollectItem");
-                }
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 Destroy(gameObject);
             }
             if (collision.gameObject.name == "ThirdPersonPlayer2")
@@ -48,10 +45,7 @@ namespace GameDev3.Project
                 {
                     Player2.GetComponent<ThirdPersonMovement>().speed = 13f;
                 }
-                if (AudioManager.SFxOn)
-                {
-                    FindObjectOfType<AudioManager>().Play("CollectItem");
-                }
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 Destroy(gameObject);
             }
             if (collision.gameObject.name == "Interaction Trigger")
@@ -64,10 +58,7 @@ namespace GameDev3.Project
                 {
                     Player2.GetComponent<ThirdPersonMovement>().speed = 13f;
                 }
-                if (AudioManager.SFxOn)
-                {
-                    FindObjectOfType<AudioManager>().Play("CollectItem");
-                }
+                FindObjectOfType<AudioManager>().Play("CollectItem");
                 Destroy(gameObject);
             }
         }

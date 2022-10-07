@@ -7,7 +7,7 @@ namespace GameDev3.Project
 {
     public class TimerOrder1 : MonoBehaviour
     {
-        public TimeDocumentSet1 timeDocumentSet1;
+        public TimeDocumentSet timeDocumentSet;
         public CardScript1 cardScript1;
         public float TimeLeft;
         public int DocOrder;
@@ -45,25 +45,25 @@ namespace GameDev3.Project
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                 }
-                if (cardScript1.Card1Finish == true && _TimeLeft == timeDocumentSet1.Timer1 && DocOrder == 1)
+                if (cardScript1.Card1Finish == true && _TimeLeft == timeDocumentSet.Timer1 && DocOrder == 1)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                 }
-                else if (cardScript1.Card2Finish == true && _TimeLeft == timeDocumentSet1.Timer2 && DocOrder == 2)
+                else if (cardScript1.Card2Finish == true && _TimeLeft == timeDocumentSet.Timer2 && DocOrder == 2)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                 }
-                else if (cardScript1.Card3Finish == true && _TimeLeft == timeDocumentSet1.Timer3 && DocOrder == 3)
+                else if (cardScript1.Card3Finish == true && _TimeLeft == timeDocumentSet.Timer3 && DocOrder == 3)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                 }
-                else if (cardScript1.Card4Finish == true && _TimeLeft == timeDocumentSet1.Timer4 && DocOrder == 4)
+                else if (cardScript1.Card4Finish == true && _TimeLeft == timeDocumentSet.Timer4 && DocOrder == 4)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
@@ -86,22 +86,22 @@ namespace GameDev3.Project
         {
             if (order == 1)
             {
-                TimeLeft = timeDocumentSet1.Timer1;
+                TimeLeft = timeDocumentSet.Timer1;
                 _TimeLeft = TimeLeft;
             }
             else if (order == 2)
             {
-                TimeLeft = timeDocumentSet1.Timer2;
+                TimeLeft = timeDocumentSet.Timer2;
                 _TimeLeft = TimeLeft;
             }
             else if (order == 3)
             {
-                TimeLeft = timeDocumentSet1.Timer3;
+                TimeLeft = timeDocumentSet.Timer3;
                 _TimeLeft = TimeLeft;
             }
             else if (order == 4)
             {
-                TimeLeft = timeDocumentSet1.Timer4;
+                TimeLeft = timeDocumentSet.Timer4;
                 _TimeLeft = TimeLeft;
             }
         }

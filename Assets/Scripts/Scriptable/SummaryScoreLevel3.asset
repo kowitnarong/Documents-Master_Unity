@@ -15,9 +15,9 @@ MonoBehaviour:
   Score1StarEasy: 700
   Score2StarEasy: 800
   Score3StarEasy: 900
-  Score1StarNormal: 800
-  Score2StarNormal: 900
-  Score3StarNormal: 1000
-  Score1StarHard: 900
-  Score2StarHard: 1400
-  Score3StarHard: 1800
+  Score1StarNormal: 1100
+  Score2StarNormal: 1200
+  Score3StarNormal: 1300
+  Score1StarHard: 1500
+  Score2StarHard: 1600
+  Score3StarHard: 1700

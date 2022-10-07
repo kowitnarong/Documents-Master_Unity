@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20711b29a5c8b7a46a477e16dd2f2cde, type: 3}
+  m_Name: TimeDocumentLevel2
+  m_EditorClassIdentifier: 
+  Doc1TimeEasy: 148
+  Doc2TimeEasy: 111
+  Doc3TimeEasy: 91
+  Doc4TimeEasy: 0
+  Doc1TimeNormal: 149
+  Doc2TimeNormal: 112
+  Doc3TimeNormal: 92
+  Doc4TimeNormal: 0
+  Doc1TimeHard: 150
+  Doc2TimeHard: 113
+  Doc3TimeHard: 93
+  Doc4TimeHard: 0
+  TimeDeduct2Player: 15

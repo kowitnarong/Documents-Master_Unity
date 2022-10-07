@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c51b356f062c14c9d5749b1b59b5f8, type: 3}
   m_Name: SummaryScoreLevel2
   m_EditorClassIdentifier: 
-  Score1StarEasy: 300
-  Score2StarEasy: 400
-  Score3StarEasy: 500
-  Score1StarNormal: 550
-  Score2StarNormal: 650
-  Score3StarNormal: 750
-  Score1StarHard: 800
-  Score2StarHard: 1000
-  Score3StarHard: 1250
+  Score1StarEasy: 200
+  Score2StarEasy: 300
+  Score3StarEasy: 400
+  Score1StarNormal: 350
+  Score2StarNormal: 450
+  Score3StarNormal: 550
+  Score1StarHard: 450
+  Score2StarHard: 550
+  Score3StarHard: 650

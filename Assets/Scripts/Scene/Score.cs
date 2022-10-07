@@ -7,6 +7,8 @@ namespace GameDev3.Project
     public class Score : MonoBehaviour
     {
         public static int ScoreGame = 0;
+        //public int score;
+
         public static string _Level;
 
         public string CurrentLevel;
@@ -15,6 +17,8 @@ namespace GameDev3.Project
         {
             _Level = CurrentLevel;
             AudioManager.ChangeScene = true;
+
+            ScoreGame = 0;
         }
 
         private void Update()
@@ -23,6 +27,7 @@ namespace GameDev3.Project
             {
                 ScoreGame = 0;
             }
+            //ScoreGame = score;
         }
     }
 }

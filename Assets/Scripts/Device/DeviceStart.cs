@@ -29,10 +29,7 @@ namespace GameDev3.Project
                 if (Working == false)
                 {
                     timeSystem.Working = true;
-                    if (AudioManager.SFxOn)
-                    {
-                        FindObjectOfType<AudioManager>().Play("RecieveDevice");
-                    }
+                    FindObjectOfType<AudioManager>().Play("RecieveDevice");
                     Working = true;
                     Invoke("DeviceFinished", SpeedDevice);
                 }
@@ -40,10 +37,7 @@ namespace GameDev3.Project
                 if (isFinished)
                 {
                     inventory.AddItem(DeviceID);
-                    if (AudioManager.SFxOn)
-                    {
-                        FindObjectOfType<AudioManager>().Play("PickUpItem");
-                    }
+                    FindObjectOfType<AudioManager>().Play("PickUpItem");
                     timeSystem.Working = false;
                     isFinished = false;
                     Working = false;

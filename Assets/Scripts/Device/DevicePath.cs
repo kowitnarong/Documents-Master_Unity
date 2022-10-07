@@ -53,10 +53,7 @@ namespace GameDev3.Project
                 if (isFinished)
                 {
                     inventory.AddItem(DeviceID);
-                    if (AudioManager.SFxOn)
-                    {
-                        FindObjectOfType<AudioManager>().Play("PickUpItem");
-                    }
+                    FindObjectOfType<AudioManager>().Play("PickUpItem");
                     timeSystem.Working = false;
                     isFinished = false;
                     Working = false;
@@ -81,10 +78,7 @@ namespace GameDev3.Project
 
         public virtual void PlaySoundWorking()
         {
-            if (AudioManager.SFxOn)
-            {
-                FindObjectOfType<AudioManager>().Play("PickUpItem");
-            }
+            FindObjectOfType<AudioManager>().Play("PickUpItem");
         }
     }
 }
