@@ -139,6 +139,7 @@ namespace GameDev3.Project
         void SpawnPlayer1()
         {
             Player1.transform.position = _Player1;
+            Player1.transform.rotation = Quaternion.identity;
             var inventory = GetComponent<Inventory>();
             FindObjectOfType<AudioManager>().Play("Down");
             inventory.m_ItemInventory.Clear();
@@ -148,6 +149,7 @@ namespace GameDev3.Project
         void SpawnPlayer2()
         {
             Player2.transform.position = _Player2;
+            Player2.transform.rotation = Quaternion.identity;
             var inventory = GetComponent<Inventory>();
             FindObjectOfType<AudioManager>().Play("Down");
             inventory.m_ItemInventory.Clear();

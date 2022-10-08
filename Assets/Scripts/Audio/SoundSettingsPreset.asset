@@ -16,7 +16,7 @@ MonoBehaviour:
   MasterVolumeName: MasterVolume
   MasterVolume: 0
   BGMVolumeName: BGMVolume
-  BGMVolume: 0
+  BGMVolume: -19.712126
   SFXVolumeName: SFXVolume
   SFXVolume: 0
   UIVolumeName: UIVolume

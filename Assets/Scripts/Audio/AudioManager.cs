@@ -17,7 +17,6 @@ namespace GameDev3.Project
         public Sound Menu;
 
         public static AudioManager instance;
-        public float BGVolume = 0.1f;
 
         bool PlaySoundLevel1;
         bool PlaySoundLevel2;
@@ -56,7 +55,7 @@ namespace GameDev3.Project
                 PlaySoundLevel3 = true;
                 PlaySoundMenu = false;
             }
-            else if (sceneName == "PlayerSelect")
+            else if (sceneName == "MenuScene")
             {
                 PlaySoundLevel1 = false;
                 PlaySoundLevel2 = false;
@@ -164,7 +163,7 @@ namespace GameDev3.Project
                     PlaySoundLevel2 = false;
                     PlaySoundLevel3 = true;
                 }
-                else if (sceneName == "PlayerSelect")
+                else if (sceneName == "MenuScene")
                 {
                     PlaySoundLevel1 = false;
                     PlaySoundLevel2 = false;
@@ -174,11 +173,6 @@ namespace GameDev3.Project
                 StopSoundLevel();
                 ChangeScene = false;
             }
-
-            Level1.source.volume = BGVolume;
-            Level2.source.volume = BGVolume;
-            Level3.source.volume = BGVolume;
-            Menu.source.volume = BGVolume;
         }
 
         public void Play(string name)

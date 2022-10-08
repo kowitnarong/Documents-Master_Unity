@@ -10,6 +10,8 @@ namespace GameDev3.Project
 
         public GameObject pauseMenuUI;
         public GameObject optionMenuUI;
+        public GameObject HTPMenuUI;
+
 
         void Update()
         {
@@ -30,6 +32,7 @@ namespace GameDev3.Project
         {
             pauseMenuUI.SetActive(false);
             optionMenuUI.SetActive(false);
+            HTPMenuUI.SetActive(false);
             Time.timeScale = 1f;
             GameIsPaused = false;
         }
@@ -37,6 +40,15 @@ namespace GameDev3.Project
         {
             pauseMenuUI.SetActive(false);
             optionMenuUI.SetActive(true);
+            HTPMenuUI.SetActive(false);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
+        public void Howtoplay()
+        {
+            optionMenuUI.SetActive(false);
+            pauseMenuUI.SetActive(false);
+            HTPMenuUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsPaused = true;
         }
@@ -44,10 +56,11 @@ namespace GameDev3.Project
         {
             optionMenuUI.SetActive(false);
             pauseMenuUI.SetActive(true);
+            HTPMenuUI.SetActive(false);
             Time.timeScale = 0f;
             GameIsPaused = true;
         }
-        void Pause()
+        public void Pause()
         {
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;

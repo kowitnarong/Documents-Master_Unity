@@ -22,6 +22,7 @@ namespace GameDev3.Project
 
         void Start()
         {
+            GameIsTimeOut = false;
             getValue(DocOrder);
         }
 

@@ -15,5 +15,10 @@ namespace GameDev3.Project
             SceneManager.LoadScene(sceneID);
             countOfPlayer = Player;
         }
+
+        public void BackMainMenu()
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
     }
 }

@@ -35,5 +35,10 @@ namespace GameDev3.Project
                     break;
             }
         }
+
+        public void BackSelectPlayer()
+        {
+            SceneManager.LoadScene("PlayerSelect");
+        }
     }
 }

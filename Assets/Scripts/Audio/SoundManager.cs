@@ -14,10 +14,18 @@ namespace GameDev3.Project
         public Slider m_SliderSFXVolume;
         public Slider m_SliderUIVolume;
 
+        void Awake()
+        {
+            GetMasterVolume();
+            GetBGMVolume();
+            GetSFXVolume();
+            GetUIVolume();
+        }
         void Start()
         {
             InitialiseVolumes();
         }
+
         private void InitialiseVolumes()
         {
             SetMasterVolume(m_SoundSettings.MasterVolume);
@@ -25,6 +33,27 @@ namespace GameDev3.Project
             SetSFXVolume(m_SoundSettings.SFXVolume);
             SetUIVolume(m_SoundSettings.UIVolume);
         }
+
+        private void GetMasterVolume()
+        {
+            m_SliderMasterVolume.value = m_SoundSettings.MasterVolume;
+        }
+
+        private void GetBGMVolume()
+        {
+            m_SliderBGMVolume.value = m_SoundSettings.BGMVolume;
+        }
+
+        private void GetSFXVolume()
+        {
+            m_SliderSFXVolume.value = m_SoundSettings.SFXVolume;
+        }
+
+        private void GetUIVolume()
+        {
+            m_SliderUIVolume.value = m_SoundSettings.UIVolume;
+        }
+
         public void SetMasterVolume(float vol)
         {
             //Set float to the audiomixer

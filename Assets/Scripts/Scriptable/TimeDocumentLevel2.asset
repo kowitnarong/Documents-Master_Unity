@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20711b29a5c8b7a46a477e16dd2f2cde, type: 3}
   m_Name: TimeDocumentLevel2
   m_EditorClassIdentifier: 
-  Doc1TimeEasy: 148
+  Doc1TimeEasy: 158
   Doc2TimeEasy: 111
   Doc3TimeEasy: 91
   Doc4TimeEasy: 0
-  Doc1TimeNormal: 149
+  Doc1TimeNormal: 159
   Doc2TimeNormal: 112
   Doc3TimeNormal: 92
   Doc4TimeNormal: 0
-  Doc1TimeHard: 150
+  Doc1TimeHard: 160
   Doc2TimeHard: 113
   Doc3TimeHard: 93
   Doc4TimeHard: 0

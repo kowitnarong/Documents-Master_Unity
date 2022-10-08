@@ -17,6 +17,9 @@ namespace GameDev3.Project
         public SummaryScoreScriptable Level2;
         public SummaryScoreScriptable Level3;
 
+        public GameObject restartButton;
+        public GameObject NextlvlButton;
+
         void Start()
         {
             _Score = Score.ScoreGame;
@@ -26,6 +29,21 @@ namespace GameDev3.Project
             textScore = "Score : " + _Score.ToString(); ;
             textElementScore.text = textScore;
             CalculateStar();
+            SetButton();
+        }
+
+        void SetButton()
+        {
+            if (textStar == "0 Star")
+            {
+                restartButton.SetActive(true);
+                NextlvlButton.SetActive(false);
+            }
+            else
+            {
+                restartButton.SetActive(false);
+                NextlvlButton.SetActive(true);
+            }
         }
 
         void CalculateStar()
