@@ -132,14 +132,21 @@ namespace GameDev3.Project
             {
                 foreach (Sound s in sounds)
                 {
-                    s.source.Pause();
+                    //Debug.Log(s.source.outputAudioMixerGroup.name);
+                    if (s.source.outputAudioMixerGroup.name != "UI")
+                    {
+                        s.source.Pause();
+                    }
                 }
             }
             else
             {
                 foreach (Sound s in sounds)
                 {
-                    s.source.UnPause();
+                    if (s.source.outputAudioMixerGroup.name != "UI")
+                    {
+                        s.source.UnPause();
+                    }  
                 }
             }
 

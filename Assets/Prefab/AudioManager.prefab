@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Audio
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -157,6 +157,46 @@ MonoBehaviour:
     spatial: 0
     loop: 0
     source: {fileID: 0}
+  - name: Clicked
+    clip: {fileID: 8300000, guid: 6535900781acd48419e600598064bda2, type: 3}
+    mixerGroup: {fileID: -2848683510013370277, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.2
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Hover
+    clip: {fileID: 8300000, guid: 4012461a05385424ca5b905a10394036, type: 3}
+    mixerGroup: {fileID: -2848683510013370277, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.2
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Phonebooth
+    clip: {fileID: 8300000, guid: c1d32e616fdf2f3469b175f1343790c1, type: 3}
+    mixerGroup: {fileID: 29516861310412515, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Cabinet
+    clip: {fileID: 8300000, guid: f84a99d2cc6c19645beea63a756bf928, type: 3}
+    mixerGroup: {fileID: 29516861310412515, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Star
+    clip: {fileID: 8300000, guid: 67022defa28f9aa498282861000e46ca, type: 3}
+    mixerGroup: {fileID: -2848683510013370277, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
   Level1:
     name: BG_Scene1
     clip: {fileID: 8300000, guid: d4a05f7a77b412e4ea78d0fb4d866cd7, type: 3}
@@ -193,4 +233,3 @@ MonoBehaviour:
     spatial: 0
     loop: 1
     source: {fileID: 0}
-  BGVolume: 0.1

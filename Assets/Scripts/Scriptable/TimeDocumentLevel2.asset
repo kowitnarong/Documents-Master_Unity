@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: TimeDocumentLevel2
   m_EditorClassIdentifier: 
   Doc1TimeEasy: 158
-  Doc2TimeEasy: 111
-  Doc3TimeEasy: 91
+  Doc2TimeEasy: 159
+  Doc3TimeEasy: 160
   Doc4TimeEasy: 0
-  Doc1TimeNormal: 159
+  Doc1TimeNormal: 111
   Doc2TimeNormal: 112
-  Doc3TimeNormal: 92
+  Doc3TimeNormal: 113
   Doc4TimeNormal: 0
-  Doc1TimeHard: 160
-  Doc2TimeHard: 113
+  Doc1TimeHard: 91
+  Doc2TimeHard: 92
   Doc3TimeHard: 93
   Doc4TimeHard: 0
   TimeDeduct2Player: 15

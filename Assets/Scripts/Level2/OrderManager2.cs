@@ -46,7 +46,7 @@ namespace GameDev3.Project
                     }
                     else if (RanOrder1 != RanOrder2)
                     {
-                        Debug.Log("ran1 :" + RanOrder1);
+                        //Debug.Log("ran1 :" + RanOrder1);
                         RandomOrder1 = false;
                     }
                 }
@@ -63,7 +63,7 @@ namespace GameDev3.Project
                     }
                     else if (RanOrder2 != RanOrder1)
                     {
-                        Debug.Log("ran2 :" + RanOrder2);
+                        //Debug.Log("ran2 :" + RanOrder2);
                         RandomOrder2 = false;
                     }
                 }
