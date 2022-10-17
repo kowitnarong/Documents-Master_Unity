@@ -41,9 +41,14 @@ namespace GameDev3.Project
 
         public ParticleSystem dust;
 
+        private Animator animator;
+        private BlinkEffect effect;
+
         private void Awake()
         {
             playerControls = new PlayerControl();
+            animator = GetComponentInChildren<Animator>();
+            effect = GetComponentInChildren<BlinkEffect>();
         }
 
         private void Start()
@@ -94,8 +99,13 @@ namespace GameDev3.Project
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                     transform.rotation = Quaternion.Euler(0f, angle, 0f);
-                   
+                    animator.SetTrigger("RunningTrigger");
+                    animator.SetBool("RunningBool", true);
                     CreateDust();
+                }
+                else
+                {
+                    animator.SetBool("RunningBool", false);
                 }
                 direction.y -= _gravity;
                 controller.Move(direction * speed * Time.deltaTime);
@@ -114,12 +124,18 @@ namespace GameDev3.Project
                     float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                     transform.rotation = Quaternion.Euler(0f, angle, 0f);
-   
+                    animator.SetTrigger("RunningTrigger");
+                    animator.SetBool("RunningBool", true);
                     CreateDust();
+                }
+                else
+                {
+                    animator.SetBool("RunningBool", false);
                 }
                 direction.y -= _gravity;
                 controller.Move(direction * speed * Time.deltaTime);
             }
+
             if (speed == 13 && speedTurnBack == false)
             {
                 Invoke("defaultSpeed", 8);
@@ -138,6 +154,8 @@ namespace GameDev3.Project
 
         void SpawnPlayer1()
         {
+            animator.SetBool("RunningBool", false);
+            effect.speed = 3;
             Player1.transform.position = _Player1;
             Player1.transform.rotation = Quaternion.identity;
             var inventory = GetComponent<Inventory>();
@@ -148,6 +166,8 @@ namespace GameDev3.Project
 
         void SpawnPlayer2()
         {
+            animator.SetBool("RunningBool", false);
+            effect.speed = 3;
             Player2.transform.position = _Player2;
             Player2.transform.rotation = Quaternion.identity;
             var inventory = GetComponent<Inventory>();
@@ -158,11 +178,13 @@ namespace GameDev3.Project
 
         void Move1()
         {
+            effect.speed = 0;
             Spawn1 = false;
         }
 
         void Move2()
         {
+            effect.speed = 0;
             Spawn2 = false;
         }
     }

@@ -11,6 +11,7 @@ namespace GameDev3.Project
         [Header("----------------------------")]
         public TimeCount timeCount;
         private bool Working = false;
+        public GameObject image;
 
 
         void Start()
@@ -30,7 +31,7 @@ namespace GameDev3.Project
                     inventory.m_ItemInventory.Clear();
                     timeSystem.Working = true;
                     FindObjectOfType<AudioManager>().Play("Shredder");
-
+                    image.SetActive(false);
                     Working = true;
                     Invoke("DeviceFinished", SpeedDevice);
                 }
@@ -51,6 +52,7 @@ namespace GameDev3.Project
         {
             var timeSystem = this.gameObject.GetComponent<TimeSystem>();
             timeSystem.Working = false;
+            image.SetActive(true);
             Working = false;
         }
     }

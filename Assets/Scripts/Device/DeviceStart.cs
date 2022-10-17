@@ -14,6 +14,7 @@ namespace GameDev3.Project
         public TimeCount timeCount;
         private bool Working = false;
         private bool isFinished = false;
+        public GameObject image;
 
         void Start()
         {
@@ -30,6 +31,7 @@ namespace GameDev3.Project
                 {
                     timeSystem.Working = true;
                     FindObjectOfType<AudioManager>().Play("RecieveDevice");
+                    image.SetActive(false);
                     Working = true;
                     Invoke("DeviceFinished", SpeedDevice);
                 }
@@ -38,6 +40,7 @@ namespace GameDev3.Project
                 {
                     inventory.AddItem(DeviceID);
                     FindObjectOfType<AudioManager>().Play("PickUpItem");
+                    image.SetActive(true);
                     timeSystem.Working = false;
                     isFinished = false;
                     Working = false;

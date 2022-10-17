@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d1f814b379c01004a93b3e8474317458, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 3ed8a2edfab0b9241bd712d667d1f80c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -6749,6 +6749,7 @@ MonoBehaviour:
   DeviceID: Device3
   SpeedDevice: 4
   timeCount: {fileID: 2146732535}
+  image: {fileID: 0}
 --- !u!1 &189482831
 GameObject:
   m_ObjectHideFlags: 0
@@ -9100,6 +9101,7 @@ MonoBehaviour:
   DeviceID: Device5
   SpeedDevice: 4
   timeCount: {fileID: 1712749717}
+  image: {fileID: 0}
 --- !u!1 &349524036
 GameObject:
   m_ObjectHideFlags: 0
@@ -11016,6 +11018,7 @@ MonoBehaviour:
   DeviceID: Device6
   SpeedDevice: 4
   timeCount: {fileID: 726385432}
+  image: {fileID: 0}
 --- !u!1 &512625571
 GameObject:
   m_ObjectHideFlags: 0
@@ -11569,6 +11572,7 @@ MonoBehaviour:
   DeviceID: Device5
   SpeedDevice: 4
   timeCount: {fileID: 1090614823}
+  image: {fileID: 0}
 --- !u!1 &531290308
 GameObject:
   m_ObjectHideFlags: 0
@@ -12376,6 +12380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeedDevice: 4
   timeCount: {fileID: 988561536}
+  image: {fileID: 0}
 --- !u!1 &603630971
 GameObject:
   m_ObjectHideFlags: 0
@@ -18601,6 +18606,7 @@ MonoBehaviour:
   DeviceID: Device7
   SpeedDevice: 4
   timeCount: {fileID: 1487998585}
+  image: {fileID: 0}
 --- !u!1 &712106155
 GameObject:
   m_ObjectHideFlags: 0
@@ -21332,6 +21338,7 @@ MonoBehaviour:
   DeviceID: Device7
   SpeedDevice: 4
   timeCount: {fileID: 2057866455}
+  image: {fileID: 0}
 --- !u!1 &988561532
 GameObject:
   m_ObjectHideFlags: 0
@@ -23182,6 +23189,7 @@ MonoBehaviour:
   DeviceID: Device8
   SpeedDevice: 4
   timeCount: {fileID: 1182888947}
+  image: {fileID: 0}
 --- !u!1 &1165112123
 GameObject:
   m_ObjectHideFlags: 0
@@ -23405,6 +23413,7 @@ MonoBehaviour:
   DeviceID: Device6
   SpeedDevice: 4
   timeCount: {fileID: 1801297629}
+  image: {fileID: 0}
 --- !u!1 &1172249526
 GameObject:
   m_ObjectHideFlags: 0
@@ -23946,6 +23955,7 @@ MonoBehaviour:
   DeviceID: Device1
   SpeedDevice: 4
   timeCount: {fileID: 215022095}
+  image: {fileID: 0}
 --- !u!1 &1189237053
 GameObject:
   m_ObjectHideFlags: 0
@@ -24901,6 +24911,7 @@ MonoBehaviour:
   DeviceID: Device8
   SpeedDevice: 4
   timeCount: {fileID: 607539340}
+  image: {fileID: 0}
 --- !u!1 &1295479517
 GameObject:
   m_ObjectHideFlags: 0
@@ -26022,6 +26033,7 @@ MonoBehaviour:
   DeviceID: Device2
   SpeedDevice: 4
   timeCount: {fileID: 2073242653}
+  image: {fileID: 0}
 --- !u!1 &1413349592
 GameObject:
   m_ObjectHideFlags: 0
@@ -27000,6 +27012,7 @@ MonoBehaviour:
   DeviceID: Device1
   SpeedDevice: 4
   timeCount: {fileID: 324735249}
+  image: {fileID: 0}
 --- !u!1 &1557756106
 GameObject:
   m_ObjectHideFlags: 0
@@ -29730,6 +29743,7 @@ MonoBehaviour:
   DeviceID: Device3
   SpeedDevice: 4
   timeCount: {fileID: 1146105885}
+  image: {fileID: 0}
 --- !u!1 &1894557080
 GameObject:
   m_ObjectHideFlags: 0
@@ -31391,6 +31405,7 @@ MonoBehaviour:
   DeviceID: Device2
   SpeedDevice: 4
   timeCount: {fileID: 1457508434}
+  image: {fileID: 0}
 --- !u!1 &2029247781
 GameObject:
   m_ObjectHideFlags: 0
