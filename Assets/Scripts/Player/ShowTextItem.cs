@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace GameDev3.Project
 {
@@ -10,6 +12,14 @@ namespace GameDev3.Project
     {
         public TextMeshProUGUI textItem;
         public Inventory PlayerInventory;
+        private Image IconImage;
+        private string CurrentItem;
+        public IconInputSetting iconSprite;
+
+        private void Start()
+        {
+            IconImage = GetComponentInChildren<Image>();
+        }
 
         private void Update()
         {
@@ -19,18 +29,62 @@ namespace GameDev3.Project
                 {
                     if (o.ToString() == "DestroyItem")
                     {
-                        textItem.SetText("Trash");
+                        CurrentItem = "Trash";
+                        IconImage.color = new Color(255, 255, 255, 255);
+                        CheckSceneLevel();
                     }
                     else
                     {
-                        textItem.SetText(o.ToString().Substring(6, 1));
+                        CurrentItem = o.ToString().Substring(6, 1);
+                        IconImage.color = new Color(255, 255, 255, 255);
+                        CheckSceneLevel();
                     }
                 }
             }
             else
             {
-                textItem.SetText("");
-            } 
+                CurrentItem = "";
+                CheckSceneLevel();
+            }
+        }
+
+        private void CheckSceneLevel()
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+
+            if (sceneName == "Level1")
+            {
+                SetIconItemLevel1();
+            }
+        }
+
+        private void SetIconItemLevel1()
+        {
+            switch (CurrentItem)
+            {
+                case "Trash":
+                    IconImage.sprite = iconSprite.icon_9;
+                    break;
+                case "1":
+                    IconImage.sprite = iconSprite.icon_1;
+                    break;
+                case "3":
+                    IconImage.sprite = iconSprite.icon_2;
+                    break;
+                case "2":
+                    IconImage.sprite = iconSprite.icon_5;
+                    break;
+                case "4":
+                    IconImage.sprite = iconSprite.icon_4;
+                    break;
+                case "5":
+                    IconImage.sprite = iconSprite.icon_7;
+                    break;
+                case "":
+                    IconImage.color = new Color(0, 0, 0, 0);
+                    break;
+            }
         }
     }
 }

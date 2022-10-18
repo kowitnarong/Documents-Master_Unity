@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8838817a2e3f0b940b64b7aa3fe1f467, type: 3}
+  m_Name: IconInputSettingPreset1
+  m_EditorClassIdentifier: 
+  icon_1: {fileID: 21300000, guid: ec9297fd7456c364b86e0d5ea56cc291, type: 3}
+  icon_2: {fileID: 21300000, guid: f6d9d397f2fed6446927531ba19fdd0f, type: 3}
+  icon_3: {fileID: 21300000, guid: c3fb6a676b6778a4d86c662a6dd52b27, type: 3}
+  icon_4: {fileID: 21300000, guid: fc5c0608495e12e4a8d5782e4cb29ed0, type: 3}
+  icon_5: {fileID: 21300000, guid: 6590576850ca50243953285c36c0727c, type: 3}
+  icon_6: {fileID: 21300000, guid: 81ee05e9ab20c394bb54ae192d2ce0f7, type: 3}
+  icon_7: {fileID: 21300000, guid: 78deb599c6118224aa82f799d4381514, type: 3}
+  icon_8: {fileID: 21300000, guid: 44527acddf5184546bbb667c911b4b4c, type: 3}
+  icon_9: {fileID: 21300000, guid: 0b697d28b296d02408650c4a0c90a282, type: 3}
