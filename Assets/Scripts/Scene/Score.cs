@@ -27,7 +27,7 @@ namespace GameDev3.Project
             {
                 ScoreGame = 0;
             }
-           // ScoreGame = score;
+            //ScoreGame = score;
         }
     }
 }
