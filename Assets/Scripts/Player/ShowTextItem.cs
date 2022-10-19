@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +9,6 @@ namespace GameDev3.Project
 {
     public class ShowTextItem : MonoBehaviour
     {
-        public TextMeshProUGUI textItem;
         public Inventory PlayerInventory;
         private Image IconImage;
         private string CurrentItem;
@@ -57,9 +55,41 @@ namespace GameDev3.Project
             {
                 SetIconItemLevel1();
             }
+            else if (sceneName == "Level2")
+            {
+                SetIconItemLevel2();
+            }
         }
 
         private void SetIconItemLevel1()
+        {
+            switch (CurrentItem)
+            {
+                case "Trash":
+                    IconImage.sprite = iconSprite.icon_9;
+                    break;
+                case "1":
+                    IconImage.sprite = iconSprite.icon_1;
+                    break;
+                case "3":
+                    IconImage.sprite = iconSprite.icon_2;
+                    break;
+                case "2":
+                    IconImage.sprite = iconSprite.icon_5;
+                    break;
+                case "4":
+                    IconImage.sprite = iconSprite.icon_4;
+                    break;
+                case "5":
+                    IconImage.sprite = iconSprite.icon_7;
+                    break;
+                case "":
+                    IconImage.color = new Color(0, 0, 0, 0);
+                    break;
+            }
+        }
+
+        private void SetIconItemLevel2()
         {
             switch (CurrentItem)
             {

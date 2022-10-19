@@ -20,7 +20,7 @@ namespace GameDev3.Project
         public Vector3 offset = new Vector3(0f, 0f, 0f);
 
         // 1 player distance 18 height 38
-        // 2 player distance 16.2 height 42.9 y 40 z 1.6
+        // 2 player distance 25 height 42.9 y 40 z 1.6
 
         void LateUpdate()
         {
@@ -83,7 +83,7 @@ namespace GameDev3.Project
                 targets.Add(GameObject.FindGameObjectWithTag("Player1").transform);
                 targets.Add(GameObject.FindGameObjectWithTag("Player2").transform);
 
-                distance = 16.2f;
+                distance = 25f;
                 height = 42.9f;
                 offset = new Vector3(0f, 40f, 1.6f);
             }
