@@ -197,19 +197,31 @@ namespace GameDev3.Project
         {
             if (PlaySoundLevel1)
             {
-                Level1.source.Play();
+                if (Level1.source.isPlaying == false)
+                {
+                    Level1.source.Play();
+                }
             }
             else if (PlaySoundLevel2)
             {
-                Level2.source.Play();
+                if (Level2.source.isPlaying == false)
+                {
+                    Level2.source.Play();
+                }
             }
             else if (PlaySoundLevel3)
             {
-                Level3.source.Play();
+                if (Level3.source.isPlaying == false)
+                {
+                    Level3.source.Play();
+                }
             }
             else if (PlaySoundMenu)
             {
-                Menu.source.Play();
+                if (Menu.source.isPlaying == false)
+                {
+                    Menu.source.Play();
+                }
             }
         }
 
@@ -217,7 +229,10 @@ namespace GameDev3.Project
         {
             if (PlaySoundLevel1)
             {
-                Level1.source.Play();
+                if (Level1.source.isPlaying == false)
+                {
+                    Level1.source.Play();
+                }
                 Level2.source.Stop();
                 Level3.source.Stop();
                 Menu.source.Stop();
@@ -225,7 +240,10 @@ namespace GameDev3.Project
             else if (PlaySoundLevel2)
             {
                 Level1.source.Stop();
-                Level2.source.Play();
+                if (Level2.source.isPlaying == false)
+                {
+                    Level2.source.Play();
+                }
                 Level3.source.Stop();
                 Menu.source.Stop();
             }
@@ -233,7 +251,10 @@ namespace GameDev3.Project
             {
                 Level1.source.Stop();
                 Level2.source.Stop();
-                Level3.source.Play();
+                if (Level3.source.isPlaying == false)
+                {
+                    Level3.source.Play();
+                }
                 Menu.source.Stop();
             }
             else if (PlaySoundMenu)
@@ -241,7 +262,10 @@ namespace GameDev3.Project
                 Level1.source.Stop();
                 Level2.source.Stop();
                 Level3.source.Stop();
-                Menu.source.Play();
+                if (Menu.source.isPlaying == false)
+                {
+                    Menu.source.Play();
+                }
             }
         }
     }

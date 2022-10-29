@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SummaryScore.unity
     guid: 22553ff5ecff7e744b8601ce4b1efe5e
+  - enabled: 1
+    path: Assets/Scenes/OptionScene.unity
+    guid: 4ff12267cefa4ba46943069c5ab5c4fc
+  - enabled: 1
+    path: Assets/Scenes/HTPScene.unity
+    guid: ab2777a515f13eb40980c1a8e17e79a7
+  - enabled: 1
+    path: Assets/Scenes/PauseScene.unity
+    guid: 21a0ff4ab509a7a40b7dea530fc5fe6c
   m_configObjects: {}
