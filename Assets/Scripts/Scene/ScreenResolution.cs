@@ -10,7 +10,7 @@ public class ScreenResolution : MonoBehaviour
 
     public static string ResoSelected;
     public static bool Fullscreen;
-    // Start is called before the first frame update
+    
     void Start()
     {
         ResoDropdown.options.Clear();
@@ -26,7 +26,7 @@ public class ScreenResolution : MonoBehaviour
             ResoDropdown.options.Add(new Dropdown.OptionData() { text = item });
         }
 
-        //DropDownSelected(ResoDropdown);
+
         if (ResoSelected == "1,366 × 768")
         {
             ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,366 × 768");
@@ -43,8 +43,6 @@ public class ScreenResolution : MonoBehaviour
         FullScreenToggle.isOn = Fullscreen;
 
         ResoDropdown.onValueChanged.AddListener(delegate { DropDownSelected(ResoDropdown); });
-
-        //ToggleValueChanged(FullScreenToggle);
 
         FullScreenToggle.onValueChanged.AddListener(delegate {
             ToggleValueChanged(FullScreenToggle);

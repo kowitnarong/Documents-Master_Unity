@@ -99,17 +99,23 @@ namespace GameDev3.Project
                 case "1":
                     IconImage.sprite = iconSprite.icon_1;
                     break;
-                case "3":
-                    IconImage.sprite = iconSprite.icon_2;
-                    break;
                 case "2":
-                    IconImage.sprite = iconSprite.icon_5;
+                    IconImage.sprite = iconSprite.icon_6;
                     break;
-                case "4":
+                case "3":
                     IconImage.sprite = iconSprite.icon_4;
                     break;
                 case "5":
                     IconImage.sprite = iconSprite.icon_7;
+                    break;
+                case "6":
+                    IconImage.sprite = iconSprite.icon_3;
+                    break;
+                case "7":
+                    IconImage.sprite = iconSprite.icon_5;
+                    break;
+                case "8":
+                    IconImage.sprite = iconSprite.icon_8;
                     break;
                 case "":
                     IconImage.color = new Color(0, 0, 0, 0);
