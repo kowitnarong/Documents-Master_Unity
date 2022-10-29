@@ -68,7 +68,7 @@ namespace GameDev3.Project
         void Start()
         {
             ////////////////////////////////////
-            SelectPlayer.countOfPlayer = 2;
+            //SelectPlayer.countOfPlayer = 2;
             ////////////////////////////////////
             if (SelectPlayer.countOfPlayer == 1)
             {

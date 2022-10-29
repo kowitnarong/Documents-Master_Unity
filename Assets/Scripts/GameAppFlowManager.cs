@@ -52,7 +52,7 @@ namespace GameDev3.Project
         public void ExitGame()
         {
             Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
 
         public void TryAgain()
