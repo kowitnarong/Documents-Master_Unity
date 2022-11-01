@@ -305,7 +305,7 @@ namespace GameDev3.Project
         {
             if (setStar1 == false)
             {
-                SetStar1();
+                Invoke("SetStar1", 2f);
                 setStar1 = true;
             }
         }
@@ -313,8 +313,8 @@ namespace GameDev3.Project
         {
             if (setStar2 == false)
             {
-                SetStar1();
-                Invoke("SetStar2", 1f);
+                Invoke("SetStar1", 2f);
+                Invoke("SetStar2", 3f);
                 setStar2 = true;
             }
         }
@@ -322,9 +322,9 @@ namespace GameDev3.Project
         {
             if (setStar3 == false)
             {
-                SetStar1();
-                Invoke("SetStar2", 1f);
-                Invoke("SetStar3", 2f);
+                Invoke("SetStar1", 2f);
+                Invoke("SetStar2", 3f);
+                Invoke("SetStar3", 4f);
                 setStar3 = true;
             }
         }

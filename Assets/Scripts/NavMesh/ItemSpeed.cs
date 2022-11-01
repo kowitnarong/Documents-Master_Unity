@@ -6,7 +6,6 @@ namespace GameDev3.Project
 {
     public class ItemSpeed : MonoBehaviour
     {
-        private Vector3 _rotation = new Vector3(0f, 100f, 0f);
         public GameObject Player1;
         public GameObject Player2;
         float direction;
@@ -25,7 +24,6 @@ namespace GameDev3.Project
             {
                 transform.position = new Vector3(transform.position.x + direction, transform.position.y + 0.02f, transform.position.z + direction);
             }
-            transform.Rotate(_rotation * Time.deltaTime);
         }
 
         private void OnCollisionEnter(Collision collision)

@@ -27,7 +27,7 @@ namespace GameDev3.Project
 
         public IEnumerator LoadSummaryScene()
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
             SceneManager.LoadScene(IndexSceneID);
         }
     }

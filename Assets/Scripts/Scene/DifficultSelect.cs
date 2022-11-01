@@ -11,13 +11,21 @@ namespace GameDev3.Project
         public Level level;
         static public string LevelSelect;
         private string _tempLevel;
-        // Start is called before the first frame update
+
+        public Animator Transition;
+
+        public void TransitionIn()
+        {
+            Transition.SetBool("End", true);
+        }
+
         public void SetPlayerThenMove(int sceneID)
         {
-            SceneManager.LoadScene(sceneID);
             SelectLevel(level);
             LevelSelect = _tempLevel;
             Debug.Log(LevelSelect);
+            TransitionIn();
+            StartCoroutine(LoadLevelScene(sceneID));
         }
 
         public void SelectLevel(Level level)
@@ -36,5 +44,10 @@ namespace GameDev3.Project
             }
         }
 
+        public IEnumerator LoadLevelScene(int sceneID)
+        {
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(sceneID);
+        }
     }
 }

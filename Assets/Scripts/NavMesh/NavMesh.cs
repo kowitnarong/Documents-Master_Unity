@@ -19,17 +19,25 @@ namespace GameDev3.Project
         [SerializeField] private Transform movePositionTranform9;
         [SerializeField] private Transform movePositionTranform10;
 
+        
+
         public int randomSpot;
         int _randomSpot;
         private NavMeshAgent navMeshAgent;
+        private Animator animator;
+
 
         void Awake()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
+            animator = GetComponentInChildren<Animator>();
         }
+
         void Start()
         {
             randomSpot = Random.Range(1, 11);
+            animator.SetTrigger("RunningTrigger");
+            animator.SetBool("RunningBool", true);
             StartCoroutine(RandomSpot());
         }
 
@@ -69,6 +77,18 @@ namespace GameDev3.Project
                     navMeshAgent.destination = movePositionTranform10.position;
                     break;
             }
+
+            if (!navMeshAgent.pathPending)
+            {
+                if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+                {
+                    if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
+                    {
+                        animator.SetBool("RunningBool", false);
+                    }
+                }
+            }
+
         }
 
         public IEnumerator RandomSpot()
@@ -79,6 +99,8 @@ namespace GameDev3.Project
                 _randomSpot = Random.Range(1, 11);
             } while (_randomSpot == randomSpot);
             randomSpot = _randomSpot;
+            animator.SetTrigger("RunningTrigger");
+            animator.SetBool("RunningBool", true);
             StartCoroutine(RandomSpot());
         }
     }
