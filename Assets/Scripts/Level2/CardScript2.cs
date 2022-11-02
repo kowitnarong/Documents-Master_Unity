@@ -210,7 +210,13 @@ namespace GameDev3.Project
                 Card4Finish = false;
             }
         }
-
+        
+        public void PopupScoreMinus(int score)
+        {
+            FindObjectOfType<PopupScore>().CurrentScorePopup = score;
+            FindObjectOfType<PopupScore>().PopupScoreTextMinus();
+        }
+        
         //1
         public IEnumerator Card1Idle()
         {
@@ -242,6 +248,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder1 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
             else if (orderManager.RanOrder2 == 1)
             {
@@ -250,6 +257,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder2 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
         }
         public IEnumerator Card1Random()
@@ -298,6 +306,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder1 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
             else if (orderManager.RanOrder2 == 2)
             {
@@ -306,6 +315,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder2 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
         }
         public IEnumerator Card2Random()
@@ -354,6 +364,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder1 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
             else if (orderManager.RanOrder2 == 3)
             {
@@ -362,6 +373,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder2 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
         }
         public IEnumerator Card3Random()
@@ -410,6 +422,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder1 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
             else if (orderManager.RanOrder2 == 4)
             {
@@ -418,6 +431,7 @@ namespace GameDev3.Project
                 yield return new WaitForSeconds(2f);
                 orderManager.RandomOrder2 = true;
                 Score.ScoreGame += -50;
+                PopupScoreMinus(50);
             }
         }
         public IEnumerator Card4Random()

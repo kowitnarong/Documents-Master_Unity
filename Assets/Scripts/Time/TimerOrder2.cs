@@ -20,6 +20,9 @@ namespace GameDev3.Project
 
         public Text TimerTxt;
 
+        private bool playSoundClock = false;
+        private bool BlinkEffect = false;
+
         void Start()
         {
             GameIsTimeOut = false;
@@ -34,6 +37,16 @@ namespace GameDev3.Project
                 {
                     TimeLeft -= Time.deltaTime;
                     updateTimer(TimeLeft);
+                    if (TimeStart && TimeLeft < 10 && playSoundClock == false)
+                    {
+                        FindObjectOfType<AudioManager>().Play("Clock");
+                        playSoundClock = true;
+                    }
+                    if (TimeLeft < 10 && BlinkEffect == false)
+                    {
+                        OnBlinkEffect();
+                        BlinkEffect = true;
+                    }
                 }
                 else
                 {
@@ -45,32 +58,50 @@ namespace GameDev3.Project
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
+                    OffBlinkEffect();
                 }
                 if (cardScript2.Card1Finish == true && _TimeLeft == timeDocumentSet.Timer1 && DocOrder == 1)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
+                    OffBlinkEffect();
                 }
                 else if (cardScript2.Card2Finish == true && _TimeLeft == timeDocumentSet.Timer2 && DocOrder == 2)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
+                    OffBlinkEffect();
                 }
                 else if (cardScript2.Card3Finish == true && _TimeLeft == timeDocumentSet.Timer3 && DocOrder == 3)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
+                    OffBlinkEffect();
                 }
                 else if (cardScript2.Card4Finish == true && _TimeLeft == timeDocumentSet.Timer4 && DocOrder == 4)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
+                    OffBlinkEffect();
                 }
             }
+        }
+
+        void OnBlinkEffect()
+        {
+            var animation = GetComponent<BlinkEffectImage>();
+            animation.speed = 4;
+        }
+
+        void OffBlinkEffect()
+        {
+            var animation = GetComponent<BlinkEffectImage>();
+            animation.speed = 0;
+            BlinkEffect = false;
         }
 
         void updateTimer(float currentTime)

@@ -14,6 +14,7 @@ namespace GameDev3.Project
             if (orderManager.Order1Enable == true)
             {
                 Score.ScoreGame += ScorePath1;
+                PopupScorePlus(ScorePath1);
                 FindObjectOfType<AudioManager>().Play("SentDevice");
                 if (orderManager.RanOrder1 == 1)
                 {
@@ -29,6 +30,7 @@ namespace GameDev3.Project
             else if (orderManager.Order1Enable == false)
             {
                 Score.ScoreGame -= (ScorePath1 / 2);
+                PopupScoreMinus(ScorePath1 / 2);
             }
         }
         public override void AddScore2()
@@ -36,6 +38,7 @@ namespace GameDev3.Project
             if (orderManager.Order2Enable == true)
             {
                 Score.ScoreGame += ScorePath2;
+                PopupScorePlus(ScorePath2);
                 FindObjectOfType<AudioManager>().Play("SentDevice");
                 if (orderManager.RanOrder1 == 2)
                 {
@@ -51,6 +54,7 @@ namespace GameDev3.Project
             else if (orderManager.Order2Enable == false)
             {
                 Score.ScoreGame -= (ScorePath2 / 2);
+                PopupScoreMinus(ScorePath2 / 2);
             }
         }
         public override void AddScore3()
@@ -58,6 +62,7 @@ namespace GameDev3.Project
             if (orderManager.Order3Enable == true)
             {
                 Score.ScoreGame += ScorePath3;
+                PopupScorePlus(ScorePath3);
                 FindObjectOfType<AudioManager>().Play("SentDevice");
                 if (orderManager.RanOrder1 == 3)
                 {
@@ -73,6 +78,7 @@ namespace GameDev3.Project
             else if (orderManager.Order3Enable == false)
             {
                 Score.ScoreGame -= (ScorePath3 / 2);
+                PopupScoreMinus(ScorePath3 / 2);
             }
         }
         public override void AddScore4()
@@ -80,6 +86,7 @@ namespace GameDev3.Project
             if (orderManager.Order4Enable == true)
             {
                 Score.ScoreGame += ScorePath4;
+                PopupScorePlus(ScorePath4);
                 FindObjectOfType<AudioManager>().Play("SentDevice");
                 if (orderManager.RanOrder1 == 4)
                 {
@@ -95,6 +102,7 @@ namespace GameDev3.Project
             else if (orderManager.Order4Enable == false)
             {
                 Score.ScoreGame -= (ScorePath4 / 2);
+                PopupScoreMinus(ScorePath4 / 2);
             }
         }
     }

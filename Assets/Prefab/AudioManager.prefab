@@ -197,6 +197,14 @@ MonoBehaviour:
     spatial: 0
     loop: 0
     source: {fileID: 0}
+  - name: Clock
+    clip: {fileID: 8300000, guid: 4bd64ebc4f65b3c42a61f69bbc23e51a, type: 3}
+    mixerGroup: {fileID: 29516861310412515, guid: 28917bc5c34895e4c8ab136cb938438c, type: 2}
+    volume: 0.4
+    pitch: 1
+    spatial: 0
+    loop: 0
+    source: {fileID: 0}
   Level1:
     name: BG_Scene1
     clip: {fileID: 8300000, guid: d4a05f7a77b412e4ea78d0fb4d866cd7, type: 3}

@@ -77,5 +77,17 @@ namespace GameDev3.Project
         {
             Score.ScoreGame += ScorePath4;
         }
+
+        public void PopupScorePlus(int score)
+        {
+            FindObjectOfType<PopupScore>().CurrentScorePopup = score;
+            FindObjectOfType<PopupScore>().PopupScoreTextPlus();
+        }
+        
+        public void PopupScoreMinus(int score)
+        {
+            FindObjectOfType<PopupScore>().CurrentScorePopup = score;
+            FindObjectOfType<PopupScore>().PopupScoreTextMinus();
+        }
     }
 }
