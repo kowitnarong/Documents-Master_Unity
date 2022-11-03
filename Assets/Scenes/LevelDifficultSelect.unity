@@ -812,9 +812,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 969035173}
-        m_TargetAssemblyTypeName: DifficultSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameDev3.Project.DifficultSelect, Assembly-CSharp
         m_MethodName: SetPlayerThenMove
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -959,9 +959,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1316785875}
-        m_TargetAssemblyTypeName: DifficultSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameDev3.Project.DifficultSelect, Assembly-CSharp
         m_MethodName: SetPlayerThenMove
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1216,9 +1216,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1585093820}
-        m_TargetAssemblyTypeName: DifficultSelect, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameDev3.Project.DifficultSelect, Assembly-CSharp
         m_MethodName: SetPlayerThenMove
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

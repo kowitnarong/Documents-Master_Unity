@@ -10,6 +10,8 @@ namespace GameDev3.Project
         //public int score;
 
         public static string _Level;
+        public static string _LevelCurrent;
+        public static bool isPlay;
 
         public string CurrentLevel;
 

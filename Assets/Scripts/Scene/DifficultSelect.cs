@@ -14,18 +14,29 @@ namespace GameDev3.Project
 
         public Animator Transition;
 
+        private string _sceneID;
+
+        void Start()
+        {
+            if (Score._Level == "MenuScene")
+            {
+                _sceneID = "Level1";
+                Debug.Log(_sceneID);
+            }
+        }
+
         public void TransitionIn()
         {
             Transition.SetBool("End", true);
         }
 
-        public void SetPlayerThenMove(int sceneID)
+        public void SetPlayerThenMove()
         {
             SelectLevel(level);
             LevelSelect = _tempLevel;
             Debug.Log(LevelSelect);
             TransitionIn();
-            StartCoroutine(LoadLevelScene(sceneID));
+            Invoke("LoadScene", 3f);
         }
 
         public void SelectLevel(Level level)
@@ -44,10 +55,9 @@ namespace GameDev3.Project
             }
         }
 
-        public IEnumerator LoadLevelScene(int sceneID)
+        private void LoadScene()
         {
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(sceneID);
+            SceneManager.LoadScene(_sceneID, LoadSceneMode.Single);
         }
     }
 }

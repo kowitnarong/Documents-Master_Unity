@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 namespace GameDev3.Project
 {
@@ -12,6 +13,69 @@ namespace GameDev3.Project
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        }
+
+        public void LoadMainMenu(Animator transition)
+        {
+            Time.timeScale = 1f;
+            Scene currentScene = SceneManager.GetActiveScene();
+            if (currentScene.name != "Level1")
+            {
+                Score._LevelCurrent = currentScene.name;
+                Score.isPlay = true;
+            }
+            if (currentScene.name == "SummaryScore")
+            {
+                if (FindObjectOfType<SummaryScore>().m_textStar != "0 Star")
+                {
+                    Score._LevelCurrent = "Level" + (Int32.Parse(Score._Level.Substring(5, 1)) + 1).ToString();
+                    Score.isPlay = true;
+                }
+                else
+                {
+                    Score._LevelCurrent = Score._Level;
+                    if (Score._Level != "Level1")
+                    {
+                        Score.isPlay = true;
+                    }
+                    else
+                    {
+                        Score.isPlay = false;
+                    }
+                }
+            }
+            transition.SetBool("End", true);
+            Invoke("LoadSceneMenu", 3f);
+        }
+
+        public void LoadSceneStartGame(Animator transition)
+        {
+            if (Score.isPlay)
+            {
+                transition.SetBool("End", true);
+                Invoke("LoadSceneStartDelay", 3f);
+            }
+            else
+            {
+                SceneManager.LoadScene("PlayerSelect", LoadSceneMode.Single);
+            }
+        }
+
+        public void BackToMenu(Animator transition)
+        {
+            transition.SetBool("End", true);
+            Invoke("LoadSceneMenu", 2f);
+        }
+
+        private void LoadSceneStartDelay()
+        {
+            SceneManager.LoadScene(Score._LevelCurrent, LoadSceneMode.Single);
+        }
+
+        private void LoadSceneMenu()
+        {
+            PauseMenu.GameIsPaused = false;
+            SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
         }
 
         public void UnloadScene(string sceneName)

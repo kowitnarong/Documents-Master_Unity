@@ -27525,7 +27525,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &1862674666
 GameObject:
@@ -31125,6 +31125,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 607722228}
     m_Modifications:
+    - target: {fileID: 7179961213983480473, guid: d8587a263182a7a48a7e7f94317de6bf, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7179961213983480474, guid: d8587a263182a7a48a7e7f94317de6bf, type: 3}
       propertyPath: ScorePassLevel
       value: 

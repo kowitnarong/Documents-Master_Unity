@@ -17,6 +17,7 @@ namespace GameDev3.Project
         public Text textElementStar;
         private string textScore;
         private string textStar;
+        [HideInInspector] public string m_textStar;
         private int _Score;
 
         public SummaryScoreScriptable Level1;
@@ -54,11 +55,13 @@ namespace GameDev3.Project
         {
             if (textStar == "0 Star")
             {
+                m_textStar = "0 Star";
                 restartButton.SetActive(true);
                 NextlvlButton.SetActive(false);
             }
             else
             {
+                m_textStar = textStar;
                 restartButton.SetActive(false);
                 NextlvlButton.SetActive(true);
             }
