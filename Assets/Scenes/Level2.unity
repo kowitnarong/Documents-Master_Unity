@@ -5141,6 +5141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locker 01 Wooden Door Open
       objectReference: {fileID: 0}
+    - target: {fileID: 1016066644303756, guid: 2df67b5a61be93b4196b1a5df93813f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4408291068472582, guid: 2df67b5a61be93b4196b1a5df93813f3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -21328,7 +21332,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.66, y: 1.5, z: 0.89}
+  m_Size: {x: 0.69, y: 1.5, z: 1.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1151936221
 MonoBehaviour:
@@ -23371,7 +23375,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.66, y: 1.5, z: 0.89}
+  m_Size: {x: 0.69, y: 1.5, z: 1.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1272401340
 Transform:

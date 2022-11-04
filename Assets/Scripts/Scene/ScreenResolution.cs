@@ -3,134 +3,140 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScreenResolution : MonoBehaviour
+namespace GameDev3.Project
 {
-    public Dropdown ResoDropdown;
-    public Toggle FullScreenToggle;
-
-    public static string ResoSelected;
-    public static bool Fullscreen;
-    
-    void Start()
+    public class ScreenResolution : MonoBehaviour
     {
-        ResoDropdown.options.Clear();
+        public Dropdown ResoDropdown;
+        public Toggle FullScreenToggle;
 
-        List<string> items = new List<string>();
+        public static string ResoSelected;
+        public static bool Fullscreen;
 
-        items.Add("1,366 × 768");
-        items.Add("1,600 × 900");
-        items.Add("1,920 × 1,080");
-
-        foreach (var item in items)
+        void Start()
         {
-            ResoDropdown.options.Add(new Dropdown.OptionData() { text = item });
+            ResoDropdown.options.Clear();
+
+            List<string> items = new List<string>();
+
+            items.Add("1,366 × 768");
+            items.Add("1,600 × 900");
+            items.Add("1,920 × 1,080");
+
+            foreach (var item in items)
+            {
+                ResoDropdown.options.Add(new Dropdown.OptionData() { text = item });
+            }
+
+
+            if (ResoSelected == "1,366 × 768")
+            {
+                ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,366 × 768");
+            }
+            else if (ResoSelected == "1,600 × 900")
+            {
+                ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,600 × 900");
+            }
+            else if (ResoSelected == "1,920 × 1,080")
+            {
+                ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,920 × 1,080");
+            }
+
+            FullScreenToggle.isOn = Fullscreen;
+
+            ResoDropdown.onValueChanged.AddListener(delegate { DropDownSelected(ResoDropdown); });
+
+            FullScreenToggle.onValueChanged.AddListener(delegate
+            {
+                ToggleValueChanged(FullScreenToggle);
+            });
         }
 
+        void DropDownSelected(Dropdown dropdown)
+        {
+            int index = dropdown.value;
 
-        if (ResoSelected == "1,366 × 768")
-        {
-            ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,366 × 768");
-        }
-        else if (ResoSelected == "1,600 × 900")
-        {
-            ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,600 × 900");
-        }
-        else if (ResoSelected == "1,920 × 1,080")
-        {
-            ResoDropdown.value = ResoDropdown.options.FindIndex(option => option.text == "1,920 × 1,080");
+            ResoSelected = dropdown.options[index].text;
+            SetResolution();
         }
 
-        FullScreenToggle.isOn = Fullscreen;
+        void ToggleValueChanged(Toggle change)
+        {
+            Fullscreen = change.isOn;
+            SetFullscreen();
+        }
 
-        ResoDropdown.onValueChanged.AddListener(delegate { DropDownSelected(ResoDropdown); });
+        void SetFullscreen()
+        {
+            if (Fullscreen)
+            {
+                switch (ResoSelected)
+                {
+                    case "1,366 × 768":
+                        Screen.SetResolution(1366, 768, true);
+                        Debug.Log("1366 * 768" + Fullscreen.ToString());
+                        break;
+                    case "1,600 × 900":
+                        Screen.SetResolution(1600, 900, true);
+                        Debug.Log("1600 * 900" + Fullscreen.ToString());
+                        break;
+                    case "1,920 × 1,080":
+                        Screen.SetResolution(1920, 1080, true);
+                        Debug.Log("1920 * 1080" + Fullscreen.ToString());
+                        break;
+                    default:
+                        Screen.SetResolution(1366, 768, true);
+                        Debug.Log("1366 * 768" + Fullscreen.ToString());
+                        break;
+                }
+            }
+            else
+            {
+                switch (ResoSelected)
+                {
+                    case "1,366 × 768":
+                        Screen.SetResolution(1366, 768, false);
+                        Debug.Log("1366 * 768" + Fullscreen.ToString());
+                        break;
+                    case "1,600 × 900":
+                        Screen.SetResolution(1600, 900, false);
+                        Debug.Log("1600 * 900" + Fullscreen.ToString());
+                        break;
+                    case "1,920 × 1,080":
+                        Screen.SetResolution(1920, 1080, false);
+                        Debug.Log("1920 * 1080" + Fullscreen.ToString());
+                        break;
+                    default:
+                        Screen.SetResolution(1366, 768, false);
+                        Debug.Log("1366 * 768" + Fullscreen.ToString());
+                        break;
+                }
+            }
+            MenuScene.isSceneResoChange = true;
+        }
 
-        FullScreenToggle.onValueChanged.AddListener(delegate {
-            ToggleValueChanged(FullScreenToggle);
-        });
-    }
-
-    void DropDownSelected(Dropdown dropdown)
-    {
-        int index = dropdown.value;
-
-        ResoSelected = dropdown.options[index].text;
-        SetResolution();
-    }
-
-    void ToggleValueChanged(Toggle change)
-    {
-        Fullscreen = change.isOn;
-        SetFullscreen();
-    }
-
-    void SetFullscreen()
-    {
-        if (Fullscreen)
+        void SetResolution()
         {
             switch (ResoSelected)
             {
                 case "1,366 × 768":
-                    Screen.SetResolution(1366, 768, true);
+                    Screen.SetResolution(1366, 768, Fullscreen);
                     Debug.Log("1366 * 768" + Fullscreen.ToString());
                     break;
                 case "1,600 × 900":
-                    Screen.SetResolution(1600, 900, true);
+                    Screen.SetResolution(1600, 900, Fullscreen);
                     Debug.Log("1600 * 900" + Fullscreen.ToString());
                     break;
                 case "1,920 × 1,080":
-                    Screen.SetResolution(1920, 1080, true);
+                    Screen.SetResolution(1920, 1080, Fullscreen);
                     Debug.Log("1920 * 1080" + Fullscreen.ToString());
                     break;
                 default:
-                    Screen.SetResolution(1366, 768, true);
+                    Screen.SetResolution(1366, 768, Fullscreen);
                     Debug.Log("1366 * 768" + Fullscreen.ToString());
                     break;
             }
-        }
-        else
-        {
-            switch (ResoSelected)
-            {
-                case "1,366 × 768":
-                    Screen.SetResolution(1366, 768, false);
-                    Debug.Log("1366 * 768" + Fullscreen.ToString());
-                    break;
-                case "1,600 × 900":
-                    Screen.SetResolution(1600, 900, false);
-                    Debug.Log("1600 * 900" + Fullscreen.ToString());
-                    break;
-                case "1,920 × 1,080":
-                    Screen.SetResolution(1920, 1080, false);
-                    Debug.Log("1920 * 1080" + Fullscreen.ToString());
-                    break;
-                default:
-                    Screen.SetResolution(1366, 768, false);
-                    Debug.Log("1366 * 768" + Fullscreen.ToString());
-                    break;
-            }
-        }
-    }
-
-    void SetResolution()
-    {
-        switch (ResoSelected)
-        {
-            case "1,366 × 768":
-                Screen.SetResolution(1366, 768, Fullscreen);
-                Debug.Log("1366 * 768" + Fullscreen.ToString());
-                break;
-            case "1,600 × 900":
-                Screen.SetResolution(1600, 900, Fullscreen);
-                Debug.Log("1600 * 900" + Fullscreen.ToString());
-                break;
-            case "1,920 × 1,080":
-                Screen.SetResolution(1920, 1080, Fullscreen);
-                Debug.Log("1920 * 1080" + Fullscreen.ToString());
-                break;
-            default:
-                Screen.SetResolution(1366, 768, Fullscreen);
-                Debug.Log("1366 * 768" + Fullscreen.ToString());
-                break;
+            MenuScene.isSceneResoChange = true;
         }
     }
 }
