@@ -6247,6 +6247,9 @@ MonoBehaviour:
   ScorePath4: 0
   orderManager: {fileID: 405271035}
   cardScript: {fileID: 1821869090}
+  order1: {fileID: 1189237058}
+  order2: {fileID: 654189841}
+  order3: {fileID: 276876074}
 --- !u!1 &152726409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,12 +8208,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDocumentSet: {fileID: 1821869089}
-  cardScript2: {fileID: 1821869090}
   TimeLeft: 0
   DocOrder: 3
   TimerOn: 0
   TimeStart: 0
   TimerTxt: {fileID: 422276790}
+  order1: 0
+  order2: 0
+  order3: 0
 --- !u!114 &276876075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13893,12 +13898,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDocumentSet: {fileID: 1821869089}
-  cardScript2: {fileID: 1821869090}
   TimeLeft: 0
   DocOrder: 2
   TimerOn: 0
   TimeStart: 0
   TimerTxt: {fileID: 283028318}
+  order1: 0
+  order2: 0
+  order3: 0
 --- !u!114 &654189842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22188,12 +22195,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDocumentSet: {fileID: 1821869089}
-  cardScript2: {fileID: 1821869090}
   TimeLeft: 0
   DocOrder: 1
   TimerOn: 0
   TimeStart: 0
   TimerTxt: {fileID: 555410111}
+  order1: 0
+  order2: 0
+  order3: 0
 --- !u!114 &1189237059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26983,12 +26992,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDocumentSet: {fileID: 1821869089}
-  cardScript2: {fileID: 1821869090}
   TimeLeft: 240
   DocOrder: 0
   TimerOn: 1
   TimeStart: 1
   TimerTxt: {fileID: 335214227}
+  order1: 0
+  order2: 0
+  order3: 0
 --- !u!114 &1616440926
 MonoBehaviour:
   m_ObjectHideFlags: 0

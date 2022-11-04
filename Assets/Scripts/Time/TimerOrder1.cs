@@ -8,8 +8,7 @@ namespace GameDev3.Project
     public class TimerOrder1 : MonoBehaviour
     {
         public TimeDocumentSet timeDocumentSet;
-        public CardScript1 cardScript1;
-        public float TimeLeft;
+        [SerializeField] private float TimeLeft;
         public int DocOrder;
         private float _TimeLeft;
         public bool TimerOn = false;
@@ -22,6 +21,10 @@ namespace GameDev3.Project
 
         private bool playSoundClock = false;
         private bool BlinkEffect = false;
+
+        [HideInInspector] public bool order1 = false;
+        [HideInInspector] public bool order2 = false;
+        [HideInInspector] public bool order3 = false;
 
         void Start()
         {
@@ -60,33 +63,29 @@ namespace GameDev3.Project
                     TimeLeft = _TimeLeft;
                     OffBlinkEffect();
                 }
-                if (cardScript1.Card1Finish == true && _TimeLeft == timeDocumentSet.Timer1 && DocOrder == 1)
+                if (order1 == true && _TimeLeft == timeDocumentSet.Timer1 && DocOrder == 1)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                     OffBlinkEffect();
+                    order1 = false;
                 }
-                else if (cardScript1.Card2Finish == true && _TimeLeft == timeDocumentSet.Timer2 && DocOrder == 2)
+                if (order2 == true && _TimeLeft == timeDocumentSet.Timer2 && DocOrder == 2)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                     OffBlinkEffect();
+                    order2 = false;
                 }
-                else if (cardScript1.Card3Finish == true && _TimeLeft == timeDocumentSet.Timer3 && DocOrder == 3)
+                if (order3 == true && _TimeLeft == timeDocumentSet.Timer3 && DocOrder == 3)
                 {
                     TimeLeft = 0;
                     TimerOn = false;
                     TimeLeft = _TimeLeft;
                     OffBlinkEffect();
-                }
-                else if (cardScript1.Card4Finish == true && _TimeLeft == timeDocumentSet.Timer4 && DocOrder == 4)
-                {
-                    TimeLeft = 0;
-                    TimerOn = false;
-                    TimeLeft = _TimeLeft;
-                    OffBlinkEffect();
+                    order3 = false;
                 }
             }
         }
@@ -96,7 +95,7 @@ namespace GameDev3.Project
             var animation = GetComponent<BlinkEffectImage>();
             animation.speed = 4;
         }
-        
+
         void OffBlinkEffect()
         {
             var animation = GetComponent<BlinkEffectImage>();

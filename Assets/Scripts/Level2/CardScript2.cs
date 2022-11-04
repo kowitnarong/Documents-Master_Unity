@@ -195,6 +195,7 @@ namespace GameDev3.Project
             {
                 StopCoroutine(ControlCard2TimeOut);
                 StartCoroutine(Card2Random());
+                Debug.Log("Card2Finish");
                 Card2Finish = false;
             }
             if (Card3Finish == true)

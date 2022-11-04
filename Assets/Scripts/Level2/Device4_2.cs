@@ -8,6 +8,10 @@ namespace GameDev3.Project
     {
         public OrderManager2 orderManager;
         public CardScript2 cardScript;
+        [Header("TimeOrder")]
+        public TimerOrder2 order1;
+        public TimerOrder2 order2;
+        public TimerOrder2 order3;
 
         public override void AddScore1()
         {
@@ -25,6 +29,7 @@ namespace GameDev3.Project
                     orderManager.RanOrder2 = 0;
                 }
                 cardScript.Card1Finish = true;
+                order1.order1 = true;
                 orderManager.Order1Enable = false;
             }
             else if (orderManager.Order1Enable == false)
@@ -49,6 +54,7 @@ namespace GameDev3.Project
                     orderManager.RanOrder2 = 0;
                 }
                 cardScript.Card2Finish = true;
+                order2.order2 = true;
                 orderManager.Order2Enable = false;
             }
             else if (orderManager.Order2Enable == false)
@@ -73,6 +79,7 @@ namespace GameDev3.Project
                     orderManager.RanOrder2 = 0;
                 }
                 cardScript.Card3Finish = true;
+                order3.order3 = true;
                 orderManager.Order3Enable = false;
             }
             else if (orderManager.Order3Enable == false)
